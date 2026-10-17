@@ -89,7 +89,7 @@ h1 span { font-size: .85rem; font-weight: 600; color: var(--muted); margin-left:
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; flex: 0 0 auto; }
 .seg button { border: 0; background: var(--sheet); padding: 7px 12px; cursor: pointer; font-size: .9rem; }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-#area { flex: 1; min-width: 0; border: 1px solid var(--line); background: var(--sheet); border-radius: 10px; padding: 7px 10px; font-size: .9rem; }
+#area, #lang { flex: 1; min-width: 0; border: 1px solid var(--line); background: var(--sheet); border-radius: 10px; padding: 7px 10px; font-size: .9rem; }
 
 .types {
   display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
@@ -137,7 +137,11 @@ main { max-width: 760px; margin: 0 auto; padding: 4px 16px 24px; }
 .slot.soon { background: var(--gold); border-color: var(--gold); color: var(--gold-ink); }
 .slot.soon small { color: inherit; opacity: .8; }
 .slot.past { opacity: .4; font-weight: 400; text-decoration: line-through; text-decoration-thickness: 1px; }
-.fmt-label { font-size: .75rem; color: var(--muted); margin: 6px 0 -2px; }
+.fmt-label { display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: .78rem; color: var(--muted); margin: 8px 0 -1px; }
+.fmt-label b { font-weight: 500; color: var(--ink); }
+.fmt-label .en-subs { color: var(--t-institution); }
+.fmt-label .en-subs b { color: inherit; font-weight: 700; }
+.guess { font-style: italic; }
 
 details.prices { margin-top: 4px; font-size: .8rem; color: var(--muted); }
 details.prices summary { cursor: pointer; width: fit-content; }

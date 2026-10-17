@@ -3,7 +3,9 @@
 A phone-friendly page of what's showing in Tokyo, built around the city's mini-theaters
 (ミニシアター), revival houses (名画座), community cinemas and cultural institutions, with
 the big central multiplexes one tap away. It shows each day's screening times, end times
-where known, subtitled/dubbed/format labels, and each theater's ticket prices.
+where known, the **audio language and subtitles** of every showing, format labels (IMAX,
+etc.), and each theater's ticket prices. You can filter to English-audio or
+English-subtitled showings.
 
 A GitHub Actions job scans every theater once a day at about **5:00 JST** and republishes
 the site on GitHub Pages. Nothing runs on your own computer.
@@ -15,7 +17,9 @@ GitHub Actions, 04:50 JST daily
   └─ scraper/run.py
        ├─ fetches each theater's page on eiga.com (映画.com), ~2.5 s apart
        ├─ parses films, dates, times, formats and the 料金 (price) table
-       ├─ fetches new films' pages once for English title / year / director (cached)
+       ├─ fetches new films' pages once for English title / year / country / director (cached)
+       ├─ optional: looks each new film up on TMDB for its original language (cached)
+       ├─ works out audio + subtitles for every showing (scraper/language.py)
        └─ writes site/data/showtimes.json  → committed, then deployed to Pages
 ```
 
@@ -25,6 +29,25 @@ Scraping 55 different theater websites would mean 55 parsers that break independ
 eiga.com's robots.txt allows these theater and film pages for general crawlers; the
 scraper identifies itself, waits between requests, and makes roughly 60–100 requests a
 day. Keep it personal and non-commercial.
+
+**Data sources.** Schedules, times, format labels and prices all come from eiga.com.
+Film details come from each film's eiga.com page. TMDB (themoviedb.org) is an optional
+second source for each film's original language and English title.
+
+**How audio and subtitles are decided.**
+
+| Listing says | Shown as |
+| --- | --- |
+| 吹替 (dubbed) | Audio: Japanese dub, no subtitles |
+| 英語字幕 / English subtitles | Audio: original language, subtitles: English |
+| 字幕 on a foreign film | Audio: original language, subtitles: Japanese |
+| 字幕 on a Japanese film | Audio: Japanese, subtitles: Japanese (accessibility captions) |
+| nothing, Japanese film | Audio: Japanese, no subtitles |
+| nothing, foreign film | Audio: original language, subtitles: Japanese — marked *likely* |
+
+The film's language comes from TMDB when available, otherwise from its production
+country on eiga.com. Co-productions without TMDB data show "Original language" rather
+than a guess. Anything not stated on the listing is marked *likely*.
 
 **Why 5:00 JST?** Theaters update their listings in the evening (and post the following
 week's schedule around Tuesday–Wednesday for Friday changeovers), so an early-morning
@@ -42,10 +65,19 @@ minutes late.
 5. Your site is at `https://<your-username>.github.io/tokyo-cinema/`. On iPhone, open it in
    Safari and use *Share → Add to Home Screen* to get an app icon.
 
+### Recommended: TMDB for film languages (free)
+
+Without it, the language is guessed from the production country, which fails for
+co-productions and films like Orson Welles' *The Trial* (a French/German/Italian
+production in English). Create a free account at <https://www.themoviedb.org>, request
+an API key under **Settings → API**, and add it as a repository secret named
+`TMDB_API_KEY` (either the "API Key" or the "API Read Access Token" works). TMDB also
+supplies English titles for many Japanese films. Each film is looked up once.
+
 ### Optional: English titles for Japanese-only films
 
 eiga.com gives an English/original title (原題・英題) for most foreign films, but not for
-many Japanese ones. To fill those in automatically, add a repository secret named
+many Japanese ones, and TMDB won't know every small release. To fill the rest in automatically, add a repository secret named
 `ANTHROPIC_API_KEY` (**Settings → Secrets and variables → Actions**). Each title is
 translated once and cached; machine-translated titles are marked *auto* on the page.
 To fix a title by hand, add it to `config/titles.yaml`.
@@ -83,6 +115,7 @@ To fix a title by hand, add it to `config/titles.yaml`.
 | `config/titles.yaml` | Manual English titles |
 | `scraper/eiga.py` | Page parsers (layout-tolerant: no reliance on CSS class names) |
 | `scraper/run.py` | The daily job |
+| `scraper/language.py` | Audio/subtitle rules, country → language map, TMDB lookup |
 | `scraper/translate.py` | Price-label translations and optional title translation |
 | `site/` | The static site (`index.html`, `app.js`, `style.css`, `data/`) |
-| `tests/` | Parser tests |
+| `tests/` | Parser and language tests |

@@ -22,7 +22,8 @@ import requests
 import yaml
 
 from .eiga import parse_movie_page, parse_theater_page
-from .translate import price_label_en, translate_titles
+from .language import LANG_NAMES, audio_subs, film_language, tmdb_lookup
+from .translate import has_japanese, price_label_en, translate_titles
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "config" / "theaters.yaml"
@@ -168,6 +169,22 @@ def main() -> int:
             except Exception as exc:
                 print(f"  film {mid}: {exc}")
 
+    # Original language + English title from TMDb (optional; needs TMDB_API_KEY).
+    if os.environ.get("TMDB_API_KEY") and not args.from_dir:
+        todo = [mid for mid in seen_movie_ids if not movies[mid].get("tmdb_checked")][:MAX_NEW_MOVIES]
+        print(f"Looking up {len(todo)} films on TMDb")
+        for mid in todo:
+            m = movies[mid]
+            hit = tmdb_lookup(fetcher.s, m.get("title_ja"), m.get("title_en"), m.get("year"))
+            time.sleep(0.3)
+            m["tmdb_checked"] = today.isoformat()
+            if hit:
+                m["lang"] = hit["lang"]
+                m["tmdb_id"] = hit["tmdb_id"]
+                t = hit.get("tmdb_title")
+                if t and not has_japanese(t) and t != m.get("title_ja"):
+                    m["title_en_tmdb"] = t
+
     n_tr = translate_titles({k: movies[k] for k in seen_movie_ids})
     if n_tr:
         print(f"Translated {n_tr} titles")
@@ -188,12 +205,21 @@ def main() -> int:
     cutoff = (today - dt.timedelta(days=60)).isoformat()
     movies = {k: v for k, v in movies.items() if v.get("last_seen", today.isoformat()) >= cutoff}
 
+    # Audio language + subtitles for every screening.
+    for sc in screenings:
+        lang, sure = film_language(movies[sc["m"]])
+        info = audio_subs(sc["f"], lang, sure)
+        sc["a"], sc["sub"] = info["a"], info["sub"]
+        if not info["sure"]:
+            sc["guess"] = 1
+
     screenings.sort(key=lambda s: (s["d"], s["s"], s["t"]))
     data = {
         "generated_at": now.isoformat(timespec="minutes"),
         "today": today.isoformat(),
         "theaters": out_theaters,
         "movies": {k: _public_movie(movies[k]) for k in seen_movie_ids},
+        "languages": LANG_NAMES,
         "screenings": screenings,
     }
     DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -208,10 +234,10 @@ def main() -> int:
 
 
 def _public_movie(m: dict) -> dict:
-    title_en = m.get("title_en_override") or m.get("title_en") or m.get("title_en_auto")
-    out = {"ja": m.get("title_ja"), "en": title_en,
-           "en_auto": bool(not m.get("title_en_override") and not m.get("title_en") and m.get("title_en_auto"))}
-    for k in ("year", "runtime", "country", "director", "rating", "poster"):
+    human = m.get("title_en_override") or m.get("title_en") or m.get("title_en_tmdb")
+    title_en = human or m.get("title_en_auto")
+    out = {"ja": m.get("title_ja"), "en": title_en, "en_auto": bool(not human and title_en)}
+    for k in ("year", "runtime", "country", "director", "rating", "poster", "lang", "tmdb_id"):
         if m.get(k):
             out[k] = m[k]
     return out

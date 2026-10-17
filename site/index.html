@@ -29,6 +29,13 @@
       </div>
       <select id="area" aria-label="Area"><option value="">All areas</option></select>
     </div>
+    <select id="lang" aria-label="Audio and subtitles">
+      <option value="">Any audio and subtitles</option>
+      <option value="en">English audio or English subtitles</option>
+      <option value="ja">Japanese audio</option>
+      <option value="orig-ja">Original language, Japanese subtitles</option>
+      <option value="dub">Japanese dub (吹替)</option>
+    </select>
     <div class="types" id="types" role="group" aria-label="Theater types"></div>
   </div>
 </section>
@@ -36,7 +43,7 @@
 <main id="list" aria-live="polite"></main>
 
 <footer class="foot">
-  <p>Schedules come from each theater's page on <a href="https://eiga.com/theater/13/">eiga.com</a>, scanned once a day around 5:00 JST. Times and prices can change — check with the theater before you go.</p>
+  <p>Schedules come from each theater's page on <a href="https://eiga.com/theater/13/">eiga.com</a>, scanned once a day around 5:00 JST. Times and prices can change — check with the theater before you go. Audio and subtitles marked “likely” aren't stated on the listing; they're inferred from the film's original language and the usual Japanese practice of subtitling foreign films.<span id="tmdb-credit" hidden> Film languages and some English titles come from <a href="https://www.themoviedb.org/">TMDB</a>; this product uses the TMDB API but is not endorsed or certified by TMDB.</span></p>
   <details id="health"><summary>Scan status</summary><ul id="health-list"></ul></details>
 </footer>
 

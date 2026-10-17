@@ -45,6 +45,7 @@
     view: store.get("view", "film"),
     q: "",
     area: store.get("area", ""),
+    lang: store.get("lang", ""),
     types: new Set(store.get("types", ["arthouse", "repertory", "community", "institution"])),
   };
   let data = null;
@@ -73,17 +74,37 @@
     return bits.length ? `<p class="meta">${bits.join("／")}</p>` : "";
   }
 
+  // Format words that only restate language/subtitles; the language line covers them.
+  const LANG_WORDS = /(日本語字幕付?|英語字幕[付版]?|字幕|吹替|吹き替え|原語版|with English subtitles|English Subtitle[sd]?|ENGLISH SUBTITLES|ENG SUB|Eng Sub)/g;
+
+  function langName(code) {
+    const n = (data.languages || {})[code];
+    return n ? `${esc(n[0])} <span lang="ja">${esc(n[1])}</span>` : esc(code);
+  }
+
+  function langLine(r) {
+    const parts = [];
+    if (r.a) parts.push(`<span><b>Audio</b> <span lang="ja">音声</span> ${langName(r.a)}</span>`);
+    if (r.sub === "none") parts.push(`<span>No subtitles <span lang="ja">字幕なし</span></span>`);
+    else if (r.sub) parts.push(`<span class="${r.sub === "en" ? "en-subs" : ""}"><b>Subtitles</b> <span lang="ja">字幕</span> ${langName(r.sub)}</span>`);
+    if (!parts.length) parts.push(`<span>Language not listed</span>`);
+    const extra = (r.f || "").replace(LANG_WORDS, "").trim();
+    if (extra) parts.push(`<span>${fmtLabel(extra)}</span>`);
+    if (r.guess) parts.push(`<span class="guess" title="Not stated on the listing; inferred from the film's country and Japanese screening conventions">likely</span>`);
+    return `<p class="fmt-label">${parts.join("")}</p>`;
+  }
+
   function slotsHTML(rows, isToday, nowMin) {
-    // group by format so subtitled / dubbed runs read as separate lines
+    // one line per audio/subtitle/format combination, then its times
     const groups = new Map();
     for (const r of rows) {
-      const k = r.f || "";
+      const k = [r.f || "", r.a || "", r.sub || "", r.guess ? 1 : 0].join("|");
       if (!groups.has(k)) groups.set(k, []);
       groups.get(k).push(r);
     }
     let html = "";
-    for (const [f, list] of groups) {
-      if (f || groups.size > 1) html += `<p class="fmt-label">${f ? fmtLabel(f) : "Standard"}</p>`;
+    for (const list of groups.values()) {
+      html += langLine(list[0]);
       html += `<div class="slots">` + list.map((r) => {
         const m = mins(r.s);
         let cls = "slot";
@@ -117,6 +138,10 @@
     const t = theaters[s.t];
     if (!t || !state.types.has(t.type)) return false;
     if (state.area && t.area_en !== state.area) return false;
+    if (state.lang === "en" && !(s.a === "en" || s.sub === "en")) return false;
+    if (state.lang === "ja" && s.a !== "ja") return false;
+    if (state.lang === "orig-ja" && !(s.sub === "ja" && s.a && s.a !== "ja" && s.a !== "ja-dub")) return false;
+    if (state.lang === "dub" && s.a !== "ja-dub") return false;
     if (!state.q) return true;
     const m = data.movies[s.m] || {};
     const hay = [m.en, m.ja, m.director, t.name_en, t.name_ja, t.area_en, t.area_ja].join(" ").toLowerCase();
@@ -135,7 +160,7 @@
         : "No listings for this day yet. Theaters usually publish the next week's schedule on Tuesday or Wednesday."}</p>${
         hidden ? `<button type="button" id="reset">Show all theaters</button>` : ""}</div>`;
       const b = $("#reset");
-      if (b) b.onclick = () => { state.q = ""; $("#q").value = ""; state.area = ""; $("#area").value = ""; TYPES.forEach((t) => state.types.add(t.id)); save(); drawTypes(); render(); };
+      if (b) b.onclick = () => { state.q = ""; $("#q").value = ""; state.area = ""; $("#area").value = ""; state.lang = ""; $("#lang").value = ""; TYPES.forEach((t) => state.types.add(t.id)); save(); drawTypes(); render(); };
       return;
     }
     const nextKey = (list) => {
@@ -235,6 +260,7 @@
   function save() {
     store.set("view", state.view);
     store.set("area", state.area);
+    store.set("lang", state.lang);
     store.set("types", [...state.types]);
   }
 
@@ -258,6 +284,8 @@
       save(); render();
     }));
     $("#area").addEventListener("change", (e) => { state.area = e.target.value; save(); render(); });
+    $("#lang").value = state.lang;
+    $("#lang").addEventListener("change", (e) => { state.lang = e.target.value; save(); render(); });
     let timer;
     $("#q").addEventListener("input", (e) => {
       clearTimeout(timer);
@@ -281,6 +309,7 @@
       return;
     }
     theaters = Object.fromEntries(data.theaters.map((t) => [t.id, t]));
+    if (Object.values(data.movies).some((m) => m.tmdb_id)) $("#tmdb-credit").hidden = false;
     drawMeta(); drawAreas(); drawDays(); render();
   }
 

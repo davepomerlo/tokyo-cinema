@@ -55,7 +55,7 @@ def translate_titles(movies: dict, limit: int = 60) -> int:
         return 0
     todo = [
         (mid, m["title_ja"]) for mid, m in movies.items()
-        if not m.get("title_en") and not m.get("title_en_auto") and has_japanese(m.get("title_ja", ""))
+        if not m.get("title_en") and not m.get("title_en_tmdb") and not m.get("title_en_auto") and has_japanese(m.get("title_ja", ""))
     ][:limit]
     if not todo:
         return 0

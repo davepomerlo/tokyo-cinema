@@ -46,6 +46,8 @@ jobs:
         env:
           # Optional: add this secret to get English titles for Japanese-only films.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Optional (free): original language + English titles from TMDB.
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python -m scraper.run
 
       - name: Keep pages that could not be parsed (for debugging)
