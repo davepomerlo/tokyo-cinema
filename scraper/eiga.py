@@ -20,6 +20,8 @@ from dataclasses import dataclass, field
 
 from bs4 import BeautifulSoup, NavigableString, Tag
 
+from .ratings import parse_eiga_rating
+
 MOVIE_HREF = re.compile(r"(?:https?://eiga\.com)?/movie/(\d+)/?(?:[?#].*)?$")
 DATE_RE = re.compile(r"(?<![\d:])(\d{1,2})\s*/\s*(\d{1,2})(?![\d:])")
 DATA_DATE_RE = re.compile(r"^(20\d{2})-?(\d{2})-?(\d{2})$")
@@ -401,6 +403,10 @@ def parse_movie_page(html: str) -> dict:
         if m:
             info["director"] = m.group(1).strip()
             break
+
+    rating = parse_eiga_rating(text)
+    if rating:
+        info["scores_eiga"] = rating
 
     og = soup.find("meta", attrs={"property": "og:image"})
     if og and og.get("content"):

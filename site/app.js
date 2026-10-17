@@ -46,6 +46,7 @@
     q: "",
     area: store.get("area", ""),
     lang: store.get("lang", ""),
+    sort: store.get("sort", "next"),
     types: new Set(store.get("types", ["arthouse", "repertory", "community", "institution"])),
   };
   let data = null;
@@ -72,6 +73,27 @@
     if (m.country) bits.push(`<span lang="ja">${esc(m.country)}</span>`);
     if (m.director) bits.push(`Dir. <span lang="ja">${esc(m.director)}</span>`);
     return bits.length ? `<p class="meta">${bits.join("／")}</p>` : "";
+  }
+
+  function scoresHTML(m, mid, compact) {
+    const sc = m.scores;
+    if (!sc) return "";
+    const items = [];
+    const link = (href, inner, title) =>
+      `<a class="score" href="${esc(href)}" target="_blank" rel="noopener" title="${esc(title)}">${inner}</a>`;
+    const plain = (inner, title) => `<span class="score" title="${esc(title)}">${inner}</span>`;
+    if (sc.rt != null) items.push(plain(`<b>${sc.rt}%</b> Rotten Tomatoes`, "Rotten Tomatoes critics score"));
+    if (sc.mc != null) items.push(plain(`<b>${sc.mc}</b> Metacritic`, "Metacritic critics score, out of 100"));
+    if (sc.imdb) items.push(m.imdb_id
+      ? link(`https://www.imdb.com/title/${m.imdb_id}/`, `<b>${sc.imdb.v.toFixed(1)}</b> IMDb`, `IMDb user rating out of 10, ${sc.imdb.n.toLocaleString("en-US")} votes`)
+      : plain(`<b>${sc.imdb.v.toFixed(1)}</b> IMDb`, "IMDb user rating out of 10"));
+    if (sc.eiga) items.push(link(`https://eiga.com/movie/${mid}/review/`,
+      `<b>★ ${sc.eiga.v.toFixed(1)}</b> eiga.com`, `eiga.com user rating out of 5, ${sc.eiga.n} reviews`));
+    if (sc.tmdb) items.push(m.tmdb_id
+      ? link(`https://www.themoviedb.org/movie/${m.tmdb_id}`, `<b>${sc.tmdb.v.toFixed(1)}</b> TMDB`, `TMDB user rating out of 10, ${sc.tmdb.n} votes`)
+      : plain(`<b>${sc.tmdb.v.toFixed(1)}</b> TMDB`, "TMDB user rating out of 10"));
+    if (!items.length) return "";
+    return `<p class="scores${compact ? " compact" : ""}">${(compact ? items.slice(0, 2) : items).join("")}</p>`;
   }
 
   // Format words that only restate language/subtitles; the language line covers them.
@@ -163,6 +185,8 @@
       if (b) b.onclick = () => { state.q = ""; $("#q").value = ""; state.area = ""; $("#area").value = ""; state.lang = ""; $("#lang").value = ""; TYPES.forEach((t) => state.types.add(t.id)); save(); drawTypes(); render(); };
       return;
     }
+    const avg = (mid) => ((data.movies[mid] || {}).scores || {}).avg ?? -1;
+    const byRating = (a, b) => state.sort === "rating" ? avg(b) - avg(a) : 0;
     const nextKey = (list) => {
       const up = list.filter((r) => !isToday || mins(r.s) >= now.min);
       return up.length ? mins(up[0].s) : 10000 + mins(list[0].s);
@@ -178,14 +202,14 @@
       }
       const films = [...byFilm.entries()].map(([mid, venues]) => ({
         mid, venues, key: nextKey([...venues.values()].flat().sort((a, b) => mins(a.s) - mins(b.s))),
-      })).sort((a, b) => a.key - b.key);
+      })).sort((a, b) => byRating(a.mid, b.mid) || a.key - b.key);
 
       list.innerHTML = films.map(({ mid, venues }) => {
         const m = data.movies[mid] || { ja: "?" };
         const vs = [...venues.entries()].sort((a, b) =>
           (TYPE_ORDER[theaters[a[0]].type] - TYPE_ORDER[theaters[b[0]].type]) || (nextKey(a[1]) - nextKey(b[1])));
         const poster = m.poster ? `<img class="poster" src="${esc(m.poster)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : "";
-        return `<article class="film"><div class="film-head"><div>${filmTitle(m, "h2", `https://eiga.com/movie/${mid}/`)}${filmMeta(m)}</div>${poster}</div>` +
+        return `<article class="film"><div class="film-head"><div>${filmTitle(m, "h2", `https://eiga.com/movie/${mid}/`)}${filmMeta(m)}${scoresHTML(m, mid, false)}</div>${poster}</div>` +
           vs.map(([tid, rs]) => {
             const t = theaters[tid];
             return `<div class="venue" style="--tc:var(--t-${esc(t.type)})"><div class="venue-name">${venueName(t)}${priceHTML(t, true)}</div>${slotsHTML(rs, isToday, now.min)}</div>`;
@@ -205,14 +229,14 @@
       list.innerHTML = ts.map(([tid, films]) => {
         const t = theaters[tid];
         const type = TYPES.find((x) => x.id === t.type);
-        const fl = [...films.entries()].sort((a, b) => nextKey(a[1]) - nextKey(b[1]));
+        const fl = [...films.entries()].sort((a, b) => byRating(a[0], b[0]) || nextKey(a[1]) - nextKey(b[1]));
         return `<article class="house venue" style="--tc:var(--t-${esc(t.type)})">` +
           `<h2><a href="${esc(t.official_url || t.eiga)}" target="_blank" rel="noopener">${esc(t.name_en)}</a>${t.name_ja !== t.name_en ? `<span class="ja" lang="ja">${esc(t.name_ja)}</span>` : ""}</h2>` +
           `<p class="house-meta"><span>${esc(t.area_en || "")} <span lang="ja">${esc(t.area_ja || "")}</span></span><span>${type ? esc(type.en) : ""}</span>${t.price_general ? `<span>General ${yen(t.price_general)}</span>` : ""}</p>` +
           priceHTML(t, false) +
           fl.map(([mid, rs]) => {
             const m = data.movies[mid] || { ja: "?" };
-            return `<div class="film-line">${filmTitle(m, "h3", `https://eiga.com/movie/${mid}/`)}${slotsHTML(rs, isToday, now.min)}</div>`;
+            return `<div class="film-line">${filmTitle(m, "h3", `https://eiga.com/movie/${mid}/`)}${scoresHTML(m, mid, true)}${slotsHTML(rs, isToday, now.min)}</div>`;
           }).join("") + `</article>`;
       }).join("");
     }
@@ -261,6 +285,7 @@
     store.set("view", state.view);
     store.set("area", state.area);
     store.set("lang", state.lang);
+    store.set("sort", state.sort);
     store.set("types", [...state.types]);
   }
 
@@ -284,6 +309,8 @@
       save(); render();
     }));
     $("#area").addEventListener("change", (e) => { state.area = e.target.value; save(); render(); });
+    $("#sort").value = state.sort;
+    $("#sort").addEventListener("change", (e) => { state.sort = e.target.value; save(); render(); });
     $("#lang").value = state.lang;
     $("#lang").addEventListener("change", (e) => { state.lang = e.target.value; save(); render(); });
     let timer;

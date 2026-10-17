@@ -80,7 +80,8 @@ h1 span { font-size: .85rem; font-weight: 600; color: var(--muted); margin-left:
 .day.sat small { color: var(--t-institution); }
 .day[aria-pressed="true"].sun small, .day[aria-pressed="true"].sat small { color: inherit; }
 
-.controls { max-width: 760px; margin: 10px auto 0; display: grid; gap: 8px; }
+.controls { max-width: 760px; margin: 10px auto 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+.controls > * { min-width: 0; }
 #q {
   width: 100%; border: 1px solid var(--line); background: var(--sheet);
   border-radius: 10px; padding: 9px 12px;
@@ -89,7 +90,7 @@ h1 span { font-size: .85rem; font-weight: 600; color: var(--muted); margin-left:
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; flex: 0 0 auto; }
 .seg button { border: 0; background: var(--sheet); padding: 7px 12px; cursor: pointer; font-size: .9rem; }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-#area, #lang { flex: 1; min-width: 0; border: 1px solid var(--line); background: var(--sheet); border-radius: 10px; padding: 7px 10px; font-size: .9rem; }
+#area, #lang, #sort { flex: 1; min-width: 0; border: 1px solid var(--line); background: var(--sheet); border-radius: 10px; padding: 7px 10px; font-size: .9rem; }
 
 .types {
   display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
@@ -118,6 +119,15 @@ main { max-width: 760px; margin: 0 auto; padding: 4px 16px 24px; }
 .ja { display: block; font: 600 .98rem/1.4 var(--serif); color: var(--muted); margin-top: 2px; }
 .auto { font: 400 .7rem var(--sans); color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; margin-left: 4px; vertical-align: 2px; }
 .meta { margin: 4px 0 0; font-size: .82rem; color: var(--muted); }
+.scores { display: flex; flex-wrap: wrap; gap: 4px 6px; margin: 8px 0 0; }
+.scores.compact { margin: 3px 0 0; }
+.score {
+  display: inline-flex; align-items: baseline; gap: 5px;
+  font-size: .76rem; color: var(--muted); text-decoration: none;
+  border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px 2px;
+}
+.score b { font-size: .92rem; color: var(--ink); font-variant-numeric: tabular-nums; }
+a.score:hover { border-color: var(--muted); }
 .poster { width: 56px; height: 80px; object-fit: cover; border-radius: 4px; background: var(--line); }
 
 .venue { margin-top: 12px; padding-left: 12px; border-left: 3px solid var(--tc, var(--muted)); }
@@ -164,7 +174,16 @@ details.prices .yen { text-align: right; font-variant-numeric: tabular-nums; col
 
 @media (min-width: 640px) {
   .film h2, .house h2 { font-size: 1.65rem; }
-  .poster { width: 72px; height: 104px; }
+  .scores { display: flex; flex-wrap: wrap; gap: 4px 6px; margin: 8px 0 0; }
+.scores.compact { margin: 3px 0 0; }
+.score {
+  display: inline-flex; align-items: baseline; gap: 5px;
+  font-size: .76rem; color: var(--muted); text-decoration: none;
+  border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px 2px;
+}
+.score b { font-size: .92rem; color: var(--ink); font-variant-numeric: tabular-nums; }
+a.score:hover { border-color: var(--muted); }
+.poster { width: 72px; height: 104px; }
 }
 @media (prefers-reduced-motion: no-preference) {
   .day, .type, .seg button { transition: background-color .15s, color .15s; }

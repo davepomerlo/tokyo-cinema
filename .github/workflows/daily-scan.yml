@@ -48,6 +48,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # Optional (free): original language + English titles from TMDB.
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          # Optional (free): IMDb, Rotten Tomatoes and Metacritic scores via OMDb (needs TMDB too).
+          OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
         run: python -m scraper.run
 
       - name: Keep pages that could not be parsed (for debugging)

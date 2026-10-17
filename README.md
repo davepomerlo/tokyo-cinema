@@ -4,8 +4,9 @@ A phone-friendly page of what's showing in Tokyo, built around the city's mini-t
 (ミニシアター), revival houses (名画座), community cinemas and cultural institutions, with
 the big central multiplexes one tap away. It shows each day's screening times, end times
 where known, the **audio language and subtitles** of every showing, format labels (IMAX,
-etc.), and each theater's ticket prices. You can filter to English-audio or
-English-subtitled showings.
+etc.), each theater's ticket prices, and each film's scores (eiga.com users, plus IMDb,
+Rotten Tomatoes, Metacritic and TMDB when keys are set). You can filter to English-audio
+or English-subtitled showings and sort by rating.
 
 A GitHub Actions job scans every theater once a day at about **5:00 JST** and republishes
 the site on GitHub Pages. Nothing runs on your own computer.
@@ -18,7 +19,9 @@ GitHub Actions, 04:50 JST daily
        ├─ fetches each theater's page on eiga.com (映画.com), ~2.5 s apart
        ├─ parses films, dates, times, formats and the 料金 (price) table
        ├─ fetches new films' pages once for English title / year / country / director (cached)
-       ├─ optional: looks each new film up on TMDB for its original language (cached)
+       ├─ optional: TMDB for original language, English title, score, IMDb id
+       ├─ optional: OMDb for IMDb, Rotten Tomatoes and Metacritic scores
+       │    (film details and scores are refreshed weekly while a film is showing)
        ├─ works out audio + subtitles for every showing (scraper/language.py)
        └─ writes site/data/showtimes.json  → committed, then deployed to Pages
 ```
@@ -74,6 +77,14 @@ an API key under **Settings → API**, and add it as a repository secret named
 `TMDB_API_KEY` (either the "API Key" or the "API Read Access Token" works). TMDB also
 supplies English titles for many Japanese films. Each film is looked up once.
 
+### Optional: IMDb, Rotten Tomatoes and Metacritic scores (free)
+
+Every film gets its eiga.com user rating (out of 5) without any setup. For critics'
+scores, get a free key at <https://www.omdbapi.com/apikey.aspx> (1,000 requests a day is
+plenty) and add it as a secret named `OMDB_API_KEY`. OMDb needs the IMDb id that TMDB
+provides, so set up TMDB too. Scores with very few votes are hidden. Small Japanese
+releases often have only an eiga.com rating.
+
 ### Optional: English titles for Japanese-only films
 
 eiga.com gives an English/original title (原題・英題) for most foreign films, but not for
@@ -81,6 +92,27 @@ many Japanese ones, and TMDB won't know every small release. To fill the rest in
 `ANTHROPIC_API_KEY` (**Settings → Secrets and variables → Actions**). Each title is
 translated once and cached; machine-translated titles are marked *auto* on the page.
 To fix a title by hand, add it to `config/titles.yaml`.
+
+## Running it
+
+The app is a website, so "running" it means letting GitHub do the work:
+
+- **Every day**: nothing to do. The scan runs at 04:50 JST and the site updates itself.
+- **On demand**: GitHub → your repo → **Actions → Daily scan → Run workflow**
+  (works from the GitHub mobile app too).
+- **Using it**: open `https://<your-username>.github.io/tokyo-cinema/`. Add it to your
+  phone's home screen to open it like an app.
+
+To run it on your own computer instead (Python 3.10+):
+
+```bash
+pip install -r requirements.txt
+python -m scraper.run                 # scan (about 3–5 minutes)
+python -m http.server -d site 8000    # then open http://localhost:8000
+```
+
+Set `TMDB_API_KEY`, `OMDB_API_KEY` or `ANTHROPIC_API_KEY` as environment variables to use
+those optional sources locally.
 
 ## Customising
 
@@ -115,7 +147,8 @@ To fix a title by hand, add it to `config/titles.yaml`.
 | `config/titles.yaml` | Manual English titles |
 | `scraper/eiga.py` | Page parsers (layout-tolerant: no reliance on CSS class names) |
 | `scraper/run.py` | The daily job |
+| `scraper/ratings.py` | Score parsing and TMDB / OMDb lookups |
 | `scraper/language.py` | Audio/subtitle rules, country → language map, TMDB lookup |
 | `scraper/translate.py` | Price-label translations and optional title translation |
 | `site/` | The static site (`index.html`, `app.js`, `style.css`, `data/`) |
-| `tests/` | Parser and language tests |
+| `tests/` | Parser, language and score tests |

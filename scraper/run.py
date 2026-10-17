@@ -22,6 +22,7 @@ import requests
 import yaml
 
 from .eiga import parse_movie_page, parse_theater_page
+from .ratings import omdb_scores, public_scores, tmdb_details
 from .language import LANG_NAMES, audio_subs, film_language, tmdb_lookup
 from .translate import has_japanese, price_label_en, translate_titles
 
@@ -34,6 +35,7 @@ JST = ZoneInfo("Asia/Tokyo")
 
 DELAY = float(os.environ.get("SCRAPE_DELAY", "2.5"))     # seconds between requests
 MAX_NEW_MOVIES = int(os.environ.get("MAX_NEW_MOVIES", "120"))
+REFRESH_DAYS = 7   # re-check scores of films still showing this often
 DAYS_AHEAD = 7
 
 
@@ -157,33 +159,75 @@ def main() -> int:
         out_theaters.append(entry)
         print(f"{len(page.movies)} films, {n} screenings")
 
-    # Film details (English title, year, director…) — fetched once, then cached.
+    # Film details (English title, year, director, eiga.com rating). New films first,
+    # then a weekly refresh of films still showing so their ratings stay current.
+    week_ago = (today - dt.timedelta(days=REFRESH_DAYS)).isoformat()
+
+    def due(field: str) -> list[str]:
+        new = [mid for mid in seen_movie_ids if not movies[mid].get(field)]
+        stale = sorted((mid for mid in seen_movie_ids
+                        if movies[mid].get(field) and movies[mid][field] <= week_ago),
+                       key=lambda mid: movies[mid][field])
+        return (new + stale)[:MAX_NEW_MOVIES]
+
     if not args.no_movies and not args.from_dir:
-        todo = [mid for mid in seen_movie_ids if not movies[mid].get("fetched")][:MAX_NEW_MOVIES]
-        print(f"Fetching {len(todo)} new film pages")
+        todo = due("fetched")
+        print(f"Fetching {len(todo)} film pages")
         for mid in todo:
             try:
                 info = parse_movie_page(fetcher.get(f"https://eiga.com/movie/{mid}/"))
+                rating = info.pop("scores_eiga", None)
                 movies[mid].update(info)
+                scores = movies[mid].setdefault("scores", {})
+                if rating:
+                    scores["eiga"] = rating
                 movies[mid]["fetched"] = today.isoformat()
             except Exception as exc:
                 print(f"  film {mid}: {exc}")
 
-    # Original language + English title from TMDb (optional; needs TMDB_API_KEY).
+    # TMDB: original language, English title, vote average, IMDb id (needs TMDB_API_KEY).
+    # OMDb: IMDb rating, Rotten Tomatoes, Metacritic (needs OMDB_API_KEY + the IMDb id).
     if os.environ.get("TMDB_API_KEY") and not args.from_dir:
-        todo = [mid for mid in seen_movie_ids if not movies[mid].get("tmdb_checked")][:MAX_NEW_MOVIES]
-        print(f"Looking up {len(todo)} films on TMDb")
+        todo = due("tmdb_checked")
+        print(f"Checking {len(todo)} films on TMDB")
         for mid in todo:
             m = movies[mid]
-            hit = tmdb_lookup(fetcher.s, m.get("title_ja"), m.get("title_en"), m.get("year"))
-            time.sleep(0.3)
+            if not m.get("tmdb_id"):
+                hit = tmdb_lookup(fetcher.s, m.get("title_ja"), m.get("title_en"), m.get("year"))
+                time.sleep(0.25)
+                if hit:
+                    m["tmdb_id"] = hit["tmdb_id"]
+                    m["lang"] = hit["lang"]
             m["tmdb_checked"] = today.isoformat()
-            if hit:
-                m["lang"] = hit["lang"]
-                m["tmdb_id"] = hit["tmdb_id"]
-                t = hit.get("tmdb_title")
-                if t and not has_japanese(t) and t != m.get("title_ja"):
-                    m["title_en_tmdb"] = t
+            if not m.get("tmdb_id"):
+                continue
+            d = tmdb_details(fetcher.s, m["tmdb_id"])
+            time.sleep(0.25)
+            if not d:
+                continue
+            if d.get("lang"):
+                m["lang"] = d["lang"]
+            if d.get("imdb_id"):
+                m["imdb_id"] = d["imdb_id"]
+            t = d.get("tmdb_title")
+            if t and not has_japanese(t) and t != m.get("title_ja"):
+                m["title_en_tmdb"] = t
+            if d.get("tmdb"):
+                m.setdefault("scores", {})["tmdb"] = d["tmdb"]
+
+    if os.environ.get("OMDB_API_KEY") and not args.from_dir:
+        todo = [mid for mid in due("omdb_checked") if movies[mid].get("imdb_id")]
+        print(f"Checking {len(todo)} films on OMDb")
+        for mid in todo:
+            m = movies[mid]
+            got = omdb_scores(fetcher.s, m["imdb_id"])
+            time.sleep(0.25)
+            m["omdb_checked"] = today.isoformat()
+            if got:
+                sc = m.setdefault("scores", {})
+                for k in ("imdb", "rt", "mc"):
+                    sc.pop(k, None)
+                sc.update(got)
 
     n_tr = translate_titles({k: movies[k] for k in seen_movie_ids})
     if n_tr:
@@ -237,9 +281,12 @@ def _public_movie(m: dict) -> dict:
     human = m.get("title_en_override") or m.get("title_en") or m.get("title_en_tmdb")
     title_en = human or m.get("title_en_auto")
     out = {"ja": m.get("title_ja"), "en": title_en, "en_auto": bool(not human and title_en)}
-    for k in ("year", "runtime", "country", "director", "rating", "poster", "lang", "tmdb_id"):
+    for k in ("year", "runtime", "country", "director", "rating", "poster", "lang", "tmdb_id", "imdb_id"):
         if m.get(k):
             out[k] = m[k]
+    scores = public_scores(m.get("scores") or {})
+    if scores:
+        out["scores"] = scores
     return out
 
 
