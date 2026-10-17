@@ -1,0 +1,288 @@
+(() => {
+  "use strict";
+
+  const TYPES = [
+    { id: "arthouse", en: "Arthouse", ja: "ミニシアター" },
+    { id: "repertory", en: "Revival", ja: "名画座" },
+    { id: "community", en: "Community", ja: "地域の映画館" },
+    { id: "institution", en: "Institutions", ja: "文化施設" },
+    { id: "multiplex", en: "Multiplex", ja: "シネコン" },
+  ];
+  const TYPE_ORDER = Object.fromEntries(TYPES.map((t, i) => [t.id, i]));
+  const FORMATS = {
+    "字幕": "Subtitled", "日本語字幕": "Japanese subtitles", "英語字幕": "English subtitles",
+    "吹替": "Dubbed", "吹き替え": "Dubbed", "バリアフリー": "Barrier-free",
+    "日本語音声ガイド": "Audio guide", "極上音響": "Enhanced sound", "轟音": "Loud sound",
+    "爆音": "Extra-loud sound", "ドルビーシネマ": "Dolby Cinema", "ドルビーアトモス": "Dolby Atmos",
+    "応援上映": "Cheering screening", "発声可能": "Cheering allowed", "デジタル": "Digital",
+    "プレミアムシアター": "Premium screen", "IMAXレーザー": "IMAX Laser",
+  };
+  const WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const WD_JA = ["日", "月", "火", "水", "木", "金", "土"];
+  const SOON_MIN = 90;
+
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  const yen = (n) => "¥" + Number(n).toLocaleString("en-US");
+  const mins = (t) => { const [h, m] = t.split(":").map(Number); return h * 60 + m; };
+
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem("tc." + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+    set(k, v) { try { localStorage.setItem("tc." + k, JSON.stringify(v)); } catch { /* storage unavailable */ } },
+  };
+
+  function nowJST() {
+    const p = Object.fromEntries(new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit",
+      hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+    }).formatToParts(new Date()).map((x) => [x.type, x.value]));
+    return { date: `${p.year}-${p.month}-${p.day}`, min: Number(p.hour) * 60 + Number(p.minute) };
+  }
+
+  const state = {
+    day: null,
+    view: store.get("view", "film"),
+    q: "",
+    area: store.get("area", ""),
+    types: new Set(store.get("types", ["arthouse", "repertory", "community", "institution"])),
+  };
+  let data = null;
+  let theaters = {};
+
+  function fmtLabel(f) {
+    if (!f) return "";
+    const en = f.split(" ").map((x) => FORMATS[x] || x).join(", ");
+    return en === f ? esc(f) : `${esc(en)} <span lang="ja">${esc(f)}</span>`;
+  }
+
+  function filmTitle(m, tag = "h2", href) {
+    const en = m.en && m.en !== m.ja ? m.en : null;
+    const main = en || m.ja;
+    const auto = en && m.en_auto ? `<span class="auto" title="Machine-translated title">auto</span>` : "";
+    const link = href ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(main)}</a>` : esc(main);
+    return `<${tag}>${link}${auto}${en ? `<span class="ja" lang="ja">${esc(m.ja)}</span>` : ""}</${tag}>`;
+  }
+
+  function filmMeta(m) {
+    const bits = [];
+    if (m.year) bits.push(m.year);
+    if (m.runtime) bits.push(`${m.runtime} min`);
+    if (m.country) bits.push(`<span lang="ja">${esc(m.country)}</span>`);
+    if (m.director) bits.push(`Dir. <span lang="ja">${esc(m.director)}</span>`);
+    return bits.length ? `<p class="meta">${bits.join("／")}</p>` : "";
+  }
+
+  function slotsHTML(rows, isToday, nowMin) {
+    // group by format so subtitled / dubbed runs read as separate lines
+    const groups = new Map();
+    for (const r of rows) {
+      const k = r.f || "";
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(r);
+    }
+    let html = "";
+    for (const [f, list] of groups) {
+      if (f || groups.size > 1) html += `<p class="fmt-label">${f ? fmtLabel(f) : "Standard"}</p>`;
+      html += `<div class="slots">` + list.map((r) => {
+        const m = mins(r.s);
+        let cls = "slot";
+        if (isToday && m < nowMin) cls += " past";
+        else if (isToday && m - nowMin <= SOON_MIN) cls += " soon";
+        const end = r.e ? `<small>until ${esc(r.e)}</small>` : "";
+        const label = `${r.s}${r.e ? ", ends " + r.e : ""}${cls.includes("past") ? ", already started" : ""}`;
+        return `<span class="${cls}" aria-label="${esc(label)}">${esc(r.s)}${end}</span>`;
+      }).join("") + `</div>`;
+    }
+    return html;
+  }
+
+  function priceHTML(t, compact) {
+    const general = t.price_general ? `<span class="price" title="General admission">${yen(t.price_general)}</span>` : "";
+    if (compact) return general;
+    if (!t.prices || !t.prices.length) return "";
+    const items = t.prices.map((p) =>
+      `<li><span>${p.label_en ? esc(p.label_en) + ` <span lang="ja">${esc(p.label_ja)}</span>` : `<span lang="ja">${esc(p.label_ja)}</span>`}</span><span class="yen">${yen(p.yen)}</span></li>`).join("");
+    return `<details class="prices"><summary>All ticket prices</summary><ul>${items}</ul></details>`;
+  }
+
+  function venueName(t) {
+    const href = t.official_url || t.eiga;
+    return `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(t.name_en)}</a>` +
+      (t.name_ja !== t.name_en ? `<span class="vja" lang="ja">${esc(t.name_ja)}</span>` : "") +
+      `<span class="area">${esc(t.area_en || "")}</span>`;
+  }
+
+  function matches(s) {
+    const t = theaters[s.t];
+    if (!t || !state.types.has(t.type)) return false;
+    if (state.area && t.area_en !== state.area) return false;
+    if (!state.q) return true;
+    const m = data.movies[s.m] || {};
+    const hay = [m.en, m.ja, m.director, t.name_en, t.name_ja, t.area_en, t.area_ja].join(" ").toLowerCase();
+    return state.q.split(/\s+/).every((w) => hay.includes(w));
+  }
+
+  function render() {
+    const now = nowJST();
+    const isToday = state.day === now.date;
+    const rows = data.screenings.filter((s) => s.d === state.day && matches(s));
+    const list = $("#list");
+    if (!rows.length) {
+      const hidden = data.screenings.some((s) => s.d === state.day);
+      list.innerHTML = `<div class="empty"><p>${hidden
+        ? "Nothing matches these filters on this day."
+        : "No listings for this day yet. Theaters usually publish the next week's schedule on Tuesday or Wednesday."}</p>${
+        hidden ? `<button type="button" id="reset">Show all theaters</button>` : ""}</div>`;
+      const b = $("#reset");
+      if (b) b.onclick = () => { state.q = ""; $("#q").value = ""; state.area = ""; $("#area").value = ""; TYPES.forEach((t) => state.types.add(t.id)); save(); drawTypes(); render(); };
+      return;
+    }
+    const nextKey = (list) => {
+      const up = list.filter((r) => !isToday || mins(r.s) >= now.min);
+      return up.length ? mins(up[0].s) : 10000 + mins(list[0].s);
+    };
+
+    if (state.view === "film") {
+      const byFilm = new Map();
+      for (const r of rows) {
+        if (!byFilm.has(r.m)) byFilm.set(r.m, new Map());
+        const v = byFilm.get(r.m);
+        if (!v.has(r.t)) v.set(r.t, []);
+        v.get(r.t).push(r);
+      }
+      const films = [...byFilm.entries()].map(([mid, venues]) => ({
+        mid, venues, key: nextKey([...venues.values()].flat().sort((a, b) => mins(a.s) - mins(b.s))),
+      })).sort((a, b) => a.key - b.key);
+
+      list.innerHTML = films.map(({ mid, venues }) => {
+        const m = data.movies[mid] || { ja: "?" };
+        const vs = [...venues.entries()].sort((a, b) =>
+          (TYPE_ORDER[theaters[a[0]].type] - TYPE_ORDER[theaters[b[0]].type]) || (nextKey(a[1]) - nextKey(b[1])));
+        const poster = m.poster ? `<img class="poster" src="${esc(m.poster)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : "";
+        return `<article class="film"><div class="film-head"><div>${filmTitle(m, "h2", `https://eiga.com/movie/${mid}/`)}${filmMeta(m)}</div>${poster}</div>` +
+          vs.map(([tid, rs]) => {
+            const t = theaters[tid];
+            return `<div class="venue" style="--tc:var(--t-${esc(t.type)})"><div class="venue-name">${venueName(t)}${priceHTML(t, true)}</div>${slotsHTML(rs, isToday, now.min)}</div>`;
+          }).join("") + `</article>`;
+      }).join("");
+    } else {
+      const byT = new Map();
+      for (const r of rows) {
+        if (!byT.has(r.t)) byT.set(r.t, new Map());
+        const f = byT.get(r.t);
+        if (!f.has(r.m)) f.set(r.m, []);
+        f.get(r.m).push(r);
+      }
+      const ts = [...byT.entries()].sort((a, b) =>
+        (TYPE_ORDER[theaters[a[0]].type] - TYPE_ORDER[theaters[b[0]].type]) ||
+        theaters[a[0]].name_en.localeCompare(theaters[b[0]].name_en));
+      list.innerHTML = ts.map(([tid, films]) => {
+        const t = theaters[tid];
+        const type = TYPES.find((x) => x.id === t.type);
+        const fl = [...films.entries()].sort((a, b) => nextKey(a[1]) - nextKey(b[1]));
+        return `<article class="house venue" style="--tc:var(--t-${esc(t.type)})">` +
+          `<h2><a href="${esc(t.official_url || t.eiga)}" target="_blank" rel="noopener">${esc(t.name_en)}</a>${t.name_ja !== t.name_en ? `<span class="ja" lang="ja">${esc(t.name_ja)}</span>` : ""}</h2>` +
+          `<p class="house-meta"><span>${esc(t.area_en || "")} <span lang="ja">${esc(t.area_ja || "")}</span></span><span>${type ? esc(type.en) : ""}</span>${t.price_general ? `<span>General ${yen(t.price_general)}</span>` : ""}</p>` +
+          priceHTML(t, false) +
+          fl.map(([mid, rs]) => {
+            const m = data.movies[mid] || { ja: "?" };
+            return `<div class="film-line">${filmTitle(m, "h3", `https://eiga.com/movie/${mid}/`)}${slotsHTML(rs, isToday, now.min)}</div>`;
+          }).join("") + `</article>`;
+      }).join("");
+    }
+  }
+
+  function drawDays() {
+    const now = nowJST();
+    const dates = [...new Set(data.screenings.map((s) => s.d))].filter((d) => d >= now.date).sort();
+    if (!dates.length) dates.push(now.date);
+    if (!state.day || !dates.includes(state.day)) state.day = dates[0];
+    $("#days").innerHTML = dates.map((d) => {
+      const [y, mo, da] = d.split("-").map(Number);
+      const wd = new Date(Date.UTC(y, mo - 1, da)).getUTCDay();
+      const day = Number(d.slice(8, 10));
+      const name = d === now.date ? "Today" : WD[wd];
+      return `<button type="button" class="day${wd === 0 ? " sun" : wd === 6 ? " sat" : ""}" data-day="${d}" aria-pressed="${d === state.day}" aria-label="${name} ${Number(d.slice(5, 7))}/${day}"><b>${day}</b><small>${name} <span lang="ja">${WD_JA[wd]}</span></small></button>`;
+    }).join("");
+  }
+
+  function drawTypes() {
+    $("#types").innerHTML = TYPES.map((t) =>
+      `<button type="button" class="type" style="--c:var(--t-${t.id})" data-type="${t.id}" aria-pressed="${state.types.has(t.id)}">${t.en} <span lang="ja">${t.ja}</span></button>`).join("");
+  }
+
+  function drawAreas() {
+    const areas = [...new Set(Object.values(theaters).map((t) => t.area_en).filter(Boolean))].sort();
+    const ja = Object.fromEntries(Object.values(theaters).map((t) => [t.area_en, t.area_ja]));
+    $("#area").innerHTML = `<option value="">All areas</option>` +
+      areas.map((a) => `<option value="${esc(a)}">${esc(a)} ${esc(ja[a] || "")}</option>`).join("");
+    if (!areas.includes(state.area)) state.area = "";
+    $("#area").value = state.area;
+  }
+
+  function drawMeta() {
+    const g = new Date(data.generated_at);
+    const when = new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Tokyo", weekday: "short", hour: "2-digit", minute: "2-digit" }).format(g);
+    const ok = data.theaters.filter((t) => t.status === "ok").length;
+    $("#updated").textContent = `Updated ${when} JST`;
+    $("#health").querySelector("summary").textContent = `Scan status: ${ok} of ${data.theaters.length} theaters have listings`;
+    const why = { error: "could not be fetched", unparsed: "page not understood", empty: "no screenings this week" };
+    $("#health-list").innerHTML = data.theaters.filter((t) => t.status !== "ok").map((t) =>
+      `<li class="${t.status === "empty" ? "" : "bad"}">${esc(t.name_en)}: ${why[t.status] || t.status}${t.error ? ` (${esc(t.error)})` : ""}</li>`).join("") || "<li>All theaters scanned.</li>";
+  }
+
+  function save() {
+    store.set("view", state.view);
+    store.set("area", state.area);
+    store.set("types", [...state.types]);
+  }
+
+  function bind() {
+    $("#days").addEventListener("click", (e) => {
+      const b = e.target.closest(".day"); if (!b) return;
+      state.day = b.dataset.day;
+      document.querySelectorAll(".day").forEach((x) => x.setAttribute("aria-pressed", x === b));
+      render();
+    });
+    $("#types").addEventListener("click", (e) => {
+      const b = e.target.closest(".type"); if (!b) return;
+      const id = b.dataset.type;
+      if (state.types.has(id)) state.types.delete(id); else state.types.add(id);
+      b.setAttribute("aria-pressed", state.types.has(id));
+      save(); render();
+    });
+    document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
+      state.view = b.dataset.view;
+      document.querySelectorAll(".seg button").forEach((x) => x.setAttribute("aria-pressed", x === b));
+      save(); render();
+    }));
+    $("#area").addEventListener("change", (e) => { state.area = e.target.value; save(); render(); });
+    let timer;
+    $("#q").addEventListener("input", (e) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => { state.q = e.target.value.trim().toLowerCase(); render(); }, 150);
+    });
+    // keep "soon" / "past" markers fresh while the page stays open
+    setInterval(() => { if (data) render(); }, 60 * 1000);
+  }
+
+  async function init() {
+    document.querySelectorAll(".seg button").forEach((x) => x.setAttribute("aria-pressed", x.dataset.view === state.view));
+    drawTypes();
+    bind();
+    try {
+      const r = await fetch("data/showtimes.json", { cache: "no-cache" });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      data = await r.json();
+    } catch (err) {
+      $("#updated").textContent = "No listings yet";
+      $("#list").innerHTML = `<div class="empty"><p>Listings haven't been generated yet. Run the “Daily scan” workflow from the repository's Actions tab.</p></div>`;
+      return;
+    }
+    theaters = Object.fromEntries(data.theaters.map((t) => [t.id, t]));
+    drawMeta(); drawAreas(); drawDays(); render();
+  }
+
+  init();
+})();

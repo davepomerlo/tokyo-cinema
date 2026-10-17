@@ -1,0 +1,221 @@
+"""Daily scan: fetch every theater page, build site/data/showtimes.json.
+
+    python -m scraper.run                 # full scan
+    python -m scraper.run --only 3044     # one theater (eiga id), handy for debugging
+    python -m scraper.run --from-dir debug/  # parse saved HTML instead of fetching
+"""
+
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import json
+import os
+import random
+import re
+import sys
+import time
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+import requests
+import yaml
+
+from .eiga import parse_movie_page, parse_theater_page
+from .translate import price_label_en, translate_titles
+
+ROOT = Path(__file__).resolve().parent.parent
+CONFIG = ROOT / "config" / "theaters.yaml"
+TITLES = ROOT / "config" / "titles.yaml"
+DATA_DIR = ROOT / "site" / "data"
+DEBUG_DIR = ROOT / "debug"
+JST = ZoneInfo("Asia/Tokyo")
+
+DELAY = float(os.environ.get("SCRAPE_DELAY", "2.5"))     # seconds between requests
+MAX_NEW_MOVIES = int(os.environ.get("MAX_NEW_MOVIES", "120"))
+DAYS_AHEAD = 7
+
+
+def theater_id(url: str) -> str:
+    m = re.search(r"/theater/\d+/\d+/(\d+)/?", url)
+    return m.group(1) if m else url
+
+
+class Fetcher:
+    def __init__(self) -> None:
+        repo = os.environ.get("GITHUB_REPOSITORY", "personal project")
+        self.s = requests.Session()
+        self.s.headers.update({
+            "User-Agent": f"tokyo-cinema-listings/1.0 (personal, non-commercial; {repo})",
+            "Accept-Language": "ja,en;q=0.8",
+        })
+        self.last = 0.0
+
+    def get(self, url: str) -> str:
+        for attempt in range(3):
+            wait = DELAY + random.uniform(0, 1) - (time.time() - self.last)
+            if wait > 0:
+                time.sleep(wait)
+            self.last = time.time()
+            try:
+                r = self.s.get(url, timeout=30)
+                if r.status_code == 200:
+                    if not r.encoding or r.encoding.lower() == "iso-8859-1":
+                        r.encoding = r.apparent_encoding or "utf-8"
+                    return r.text
+                if r.status_code in (403, 404):
+                    raise RuntimeError(f"HTTP {r.status_code}")
+                err = f"HTTP {r.status_code}"
+            except requests.RequestException as exc:
+                err = str(exc)
+            time.sleep(5 * (attempt + 1))
+        raise RuntimeError(err)
+
+
+def load_json(path: Path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return default
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--only", help="comma-separated eiga theater ids")
+    ap.add_argument("--from-dir", help="parse saved <id>.html files instead of fetching")
+    ap.add_argument("--no-movies", action="store_true", help="skip fetching film pages")
+    args = ap.parse_args()
+
+    now = dt.datetime.now(JST)
+    today = now.date()
+    last_day = today + dt.timedelta(days=DAYS_AHEAD - 1)
+    cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
+    title_overrides = {}
+    if TITLES.exists():
+        title_overrides = {str(k): v for k, v in (yaml.safe_load(TITLES.read_text(encoding="utf-8")) or {}).items()}
+
+    theaters = [t for t in cfg["theaters"] if t.get("enabled", True)]
+    if args.only:
+        wanted = set(args.only.split(","))
+        theaters = [t for t in theaters if theater_id(t["eiga"]) in wanted]
+
+    fetcher = Fetcher()
+    DEBUG_DIR.mkdir(exist_ok=True)
+    movies: dict = load_json(DATA_DIR / "movies.json", {})
+    out_theaters, screenings = [], []
+    seen_movie_ids: set[str] = set()
+
+    for t in theaters:
+        tid = theater_id(t["eiga"])
+        entry = {
+            "id": tid,
+            "name_en": t["name_en"], "name_ja": t["name_ja"],
+            "area_en": t.get("area_en"), "area_ja": t.get("area_ja"),
+            "type": t.get("type", "arthouse"),
+            "eiga": t["eiga"],
+        }
+        print(f"[{tid}] {t['name_en']} … ", end="", flush=True)
+        try:
+            if args.from_dir:
+                html = (Path(args.from_dir) / f"{tid}.html").read_text(encoding="utf-8")
+            else:
+                html = fetcher.get(t["eiga"])
+            page = parse_theater_page(html, today)
+        except Exception as exc:
+            entry.update(status="error", error=str(exc)[:200])
+            out_theaters.append(entry)
+            print(f"ERROR {exc}")
+            continue
+
+        prices = [dict(p, label_en=price_label_en(p["label_ja"])) for p in page.prices]
+        general = t.get("price_general") or next(
+            (p["yen"] for p in prices if "一般" in p["label_ja"]), None)
+        entry.update(prices=prices, price_general=general,
+                     official_url=t.get("official_url") or page.official_url)
+
+        n = 0
+        for s in page.screenings:
+            if not (today.isoformat() <= s.date <= last_day.isoformat()):
+                continue
+            screenings.append({"t": tid, "m": s.movie_id, "d": s.date, "s": s.start,
+                               "e": s.end, "f": s.fmt})
+            n += 1
+        for mid, stub in page.movies.items():
+            seen_movie_ids.add(mid)
+            m = movies.setdefault(mid, {"title_ja": stub.title_ja})
+            m["title_ja"] = stub.title_ja
+            if stub.runtime and not m.get("runtime"):
+                m["runtime"] = stub.runtime
+
+        if n == 0:
+            entry["status"] = "empty" if page.movies else "unparsed"
+            (DEBUG_DIR / f"{tid}.html").write_text(html, encoding="utf-8")
+        else:
+            entry["status"] = "ok"
+        entry["count"] = n
+        out_theaters.append(entry)
+        print(f"{len(page.movies)} films, {n} screenings")
+
+    # Film details (English title, year, director…) — fetched once, then cached.
+    if not args.no_movies and not args.from_dir:
+        todo = [mid for mid in seen_movie_ids if not movies[mid].get("fetched")][:MAX_NEW_MOVIES]
+        print(f"Fetching {len(todo)} new film pages")
+        for mid in todo:
+            try:
+                info = parse_movie_page(fetcher.get(f"https://eiga.com/movie/{mid}/"))
+                movies[mid].update(info)
+                movies[mid]["fetched"] = today.isoformat()
+            except Exception as exc:
+                print(f"  film {mid}: {exc}")
+
+    n_tr = translate_titles({k: movies[k] for k in seen_movie_ids})
+    if n_tr:
+        print(f"Translated {n_tr} titles")
+    for mid, en in title_overrides.items():
+        if mid in movies:
+            movies[mid]["title_en_override"] = en
+    for mid in seen_movie_ids:
+        movies[mid]["last_seen"] = today.isoformat()
+
+    ok = sum(1 for t in out_theaters if t["status"] == "ok")
+    print(f"\n{ok}/{len(out_theaters)} theaters parsed, {len(screenings)} screenings")
+    if not screenings:
+        print("No screenings parsed at all — keeping yesterday's data. "
+              "Check the debug-html artifact; eiga.com may have changed its layout.")
+        return 1
+
+    # Drop films not seen for 60 days to keep the cache small.
+    cutoff = (today - dt.timedelta(days=60)).isoformat()
+    movies = {k: v for k, v in movies.items() if v.get("last_seen", today.isoformat()) >= cutoff}
+
+    screenings.sort(key=lambda s: (s["d"], s["s"], s["t"]))
+    data = {
+        "generated_at": now.isoformat(timespec="minutes"),
+        "today": today.isoformat(),
+        "theaters": out_theaters,
+        "movies": {k: _public_movie(movies[k]) for k in seen_movie_ids},
+        "screenings": screenings,
+    }
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    if not args.only:
+        (DATA_DIR / "showtimes.json").write_text(
+            json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    else:
+        print(json.dumps(data, ensure_ascii=False, indent=1)[:4000])
+    (DATA_DIR / "movies.json").write_text(
+        json.dumps(movies, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+    return 0
+
+
+def _public_movie(m: dict) -> dict:
+    title_en = m.get("title_en_override") or m.get("title_en") or m.get("title_en_auto")
+    out = {"ja": m.get("title_ja"), "en": title_en,
+           "en_auto": bool(not m.get("title_en_override") and not m.get("title_en") and m.get("title_en_auto"))}
+    for k in ("year", "runtime", "country", "director", "rating", "poster"):
+        if m.get(k):
+            out[k] = m[k]
+    return out
+
+
+if __name__ == "__main__":
+    sys.exit(main())

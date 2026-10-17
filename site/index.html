@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tokyo Cinema Listings</title>
+<meta name="description" content="Daily showtimes for Tokyo's mini-theaters, revival houses and multiplexes.">
+<meta name="theme-color" content="#1f2a44">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="masthead">
+    <h1>Tokyo cinema <span lang="ja">東京の映画館</span></h1>
+    <p class="updated" id="updated">Loading listings…</p>
+  </div>
+</header>
+<nav class="days-bar" aria-label="Choose a day"><div class="days" id="days"></div></nav>
+<section class="filters" aria-label="Filters">
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search films, theaters, areas" aria-label="Search films, theaters or areas" autocomplete="off">
+    <div class="row">
+      <div class="seg" role="group" aria-label="Group listings">
+        <button type="button" data-view="film" aria-pressed="true">By film</button>
+        <button type="button" data-view="theater" aria-pressed="false">By theater</button>
+      </div>
+      <select id="area" aria-label="Area"><option value="">All areas</option></select>
+    </div>
+    <div class="types" id="types" role="group" aria-label="Theater types"></div>
+  </div>
+</section>
+
+<main id="list" aria-live="polite"></main>
+
+<footer class="foot">
+  <p>Schedules come from each theater's page on <a href="https://eiga.com/theater/13/">eiga.com</a>, scanned once a day around 5:00 JST. Times and prices can change — check with the theater before you go.</p>
+  <details id="health"><summary>Scan status</summary><ul id="health-list"></ul></details>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

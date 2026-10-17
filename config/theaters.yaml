@@ -1,0 +1,349 @@
+# Theaters to scan. Each entry points at the theater's page on eiga.com (映画.com).
+#
+#   type:  arthouse | repertory | institution | community | multiplex
+#   enabled: false  -> skip without deleting the entry
+#   price_general: set a number (yen) to override the price read from eiga.com
+#
+# To add a theater: find it on https://eiga.com/theater/13/ and copy the URL.
+
+theaters:
+  # ── Arthouse / independent (ミニシアター) ───────────────────────────────
+  - name_en: Eurospace
+    name_ja: ユーロスペース
+    area_en: Shibuya
+    area_ja: 渋谷
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130301/3044/
+  - name_en: Theater Image Forum
+    name_ja: シアター・イメージフォーラム
+    area_en: Shibuya
+    area_ja: 渋谷
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130301/3028/
+  - name_en: Bunkamura Le Cinéma Shibuya Miyashita
+    name_ja: Bunkamuraル・シネマ 渋谷宮下
+    area_en: Shibuya
+    area_ja: 渋谷
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130301/3321/
+  - name_en: Human Trust Cinema Shibuya
+    name_ja: ヒューマントラストシネマ渋谷
+    area_en: Shibuya
+    area_ja: 渋谷
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130301/3042/
+  - name_en: White Cine Quinto (Shibuya Parco)
+    name_ja: 渋谷パルコ8F ホワイト シネクイント
+    area_en: Shibuya
+    area_ja: 渋谷
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130301/3295/
+  - name_en: Theater Guild Daikanyama
+    name_ja: シアターギルド代官山
+    area_en: Daikanyama
+    area_ja: 代官山
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130301/3316/
+  - name_en: K's cinema
+    name_ja: K's cinema
+    area_en: Shinjuku
+    area_ja: 新宿
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130201/3018/
+  - name_en: Cinemart Shinjuku
+    name_ja: シネマート新宿
+    area_en: Shinjuku
+    area_ja: 新宿
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130201/3020/
+  - name_en: Shinjuku Musashinokan
+    name_ja: 新宿武蔵野館
+    area_en: Shinjuku
+    area_ja: 新宿
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130201/3026/
+  - name_en: Theatre Shinjuku
+    name_ja: テアトル新宿
+    area_en: Shinjuku
+    area_ja: 新宿
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130201/3022/
+  - name_en: kino cinema Shinjuku
+    name_ja: kino cinema新宿
+    area_en: Shinjuku
+    area_ja: 新宿
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130201/3322/
+  - name_en: Kadokawa Cinema Yurakucho
+    name_ja: 角川シネマ有楽町
+    area_en: Yurakucho
+    area_ja: 有楽町
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130102/3248/
+  - name_en: Human Trust Cinema Yurakucho
+    name_ja: ヒューマントラストシネマ有楽町
+    area_en: Yurakucho
+    area_ja: 有楽町
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130102/3004/
+  - name_en: TOHO Cinemas Chanter
+    name_ja: TOHOシネマズ シャンテ
+    area_en: Hibiya
+    area_ja: 日比谷
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130102/3006/
+  - name_en: Cine Switch Ginza
+    name_ja: シネスイッチ銀座
+    area_en: Ginza
+    area_ja: 銀座
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130101/3005/
+  - name_en: Yebisu Garden Cinema
+    name_ja: YEBISU GARDEN CINEMA
+    area_en: Ebisu
+    area_ja: 恵比寿
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130608/3261/
+  - name_en: Uplink Kichijoji
+    name_ja: アップリンク吉祥寺
+    area_en: Kichijoji
+    area_ja: 吉祥寺
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130809/3285/
+  - name_en: Cinemalice
+    name_ja: シネマリス
+    area_en: Jimbocho
+    area_ja: 神保町
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130710/3331/
+  - name_en: Shimokita Ekimae Cinema K2
+    name_ja: シモキタ-エキマエ-シネマ K2
+    area_en: Shimokitazawa
+    area_ja: 下北沢
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130613/3317/
+  - name_en: Stranger
+    name_ja: Stranger
+    area_en: Kikukawa
+    area_ja: 菊川
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130718/3319/
+  - name_en: Pole Pole Higashi-Nakano
+    name_ja: ポレポレ東中野
+    area_en: Higashi-Nakano
+    area_ja: 東中野
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130612/3292/
+  - name_en: Morc Asagaya
+    name_ja: Morc阿佐ヶ谷
+    area_en: Asagaya
+    area_ja: 阿佐ヶ谷
+    type: arthouse
+    eiga: https://eiga.com/theater/13/130610/3315/
+
+  # ── Repertory / revival houses (名画座) ─────────────────────────────────
+  - name_en: Shin-Bungeiza
+    name_ja: 新文芸坐
+    area_en: Ikebukuro
+    area_ja: 池袋
+    type: repertory
+    eiga: https://eiga.com/theater/13/130501/3055/
+  - name_en: Cinema Vera Shibuya
+    name_ja: シネマヴェーラ渋谷
+    area_en: Shibuya
+    area_ja: 渋谷
+    type: repertory
+    eiga: https://eiga.com/theater/13/130301/3298/
+  - name_en: Laputa Asagaya
+    name_ja: ラピュタ阿佐ケ谷
+    area_en: Asagaya
+    area_ja: 阿佐ヶ谷
+    type: repertory
+    eiga: https://eiga.com/theater/13/130610/3070/
+  - name_en: Jimbocho Theater
+    name_ja: 神保町シアター
+    area_en: Jimbocho
+    area_ja: 神保町
+    type: repertory
+    eiga: https://eiga.com/theater/13/130710/3302/
+  - name_en: Waseda Shochiku
+    name_ja: 早稲田松竹
+    area_en: Takadanobaba
+    area_ja: 高田馬場
+    type: repertory
+    eiga: https://eiga.com/theater/13/130611/3071/
+  - name_en: Meguro Cinema
+    name_ja: 目黒シネマ
+    area_en: Meguro
+    area_ja: 目黒
+    type: repertory
+    eiga: https://eiga.com/theater/13/130609/3069/
+  - name_en: Kineka Omori
+    name_ja: キネカ大森
+    area_en: Omori
+    area_ja: 大森
+    type: repertory
+    eiga: https://eiga.com/theater/13/130713/3095/
+  - name_en: Cinema Rosa
+    name_ja: シネマ・ロサ
+    area_en: Ikebukuro
+    area_ja: 池袋
+    type: repertory
+    eiga: https://eiga.com/theater/13/130501/3052/
+  - name_en: Togeki (Shochiku cinema kabuki)
+    name_ja: 東劇
+    area_en: Higashi-Ginza
+    area_ja: 東銀座
+    type: repertory
+    eiga: https://eiga.com/theater/13/130101/3009/
+
+  # ── Cultural institutions ───────────────────────────────────────────────
+  - name_en: National Film Archive of Japan
+    name_ja: 国立映画アーカイブ
+    area_en: Kyobashi
+    area_ja: 京橋
+    type: institution
+    eiga: https://eiga.com/theater/13/130101/3300/
+  - name_en: Tokyo Photographic Art Museum
+    name_ja: 東京都写真美術館
+    area_en: Ebisu
+    area_ja: 恵比寿
+    type: institution
+    eiga: https://eiga.com/theater/13/130608/3067/
+  - name_en: Athénée Français Cultural Center
+    name_ja: アテネ・フランセ文化センター
+    area_en: Suidobashi
+    area_ja: 水道橋
+    type: institution
+    eiga: https://eiga.com/theater/13/130614/3299/
+  - name_en: Institut français de Tokyo
+    name_ja: アンスティチュ・フランセ東京
+    area_en: Iidabashi
+    area_ja: 飯田橋
+    type: institution
+    eiga: https://eiga.com/theater/13/130604/3310/
+
+  # ── Community / neighborhood cinemas ────────────────────────────────────
+  - name_en: Shimotakaido Cinema
+    name_ja: 下高井戸シネマ
+    area_en: Shimotakaido
+    area_ja: 下高井戸
+    type: community
+    eiga: https://eiga.com/theater/13/130606/3064/
+  - name_en: Cinema Chupki Tabata
+    name_ja: CINEMA Chupki TABATA
+    area_en: Tabata
+    area_ja: 田端
+    type: community
+    eiga: https://eiga.com/theater/13/130717/3272/
+  - name_en: Cinema House Otsuka
+    name_ja: シネマハウス大塚
+    area_en: Otsuka
+    area_ja: 大塚
+    type: community
+    eiga: https://eiga.com/theater/13/130616/3311/
+  - name_en: Cinema Blue Studio
+    name_ja: シネマ ブルースタジオ
+    area_en: Kita-Senju
+    area_ja: 北千住
+    type: community
+    eiga: https://eiga.com/theater/13/130715/3301/
+  - name_en: Tollywood
+    name_ja: 下北沢トリウッド
+    area_en: Shimokitazawa
+    area_ja: 下北沢
+    type: community
+    eiga: https://eiga.com/theater/13/130613/3277/
+  - name_en: Funabori Cinepal
+    name_ja: 船堀シネパル
+    area_en: Funabori
+    area_ja: 船堀
+    type: community
+    eiga: https://eiga.com/theater/13/130714/3068/
+  - name_en: Cinema City Tachikawa
+    name_ja: シネマシティ
+    area_en: Tachikawa
+    area_ja: 立川
+    type: community
+    eiga: https://eiga.com/theater/13/130802/3101/
+  - name_en: Cinema Neko
+    name_ja: CINEMA NEKO
+    area_en: Ome
+    area_ja: 青梅
+    type: community
+    eiga: https://eiga.com/theater/13/130812/3314/
+    enabled: false   # far west of Tokyo — turn on if you like
+
+  # ── Central multiplexes ─────────────────────────────────────────────────
+  - name_en: TOHO Cinemas Shinjuku
+    name_ja: TOHOシネマズ 新宿
+    area_en: Shinjuku
+    area_ja: 新宿
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130201/3263/
+  - name_en: Shinjuku Piccadilly
+    name_ja: 新宿ピカデリー
+    area_en: Shinjuku
+    area_ja: 新宿
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130201/3017/
+  - name_en: Shinjuku Wald 9
+    name_ja: 新宿バルト9
+    area_en: Shinjuku
+    area_ja: 新宿
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130201/3016/
+  - name_en: 109 Cinemas Premium Shinjuku
+    name_ja: 109シネマズプレミアム新宿
+    area_en: Shinjuku
+    area_ja: 新宿
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130201/3318/
+  - name_en: TOHO Cinemas Shibuya
+    name_ja: TOHOシネマズ 渋谷
+    area_en: Shibuya
+    area_ja: 渋谷
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130301/3035/
+  - name_en: Shibuya HUMAX Cinema
+    name_ja: 渋谷HUMAXシネマ
+    area_en: Shibuya
+    area_ja: 渋谷
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130301/3041/
+  - name_en: Grand Cinema Sunshine Ikebukuro
+    name_ja: グランドシネマサンシャイン 池袋
+    area_en: Ikebukuro
+    area_ja: 池袋
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130501/3291/
+  - name_en: TOHO Cinemas Ikebukuro
+    name_ja: TOHOシネマズ 池袋
+    area_en: Ikebukuro
+    area_ja: 池袋
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130501/3307/
+  - name_en: TOHO Cinemas Hibiya
+    name_ja: TOHOシネマズ 日比谷
+    area_en: Hibiya
+    area_ja: 日比谷
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130102/3281/
+  - name_en: Marunouchi Piccadilly
+    name_ja: 丸の内ピカデリー
+    area_en: Yurakucho
+    area_ja: 有楽町
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130102/3011/
+  - name_en: TOHO Cinemas Roppongi Hills
+    name_ja: TOHOシネマズ 六本木ヒルズ
+    area_en: Roppongi
+    area_ja: 六本木
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130401/3047/
+  - name_en: TOHO Cinemas Nihonbashi
+    name_ja: TOHOシネマズ 日本橋
+    area_en: Nihonbashi
+    area_ja: 日本橋
+    type: multiplex
+    eiga: https://eiga.com/theater/13/130716/3258/
