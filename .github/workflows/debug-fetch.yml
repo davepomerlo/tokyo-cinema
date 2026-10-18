@@ -1,0 +1,32 @@
+name: Debug fetch (temporary)
+on:
+  push:
+    branches: [debug-fetch]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch sample pages
+        run: |
+          mkdir -p debug-pages
+          UA="tokyo-cinema-listings/1.0 (personal, non-commercial; davepomerlo/tokyo-cinema)"
+          for u in \
+            theater/13/130301/3044/ theater/13/130301/3028/ theater/13/130201/3026/ \
+            theater/13/130201/3018/ theater/13/130201/3263/ theater/13/130501/3055/ \
+            theater/13/130614/3299/ theater/13/130612/3292/ movie/105515/ ; do
+            f=$(echo "$u" | tr '/' '_').html
+            curl -sS -A "$UA" -H "Accept-Language: ja" -o "debug-pages/$f" -w "$u %{http_code} %{size_download}\n" "https://eiga.com/$u"
+            sleep 3
+          done
+          ls -la debug-pages
+      - name: Save to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add debug-pages
+          git commit -m "Sample pages for parser debugging"
+          git push
