@@ -8,8 +8,11 @@ etc.), each theater's ticket prices, and each film's scores (eiga.com users, plu
 Rotten Tomatoes, Metacritic and TMDB when keys are set). You can filter to English-audio
 or English-subtitled showings and sort by rating.
 
-A GitHub Actions job scans every theater once a day at about **5:00 JST** and republishes
-the site on GitHub Pages. Nothing runs on your own computer.
+It installs on your phone as a standalone app: its own icon, full screen with no browser
+bar, and it works offline with the last scan saved on the phone. A GitHub Actions job
+scans every theater once a day at about **5:00 JST** and publishes the listings on GitHub
+Pages, and the app picks them up the next time you open it. Nothing runs on your own
+computer.
 
 ## How it works
 
@@ -65,8 +68,28 @@ minutes late.
 2. Add these files to it (push them, or upload them on github.com).
 3. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 4. **Actions → Daily scan → Run workflow** for the first scan. It takes 3–5 minutes.
-5. Your site is at `https://<your-username>.github.io/tokyo-cinema/`. On iPhone, open it in
-   Safari and use *Share → Add to Home Screen* to get an app icon.
+5. Install the app (below). The web address is
+   `https://<your-username>.github.io/tokyo-cinema/`.
+
+### Installing the app on Android
+
+1. Open the address above in **Chrome** on your phone.
+2. Tap **Install app** at the top of the page (or Chrome's ⋮ menu → **Install app**).
+3. Tokyo Cinema appears in your app drawer and home screen like any other app.
+
+Long-press the icon for shortcuts to *English-friendly showings* and *By theater*.
+To uninstall, long-press the icon → **Uninstall**. (On iPhone: Safari → Share →
+**Add to Home Screen**.)
+
+### How the installed app behaves
+
+- **Opening it** shows the saved listings instantly, then fetches the latest scan.
+- **Offline** (subway, plane): you get the last scan and a note saying when it's from.
+- **Before about 5:45 JST**, or if a scan failed, a note says today's update hasn't
+  arrived and offers *Check again*.
+- **Coming back to it** after 20 minutes or more refreshes the listings. Tap
+  "Updated …" under the title to refresh at any time.
+- **New versions** of the app install themselves; a note offers *Reload* when one is ready.
 
 ### Recommended: TMDB for film languages (free)
 
@@ -100,8 +123,7 @@ The app is a website, so "running" it means letting GitHub do the work:
 - **Every day**: nothing to do. The scan runs at 04:50 JST and the site updates itself.
 - **On demand**: GitHub → your repo → **Actions → Daily scan → Run workflow**
   (works from the GitHub mobile app too).
-- **Using it**: open `https://<your-username>.github.io/tokyo-cinema/`. Add it to your
-  phone's home screen to open it like an app.
+- **Using it**: open the Tokyo Cinema app on your phone.
 
 To run it on your own computer instead (Python 3.10+):
 
@@ -150,5 +172,7 @@ those optional sources locally.
 | `scraper/ratings.py` | Score parsing and TMDB / OMDb lookups |
 | `scraper/language.py` | Audio/subtitle rules, country → language map, TMDB lookup |
 | `scraper/translate.py` | Price-label translations and optional title translation |
-| `site/` | The static site (`index.html`, `app.js`, `style.css`, `data/`) |
+| `site/` | The app (`index.html`, `app.js`, `style.css`, `data/`) |
+| `site/manifest.webmanifest`, `site/icons/` | App name, icons and shortcuts for installing |
+| `site/sw.js` | Offline support (saves the app and last listings on the phone) |
 | `tests/` | Parser, language and score tests |

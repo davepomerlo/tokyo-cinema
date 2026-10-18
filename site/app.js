@@ -322,22 +322,129 @@
     setInterval(() => { if (data) render(); }, 60 * 1000);
   }
 
-  async function init() {
-    document.querySelectorAll(".seg button").forEach((x) => x.setAttribute("aria-pressed", x.dataset.view === state.view));
-    drawTypes();
-    bind();
+  // ── loading, offline and staleness ────────────────────
+  let lastLoad = 0;
+
+  function fmtWhen(iso) {
+    return new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Tokyo", weekday: "short", hour: "2-digit", minute: "2-digit" })
+      .format(new Date(iso));
+  }
+
+  // The scan lands a little after 5:00 JST; before ~5:45 yesterday's data is still current.
+  function expectedScanDate() {
+    const now = nowJST();
+    if (now.min >= 5 * 60 + 45) return now.date;
+    const [y, m, d] = now.date.split("-").map(Number);
+    return new Date(Date.UTC(y, m - 1, d - 1)).toISOString().slice(0, 10);
+  }
+
+  function showNotice() {
+    const n = $("#notice");
+    if (!data) { n.hidden = true; return; }
+    const stale = data.today < expectedScanDate();
+    const from = fmtWhen(data.generated_at);
+    if (!navigator.onLine) {
+      n.className = "notice";
+      n.innerHTML = `You're offline. Showing listings saved ${esc(from)} JST.`;
+      n.hidden = false;
+    } else if (stale) {
+      n.className = "notice warn";
+      n.innerHTML = `Today's update hasn't arrived yet. Showing listings from ${esc(from)} JST. <button type="button" data-act="refresh">Check again</button>`;
+      n.hidden = false;
+    } else {
+      n.hidden = true;
+    }
+  }
+
+  async function load({ quiet = false } = {}) {
+    const btn = $("#updated");
+    btn.classList.add("busy");
     try {
       const r = await fetch("data/showtimes.json", { cache: "no-cache" });
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      data = await r.json();
+      const fresh = await r.json();
+      const changed = !data || fresh.generated_at !== data.generated_at;
+      data = fresh;
+      lastLoad = Date.now();
+      if (changed) {
+        theaters = Object.fromEntries(data.theaters.map((t) => [t.id, t]));
+        $("#tmdb-credit").hidden = !Object.values(data.movies).some((m) => m.tmdb_id);
+        drawMeta(); drawAreas(); drawDays(); render();
+      }
+      showNotice();
     } catch (err) {
-      $("#updated").textContent = "No listings yet";
-      $("#list").innerHTML = `<div class="empty"><p>Listings haven't been generated yet. Run the “Daily scan” workflow from the repository's Actions tab.</p></div>`;
-      return;
+      if (!data) {
+        btn.textContent = "No listings yet";
+        $("#list").innerHTML = navigator.onLine
+          ? `<div class="empty"><p>Listings haven't been generated yet. Run the “Daily scan” workflow from the repository's Actions tab.</p></div>`
+          : `<div class="empty"><p>You're offline and no listings are saved on this phone yet. Open the app once while online.</p></div>`;
+      } else if (!quiet) {
+        showNotice();
+      }
+    } finally {
+      btn.classList.remove("busy");
     }
-    theaters = Object.fromEntries(data.theaters.map((t) => [t.id, t]));
-    if (Object.values(data.movies).some((m) => m.tmdb_id)) $("#tmdb-credit").hidden = false;
-    drawMeta(); drawAreas(); drawDays(); render();
+  }
+
+  // ── install + updates ─────────────────────────────────
+  function setupApp() {
+    const standalone = matchMedia("(display-mode: standalone)").matches;
+    let deferred = null;
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      deferred = e;
+      if (!standalone) $("#install").hidden = false;
+    });
+    $("#install").addEventListener("click", async () => {
+      if (!deferred) return;
+      deferred.prompt();
+      await deferred.userChoice.catch(() => null);
+      deferred = null;
+      $("#install").hidden = true;
+    });
+    window.addEventListener("appinstalled", () => { $("#install").hidden = true; });
+
+    if ("serviceWorker" in navigator) {
+      const hadController = !!navigator.serviceWorker.controller;
+      navigator.serviceWorker.register("sw.js").catch(() => { /* app still works online */ });
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (!hadController) return;
+        const n = $("#notice");
+        n.className = "notice";
+        n.innerHTML = `A new version of the app is ready. <button type="button" data-act="reload">Reload</button>`;
+        n.hidden = false;
+      });
+    }
+
+    $("#notice").addEventListener("click", (e) => {
+      const act = e.target.closest("button")?.dataset.act;
+      if (act === "reload") location.reload();
+      if (act === "refresh") load();
+    });
+    $("#updated").addEventListener("click", () => load());
+    window.addEventListener("online", () => load({ quiet: true }));
+    window.addEventListener("offline", showNotice);
+    // Coming back to the app after a while: fetch the latest scan, roll "today" forward.
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState !== "visible" || !data) return;
+      if (Date.now() - lastLoad > 20 * 60 * 1000) load({ quiet: true });
+      else { drawDays(); render(); }
+    });
+  }
+
+  function applyUrlParams() {
+    const p = new URLSearchParams(location.search);
+    if (["en", "ja", "orig-ja", "dub", ""].includes(p.get("lang"))) state.lang = p.get("lang");
+    if (["film", "theater"].includes(p.get("view"))) state.view = p.get("view");
+  }
+
+  async function init() {
+    applyUrlParams();
+    document.querySelectorAll(".seg button").forEach((x) => x.setAttribute("aria-pressed", x.dataset.view === state.view));
+    drawTypes();
+    bind();
+    setupApp();
+    await load();
   }
 
   init();
