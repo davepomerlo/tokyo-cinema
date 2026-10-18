@@ -104,10 +104,17 @@
 "year": 2026
 },
 "102600": {
+"director": "ギョーム・カイヨー",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/102600/photo/d99b16ad73d2f232.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102600/photo/d99b16ad73d2f232/320.jpg",
+"rating": "ドイツ・フランス合作",
 "runtime": 212,
-"title_ja": "ダイレクト・アクション"
+"scores": {},
+"title_en": "Direct Action",
+"title_ja": "ダイレクト・アクション",
+"year": 2024
 },
 "102726": {
 "country": "チリ・フランス合作",
@@ -129,10 +136,22 @@
 "year": 2022
 },
 "103045": {
+"country": "日本",
+"director": "本広克行",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/103045/photo/7aa8ee64d24d9b41.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103045/photo/7aa8ee64d24d9b41/320.jpg",
+"rating": "G",
 "runtime": 142,
-"title_ja": "踊る大捜査線 N.E.W. メトロポリスを駆け抜けろ！"
+"scores": {
+"eiga": {
+"n": 749,
+"v": 3.2
+}
+},
+"title_ja": "踊る大捜査線 N.E.W. メトロポリスを駆け抜けろ！",
+"year": 2026
 },
 "103151": {
 "country": "日本",
@@ -314,10 +333,22 @@
 "year": 2026
 },
 "104217": {
+"country": "日本",
+"director": "藤井道人",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/104217/photo/1851208b7444526e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104217/photo/1851208b7444526e/320.jpg",
+"rating": "PG12",
 "runtime": 135,
-"title_ja": "汝、星のごとく"
+"scores": {
+"eiga": {
+"n": 372,
+"v": 4.1
+}
+},
+"title_ja": "汝、星のごとく",
+"year": 2026
 },
 "104252": {
 "director": "タナ・ヒルベルト",
@@ -333,10 +364,17 @@
 "year": 2023
 },
 "104253": {
+"director": "スー・ユーシェン",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/104253/photo/863cd0abbe87178e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104253/photo/863cd0abbe87178e/320.jpg",
+"rating": "台湾",
 "runtime": 101,
-"title_ja": "公園"
+"scores": {},
+"title_en": "Park",
+"title_ja": "公園",
+"year": 2024
 },
 "104254": {
 "director": "ネルソン・マケンゴ",
@@ -630,10 +668,23 @@
 "year": 2026
 },
 "104752": {
+"country": "ギリシャ・ドイツ・ハンガリー合作",
+"director": "パールフィ・ジョルジ",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/104752/photo/02cf55ae4cc743cf.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104752/photo/02cf55ae4cc743cf/320.jpg",
+"rating": "G",
 "runtime": 96,
-"title_ja": "雌鶏"
+"scores": {
+"eiga": {
+"n": 22,
+"v": 3.5
+}
+},
+"title_en": "Kota",
+"title_ja": "雌鶏",
+"year": 2025
 },
 "104799": {
 "country": "アメリカ",
@@ -691,10 +742,23 @@
 "year": 2025
 },
 "104898": {
+"country": "台湾・フランス・アメリカ・イギリス合作",
+"director": "ツォウ・シーチン",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/104898/photo/020128b18191d69b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104898/photo/020128b18191d69b/320.jpg",
+"rating": "G",
 "runtime": 108,
-"title_ja": "左利きの少女"
+"scores": {
+"eiga": {
+"n": 147,
+"v": 4.0
+}
+},
+"title_en": "左撇子女孩 Left-Handed Girl",
+"title_ja": "左利きの少女",
+"year": 2025
 },
 "104983": {
 "country": "中国",
@@ -1046,10 +1110,23 @@
 "year": 2026
 },
 "105345": {
+"country": "イギリス・ポルトガル合作",
+"director": "ローラ・カレイラ",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/105345/photo/00b2e50e2c9b435e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105345/photo/00b2e50e2c9b435e/320.jpg",
+"rating": "G",
 "runtime": 104,
-"title_ja": "オーロラの涙"
+"scores": {
+"eiga": {
+"n": 46,
+"v": 3.3
+}
+},
+"title_en": "On Falling",
+"title_ja": "オーロラの涙",
+"year": 2024
 },
 "105384": {
 "country": "アメリカ",
@@ -1088,10 +1165,23 @@
 "year": 2026
 },
 "105457": {
+"country": "カナダ",
+"director": "アンソニー・シム",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/105457/photo/1988fcc806b91a99.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105457/photo/1988fcc806b91a99/320.jpg",
+"rating": "PG12",
 "runtime": 117,
-"title_ja": "Riceboy ライスボーイ"
+"scores": {
+"eiga": {
+"n": 34,
+"v": 4.0
+}
+},
+"title_en": "Riceboy Sleeps",
+"title_ja": "Riceboy ライスボーイ",
+"year": 2022
 },
 "105470": {
 "country": "日本",
@@ -1368,10 +1458,23 @@
 "year": 2025
 },
 "105770": {
+"country": "イギリス・アメリカ合作",
+"director": "ニコラス・ハイトナー",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/105770/photo/b9af4d23cf00440a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105770/photo/b9af4d23cf00440a/320.jpg",
+"rating": "G",
 "runtime": 113,
-"title_ja": "ザ・コラール 希望を紡ぐ歌"
+"scores": {
+"eiga": {
+"n": 30,
+"v": 3.4
+}
+},
+"title_en": "The Choral",
+"title_ja": "ザ・コラール 希望を紡ぐ歌",
+"year": 2025
 },
 "105804": {
 "country": "日本",
@@ -1418,10 +1521,22 @@
 "year": 2026
 },
 "105906": {
+"country": "日本",
+"director": "赤羽博",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/105906/photo/4b6ea79578761f42.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105906/photo/4b6ea79578761f42/320.jpg",
+"rating": "G",
 "runtime": 98,
-"title_ja": "影を売る女"
+"scores": {
+"eiga": {
+"n": 20,
+"v": 3.8
+}
+},
+"title_ja": "影を売る女",
+"year": 2026
 },
 "105911": {
 "country": "日本",
@@ -1479,10 +1594,22 @@
 "year": 2026
 },
 "106025": {
+"country": "日本",
+"director": "錦織良成",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/106025/photo/40ba82f64ce5522d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106025/photo/40ba82f64ce5522d/320.jpg",
+"rating": "PG12",
 "runtime": 126,
-"title_ja": "遥かな町へ"
+"scores": {
+"eiga": {
+"n": 30,
+"v": 3.7
+}
+},
+"title_ja": "遥かな町へ",
+"year": 2026
 },
 "106032": {
 "country": "日本",
@@ -1606,16 +1733,41 @@
 "year": 2026
 },
 "106123": {
+"country": "アメリカ",
+"director": "ザック・クレッガー",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/106123/photo/91595e98277060d1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106123/photo/91595e98277060d1/320.jpg",
+"rating": "R15+",
 "runtime": 94,
-"title_ja": "バイオハザード"
+"scores": {
+"eiga": {
+"n": 609,
+"v": 3.6
+}
+},
+"title_en": "Resident Evil",
+"title_ja": "バイオハザード",
+"year": 2026
 },
 "106146": {
+"country": "日本",
+"director": "沖田修一",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/106146/photo/c4dd888bdc81c95e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106146/photo/c4dd888bdc81c95e/320.jpg",
+"rating": "G",
 "runtime": 139,
-"title_ja": "さとこはいつも"
+"scores": {
+"eiga": {
+"n": 220,
+"v": 3.9
+}
+},
+"title_ja": "さとこはいつも",
+"year": 2026
 },
 "106185": {
 "country": "ペルー・チリ合作",
@@ -2002,10 +2154,22 @@
 "year": 2025
 },
 "106415": {
+"director": "デニス・ハーベイ",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/106415/photo/fb5f7eccfae58168.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106415/photo/fb5f7eccfae58168/320.jpg",
+"rating": "スウェーデン・アイルランド合作",
 "runtime": 90,
-"title_ja": "ケルト・ユートピア"
+"scores": {
+"eiga": {
+"n": 3,
+"v": 4.3
+}
+},
+"title_en": "Útóipe Cheilteach",
+"title_ja": "ケルト・ユートピア",
+"year": 2025
 },
 "106417": {
 "country": "ウクライナ",
@@ -2337,16 +2501,36 @@
 "year": 2026
 },
 "106590": {
+"country": "アメリカ",
+"director": "アンソニー・ルッソ",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/106590/photo/25bbcbf1166812ba.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106590/photo/25bbcbf1166812ba/320.jpg",
+"rating": "G",
 "runtime": 183,
-"title_ja": "アベンジャーズ エンドゲーム アンコール"
+"scores": {
+"eiga": {
+"n": 137,
+"v": 4.4
+}
+},
+"title_en": "Avengers: Endgame Encore",
+"title_ja": "アベンジャーズ エンドゲーム アンコール",
+"year": 2026
 },
 "106641": {
+"director": "ホン・ドクピョ",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
+"rating": "韓国",
 "runtime": 215,
-"title_ja": "発狂する現代史"
+"scores": {},
+"title_en": "Master and Man",
+"title_ja": "発狂する現代史",
+"year": 2014
 },
 "106642": {
 "director": "ホン・ドクピョ",
@@ -2525,16 +2709,33 @@
 "year": 2019
 },
 "106859": {
+"director": "金聖雄",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/106859/photo/b2a6b14a3acd414e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106859/photo/b2a6b14a3acd414e/320.jpg",
+"rating": "日本",
 "runtime": 104,
-"title_ja": "うそがほんとに ほんとがうそに"
+"scores": {},
+"title_ja": "うそがほんとに ほんとがうそに",
+"year": 2026
 },
 "106912": {
+"director": "スー・キム",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/106912/photo/e7e4c5a5c2e895d2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106912/photo/e7e4c5a5c2e895d2/320.jpg",
+"rating": "アメリカ",
 "runtime": 98,
-"title_ja": "ALWAYS LALISA"
+"scores": {
+"eiga": {
+"n": 1,
+"v": 3.5
+}
+},
+"title_ja": "ALWAYS LALISA",
+"year": 2026
 },
 "106937": {
 "director": "シャンタル・アケルマン",
@@ -2580,10 +2781,22 @@
 "year": 2026
 },
 "1257": {
+"director": "ジャン＝リュック・ゴダール",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/1257/photo/91cb7b35795f7837.jpg",
 "poster_small": "https://media.eiga.com/images/movie/1257/photo/91cb7b35795f7837/320.jpg",
+"rating": "フランス・スイス合作",
 "runtime": 99,
-"title_ja": "愛の世紀"
+"scores": {
+"eiga": {
+"n": 2,
+"v": 2.7
+}
+},
+"title_en": "Eloge de l'Amour",
+"title_ja": "愛の世紀",
+"year": 2001
 },
 "1275": {
 "director": "ジャン＝リュック・ゴダール",
@@ -2693,22 +2906,59 @@
 "year": 1942
 },
 "20052": {
+"director": "黒澤明",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/20052/photo/6b5273429647e0b8.jpg",
 "poster_small": "https://media.eiga.com/images/movie/20052/photo/6b5273429647e0b8/320.jpg",
+"rating": "日本",
 "runtime": 96,
-"title_ja": "椿三十郎（1962）"
+"scores": {
+"eiga": {
+"n": 86,
+"v": 4.3
+}
+},
+"title_ja": "椿三十郎（1962）",
+"year": 1962
 },
 "21804": {
+"country": "アメリカ",
+"director": "ガス・バン・サント",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/21804/photo/b9bc0ca904e4af61.jpg",
 "poster_small": "https://media.eiga.com/images/movie/21804/photo/b9bc0ca904e4af61/320.jpg",
+"rating": "PG12",
 "runtime": 100,
-"title_ja": "ドラッグストア・カウボーイ"
+"scores": {
+"eiga": {
+"n": 27,
+"v": 3.5
+}
+},
+"title_en": "Drugstore Cowboy",
+"title_ja": "ドラッグストア・カウボーイ",
+"year": 1989
 },
 "22716": {
+"country": "イタリア・フランス合作",
+"director": "ジュゼッペ・トルナトーレ",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/22716/photo/78a0968de84263ed.jpg",
 "poster_small": "https://media.eiga.com/images/movie/22716/photo/78a0968de84263ed/320.jpg",
+"rating": "PG12",
 "runtime": 124,
-"title_ja": "ニュー・シネマ・パラダイス"
+"scores": {
+"eiga": {
+"n": 259,
+"v": 4.3
+}
+},
+"title_en": "Nuovo Cinema Paradiso",
+"title_ja": "ニュー・シネマ・パラダイス",
+"year": 1989
 },
 "25081": {
 "director": "小津安二郎",
@@ -2928,10 +3178,22 @@
 "year": 1948
 },
 "36242": {
+"country": "日本",
+"director": "塩田明彦",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/36242/photo/7aabd8f70a93a6ff.jpg",
 "poster_small": "https://media.eiga.com/images/movie/36242/photo/7aabd8f70a93a6ff/320.jpg",
+"rating": "R15+",
 "runtime": 100,
-"title_ja": "月光の囁き"
+"scores": {
+"eiga": {
+"n": 9,
+"v": 3.6
+}
+},
+"title_ja": "月光の囁き",
+"year": 1999
 },
 "36318": {
 "director": "中島貞夫",
@@ -3037,10 +3299,21 @@
 "year": 1947
 },
 "38684": {
+"director": "小津安二郎",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/38684/photo/ce6fcd9933b16ccd.jpg",
 "poster_small": "https://media.eiga.com/images/movie/38684/photo/ce6fcd9933b16ccd/320.jpg",
+"rating": "日本",
 "runtime": 124,
-"title_ja": "麦秋"
+"scores": {
+"eiga": {
+"n": 41,
+"v": 4.1
+}
+},
+"title_ja": "麦秋",
+"year": 1951
 },
 "38889": {
 "director": "野村芳太郎",
@@ -3178,10 +3451,21 @@
 "year": 1984
 },
 "40388": {
+"director": "行定勲",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
+"rating": "日本",
 "runtime": 105,
-"title_ja": "贅沢な骨"
+"scores": {
+"eiga": {
+"n": 6,
+"v": 3.0
+}
+},
+"title_ja": "贅沢な骨",
+"year": 2001
 },
 "40452": {
 "director": "こだま兼嗣",
@@ -3438,10 +3722,17 @@
 "year": 1995
 },
 "47515": {
+"director": "マルコ・ベロッキオ",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/47515/photo/16cca17c074e7ee7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/47515/photo/16cca17c074e7ee7/320.jpg",
+"rating": "イタリア・フランス合作",
 "runtime": 115,
-"title_ja": "肉体の悪魔"
+"scores": {},
+"title_en": "Diavolo in corpo",
+"title_ja": "肉体の悪魔",
+"year": 1986
 },
 "48136": {
 "director": "ジャン・ドゥーシェ",
@@ -3478,10 +3769,22 @@
 "title_ja": "100人の子供たちが列車を待っている"
 },
 "48880": {
+"director": "ウルリケ・オッティンガー",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/48880/photo/a7605de30ab384bb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/48880/photo/a7605de30ab384bb/320.jpg",
+"rating": "西ドイツ",
 "runtime": 127,
-"title_ja": "フリーク・オルランド"
+"scores": {
+"eiga": {
+"n": 4,
+"v": 3.2
+}
+},
+"title_en": "Freak Orlando",
+"title_ja": "フリーク・オルランド",
+"year": 1981
 },
 "49013": {
 "country": "アメリカ",
@@ -3556,10 +3859,23 @@
 "year": 1985
 },
 "50458": {
+"country": "イタリア",
+"director": "ロベルト・ベニーニ",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/50458/photo/d31700ccf0dffca1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/50458/photo/d31700ccf0dffca1/320.jpg",
+"rating": "G",
 "runtime": 117,
-"title_ja": "ライフ・イズ・ビューティフル"
+"scores": {
+"eiga": {
+"n": 219,
+"v": 4.2
+}
+},
+"title_en": "La vita e bella",
+"title_ja": "ライフ・イズ・ビューティフル",
+"year": 1997
 },
 "53029": {
 "director": "パトリック・レオン",
@@ -3597,10 +3913,23 @@
 "year": 2008
 },
 "54466": {
+"country": "アメリカ",
+"director": "クリストファー・ノーラン",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/54466/photo/e6b43a05c7bed751.jpg",
 "poster_small": "https://media.eiga.com/images/movie/54466/photo/e6b43a05c7bed751/320.jpg",
+"rating": "G",
 "runtime": 148,
-"title_ja": "インセプション"
+"scores": {
+"eiga": {
+"n": 580,
+"v": 4.1
+}
+},
+"title_en": "Inception",
+"title_ja": "インセプション",
+"year": 2010
 },
 "55066": {
 "country": "日本",
@@ -3621,10 +3950,22 @@
 "year": 2009
 },
 "55165": {
+"country": "日本",
+"director": "本広克行",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/55165/photo/cb8c195b0bf6ee95.jpg",
 "poster_small": "https://media.eiga.com/images/movie/55165/photo/cb8c195b0bf6ee95/320.jpg",
+"rating": "G",
 "runtime": 141,
-"title_ja": "踊る大捜査線 THE MOVIE 3 ヤツらを解放せよ！"
+"scores": {
+"eiga": {
+"n": 134,
+"v": 2.7
+}
+},
+"title_ja": "踊る大捜査線 THE MOVIE 3 ヤツらを解放せよ！",
+"year": 2010
 },
 "55593": {
 "fetched": "2026-10-18",
@@ -3754,10 +4095,16 @@
 "year": 1956
 },
 "72751": {
+"director": "野村芳太郎",
+"fetched": "2026-10-18",
 "last_seen": "2026-10-18",
+"poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
+"rating": "日本",
 "runtime": 89,
-"title_ja": "花嫁のおのろけ"
+"scores": {},
+"title_ja": "花嫁のおのろけ",
+"year": 1958
 },
 "73070": {
 "director": "木村荘十二",
