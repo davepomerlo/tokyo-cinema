@@ -34,7 +34,7 @@ DEBUG_DIR = ROOT / "debug"
 JST = ZoneInfo("Asia/Tokyo")
 
 DELAY = float(os.environ.get("SCRAPE_DELAY", "2.5"))     # seconds between requests
-MAX_NEW_MOVIES = int(os.environ.get("MAX_NEW_MOVIES", "120"))
+MAX_NEW_MOVIES = int(os.environ.get("MAX_NEW_MOVIES", "350"))
 REFRESH_DAYS = 7   # re-check scores of films still showing this often
 DAYS_AHEAD = 7
 
