@@ -27,6 +27,7 @@ DATE_RE = re.compile(r"(?<![\d:])(\d{1,2})\s*/\s*(\d{1,2})(?![\d:])")
 DATA_DATE_RE = re.compile(r"^(20\d{2})-?(\d{2})-?(\d{2})$")
 TIME_RANGE_RE = re.compile(r"(\d{1,2}:\d{2})\s*[～~〜\-－–—]\s*(\d{1,2}:\d{2})")
 TIME_RE = re.compile(r"(?<![\d/])(\d{1,2}):(\d{2})(?!\d)")
+RATING_RE = re.compile(r"^(G|PG-?12|R-?15\+?|R-?18\+?)$")
 RUNTIME_RE = re.compile(r"(\d{2,3})\s*分")
 YEN_RE = re.compile(
     r"([^\s\d：:¥￥,円（）()／/]{1,24}?)\s*(?:[（(][^）)]{0,20}[）)])?\s*[：:]?\s*[¥￥]?\s*([\d,]{3,6})\s*円"
@@ -508,14 +509,18 @@ def parse_movie_page(html: str) -> dict:
             break
 
     for l in lines:
-        m = re.search(r"(\d{4})年製作\s*／\s*(\d{2,3})分(?:\s*／\s*([^／]+))?(?:\s*／\s*(.+))?", l)
+        m = re.search(r"(\d{4})年製作\s*／\s*(?:(\d{2,3})分)?(.*)$", l)
         if m:
             info["year"] = int(m.group(1))
-            info["runtime"] = int(m.group(2))
-            if m.group(3):
-                info["rating"] = m.group(3).strip()
-            if m.group(4):
-                info["country"] = m.group(4).strip()
+            if m.group(2):
+                info["runtime"] = int(m.group(2))
+            # Remaining parts are an optional age rating and the country, in that order;
+            # films without a rating go straight to the country.
+            for part in [x.strip() for x in m.group(3).split("／") if x.strip()]:
+                if RATING_RE.match(part):
+                    info["rating"] = part
+                elif "country" not in info:
+                    info["country"] = part
             break
 
     for i, l in enumerate(lines):

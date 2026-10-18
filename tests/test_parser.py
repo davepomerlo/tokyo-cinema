@@ -111,6 +111,13 @@ class TestParser(unittest.TestCase):
         self.assertEqual(info["director"], "デビッド・ボレンスタイン")
         self.assertEqual(info["poster"], "https://img/x.jpg")
 
+    def test_movie_page_without_rating(self):
+        info = parse_movie_page("<p>1997年製作／95分／台湾</p><p>監督 チェン</p>")
+        self.assertEqual((info["year"], info["runtime"], info["country"]), (1997, 95, "台湾"))
+        self.assertNotIn("rating", info)
+        info = parse_movie_page("<p>2024年製作／101分／PG12／フランス・ベルギー合作</p>")
+        self.assertEqual((info["rating"], info["country"]), ("PG12", "フランス・ベルギー合作"))
+
     def test_price_labels(self):
         self.assertEqual(price_label_en("一般"), "General")
         self.assertEqual(price_label_en("大学生・シニア"), "University · Senior")

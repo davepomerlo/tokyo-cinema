@@ -30,7 +30,10 @@ COUNTRY_LANG = {
     "ハンガリー": "hu", "ルーマニア": "ro", "ギリシャ": "el", "スウェーデン": "sv",
     "デンマーク": "da", "ノルウェー": "no", "フィンランド": "fi", "オランダ": "nl",
     "イスラエル": "he", "エジプト": "ar", "レバノン": "ar", "パレスチナ": "ar",
-    "ジョージア": "ka", "モンゴル": "mn", "カザフスタン": "kk", "セネガル": "fr",
+    "ジョージア": "ka", "西ドイツ": "de", "東ドイツ": "de", "ソ連": "ru", "ソビエト": "ru",
+    "チェコスロバキア": "cs", "ペルー": "es", "キューバ": "es", "ウルグアイ": "es",
+    "ベネズエラ": "es", "ボリビア": "es", "エストニア": "et", "リトアニア": "lt", "ラトビア": "lv",
+    "アイスランド": "is", "スロバキア": "sk", "セルビア": "sr", "クロアチア": "hr", "ブルガリア": "bg", "モンゴル": "mn", "カザフスタン": "kk", "セネガル": "fr",
 }
 
 # Countries where the main language is a poor guess (multilingual or English-mixed).
@@ -50,7 +53,9 @@ LANG_NAMES = {  # code -> (English, Japanese)
     "sv": ("Swedish", "スウェーデン語"), "da": ("Danish", "デンマーク語"), "no": ("Norwegian", "ノルウェー語"),
     "fi": ("Finnish", "フィンランド語"), "nl": ("Dutch", "オランダ語"), "he": ("Hebrew", "ヘブライ語"),
     "ar": ("Arabic", "アラビア語"), "ka": ("Georgian", "ジョージア語"), "mn": ("Mongolian", "モンゴル語"),
-    "kk": ("Kazakh", "カザフ語"), "xx": ("No dialogue", "台詞なし"),
+    "kk": ("Kazakh", "カザフ語"), "et": ("Estonian", "エストニア語"), "lt": ("Lithuanian", "リトアニア語"),
+    "lv": ("Latvian", "ラトビア語"), "is": ("Icelandic", "アイスランド語"), "sk": ("Slovak", "スロバキア語"),
+    "sr": ("Serbian", "セルビア語"), "hr": ("Croatian", "クロアチア語"), "bg": ("Bulgarian", "ブルガリア語"), "xx": ("No dialogue", "台詞なし"),
 }
 
 

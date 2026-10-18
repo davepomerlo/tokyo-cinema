@@ -21,7 +21,7 @@ from zoneinfo import ZoneInfo
 import requests
 import yaml
 
-from .eiga import parse_movie_page, parse_theater_page
+from .eiga import RATING_RE, parse_movie_page, parse_theater_page
 from .ratings import omdb_scores, public_scores, tmdb_details
 from .language import LANG_NAMES, audio_subs, film_language, tmdb_lookup
 from .translate import has_japanese, price_label_en, translate_titles
@@ -105,6 +105,12 @@ def main() -> int:
     fetcher = Fetcher()
     DEBUG_DIR.mkdir(exist_ok=True)
     movies: dict = load_json(DATA_DIR / "movies.json", {})
+    # Repair records saved before the rating/country fix (country stored as rating).
+    for m in movies.values():
+        r = m.get("rating")
+        if r and not RATING_RE.match(r):
+            m.setdefault("country", r)
+            del m["rating"]
     out_theaters, screenings = [], []
     seen_movie_ids: set[str] = set()
 
