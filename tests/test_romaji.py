@@ -29,6 +29,13 @@ class TestRomaji(unittest.TestCase):
         self.assertFalse(R.JP_RE.search(R.to_romaji("東京の映画館")))
         self.assertFalse(R.JP_RE.search(R.to_romaji("愛し合ってるかい？　忌野清志郎が教えてくれた")))
 
+    def test_names_and_titles(self):
+        self.assertEqual(R.latin_part("青梅竹馬 Taipei Story"), "Taipei Story")
+        self.assertEqual(R.latin_part("Love Letter"), "Love Letter")
+        self.assertEqual(R.latin_part("青梅竹馬"), "青梅竹馬")
+        self.assertEqual(R.name_romaji("デビッド・リンチ"), "Debiddo Rinchi")
+        self.assertEqual(R._tidy('Kiken " na kankei "'), 'Kiken "na kankei"')
+
     def test_country(self):
         self.assertEqual(R.country_en("日本"), "Japan")
         self.assertEqual(R.country_en("デンマーク・チェコ合作"), "Denmark/Czech Republic co-production")

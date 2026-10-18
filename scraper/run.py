@@ -22,7 +22,7 @@ import requests
 import yaml
 
 from .eiga import RATING_RE, parse_movie_page, parse_theater_page
-from .romaji import JP_RE, country_en, to_romaji
+from .romaji import JP_RE, country_en, latin_part, name_romaji, to_romaji
 from .ratings import omdb_scores, public_scores, tmdb_details
 from .language import LANG_NAMES, audio_subs, film_language, tmdb_lookup
 from .translate import has_japanese, price_label_en, translate_titles
@@ -281,8 +281,11 @@ def main() -> int:
 
     # Romaji for every Japanese string the app shows: {japanese: romaji}.
     jp_strings: set[str] = set()
+    names: set[str] = set()
     for m in public_movies.values():
-        jp_strings.update(x for x in (m.get("ja"), m.get("director")) if x)
+        jp_strings.update(x for x in (m.get("ja"), m.get("en")) if x)
+        if m.get("director"):
+            names.add(m["director"])
     for t in out_theaters:
         jp_strings.update(x for x in (t.get("name_ja"), t.get("area_ja"), t.get("notice")) if x)
         for p in t.get("prices", []) + t.get("discounts", []):
@@ -293,6 +296,7 @@ def main() -> int:
     for en, ja in LANG_NAMES.values():
         jp_strings.add(ja)
     romaji = {x: to_romaji(x) for x in sorted(jp_strings) if JP_RE.search(x)}
+    romaji.update({x: name_romaji(x) for x in sorted(names) if JP_RE.search(x)})
 
     data = {
         "generated_at": now.isoformat(timespec="minutes"),
@@ -315,7 +319,7 @@ def main() -> int:
 
 
 def _public_movie(m: dict) -> dict:
-    human = m.get("title_en_override") or m.get("title_en") or m.get("title_en_tmdb")
+    human = m.get("title_en_override") or latin_part(m.get("title_en")) or m.get("title_en_tmdb")
     title_en = human or m.get("title_en_auto")
     out = {"ja": m.get("title_ja"), "en": title_en, "en_auto": bool(not human and title_en)}
     for k in ("year", "runtime", "country", "director", "rating", "lang", "tmdb_id", "imdb_id"):

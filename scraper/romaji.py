@@ -14,6 +14,9 @@ import re
 import unicodedata
 from functools import lru_cache
 
+# Variant kanji pykakasi doesn't know, mapped to their common forms.
+_VARIANTS = str.maketrans({"髙": "高", "﨑": "崎", "德": "徳", "濵": "濱", "邊": "辺", "邉": "辺", "塚": "塚", "瀨": "瀬"})
+
 JP_RE = re.compile(r"[぀-ヿ㐀-鿿ｦ-ﾟ々〆]")
 
 try:  # pragma: no cover - exercised in CI where pykakasi is installed
@@ -99,6 +102,7 @@ def _tidy(s: str) -> str:
     s = s.replace("『", "\"").replace("』", "\"").replace("〜", "~").replace("～", "~").replace("〈", "<").replace("〉", ">")
     s = s.replace("【", "[").replace("】", "]")
     s = re.sub(r"\s+", " ", s)
+    s = re.sub(r'"\s*([^"]*?)\s*"', r'"\1"', s)
     s = re.sub(r"\s+([,.!?:)\]])", r"\1", s)
     s = re.sub(r"([(\[])\s+", r"\1", s)
     return s.strip()
@@ -110,6 +114,7 @@ def to_romaji(text: str | None) -> str | None:
     if not text or not JP_RE.search(text):
         return text
     s = unicodedata.normalize("NFKC", text)
+    s = s.translate(_VARIANTS)
     if _KKS is not None:
         parts: list[str] = []
         for seg in _KKS.convert(s):
@@ -129,8 +134,26 @@ def to_romaji(text: str | None) -> str | None:
         s = out
     else:
         s = re.sub(r"[぀-ヿー]+", lambda m: " " + _kana_to_romaji(m.group(0)) + " ", s)
+        # anything pykakasi couldn't read: convert remaining kana at least
+    s = re.sub(r"[\u3041-\u3096\u30a1-\u30f4\u30fc]+", lambda m: _kana_to_romaji(m.group(0)), s)
     s = _tidy(s)
     return s[:1].upper() + s[1:] if s else s
+
+
+def name_romaji(name: str | None) -> str | None:
+    """People's names: capitalise each part ('小津安二郎' -> 'Ozu Yasujirou')."""
+    r = to_romaji(name)
+    if not r or r == name:
+        return r
+    return " ".join(w[:1].upper() + w[1:] for w in r.split(" "))
+
+
+def latin_part(title: str | None) -> str | None:
+    """'青梅竹馬 Taipei Story' -> 'Taipei Story'; keeps titles with no Latin text as they are."""
+    if not title or not JP_RE.search(title):
+        return title
+    latin = re.sub(r"\s+", " ", re.sub(r"[\u3000-\u30ff\u3400-\u9fff\uff00-\uffef]+", " ", title)).strip(" -:・")
+    return latin if re.search(r"[A-Za-z]{3,}", latin) else title
 
 
 # ── countries in English (better than romaji for these) ─────────────────────

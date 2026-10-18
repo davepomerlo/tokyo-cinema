@@ -69,7 +69,7 @@
   }
 
   function filmTitle(m, tag = "h2", href) {
-    const en = m.en && m.en !== m.ja ? m.en : null;
+    const en = m.en && m.en !== m.ja ? romaji(m.en) : null;
     const ro = romaji(m.ja);
     const main = en || ro;
     const auto = en && m.en_auto ? `<span class="auto" title="Machine-translated title">auto</span>` : "";
