@@ -297,6 +297,7 @@ def main() -> int:
     romaji.update({x: name_romaji(x) for x in sorted(names) if JP_RE.search(x)})
     # Language names are single words in lower case: 英語 -> eigo, イタリア語 -> itariago
     romaji.update({ja: (to_romaji(ja) or ja).replace(" ", "").lower() for _, ja in LANG_NAMES.values()})
+    romaji.update({"日本語吹替": "nihongo fukikae", "台詞なし": "serifu nashi"})
 
     data = {
         "generated_at": now.isoformat(timespec="minutes"),
