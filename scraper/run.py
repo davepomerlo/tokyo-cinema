@@ -22,6 +22,7 @@ import requests
 import yaml
 
 from .eiga import RATING_RE, parse_movie_page, parse_theater_page
+from .romaji import JP_RE, country_en, to_romaji
 from .ratings import omdb_scores, public_scores, tmdb_details
 from .language import LANG_NAMES, audio_subs, film_language, tmdb_lookup
 from .translate import has_japanese, price_label_en, translate_titles
@@ -276,11 +277,29 @@ def main() -> int:
             sc["guess"] = 1
 
     screenings.sort(key=lambda s: (s["d"], s["s"], s["t"]))
+    public_movies = {k: _public_movie(movies[k]) for k in seen_movie_ids}
+
+    # Romaji for every Japanese string the app shows: {japanese: romaji}.
+    jp_strings: set[str] = set()
+    for m in public_movies.values():
+        jp_strings.update(x for x in (m.get("ja"), m.get("director")) if x)
+    for t in out_theaters:
+        jp_strings.update(x for x in (t.get("name_ja"), t.get("area_ja"), t.get("notice")) if x)
+        for p in t.get("prices", []) + t.get("discounts", []):
+            jp_strings.add(p["label_ja"])
+    for sc in screenings:
+        if sc.get("f"):
+            jp_strings.update(sc["f"].split(" "))
+    for en, ja in LANG_NAMES.values():
+        jp_strings.add(ja)
+    romaji = {x: to_romaji(x) for x in sorted(jp_strings) if JP_RE.search(x)}
+
     data = {
         "generated_at": now.isoformat(timespec="minutes"),
         "today": today.isoformat(),
         "theaters": out_theaters,
-        "movies": {k: _public_movie(movies[k]) for k in seen_movie_ids},
+        "movies": public_movies,
+        "romaji": romaji,
         "languages": LANG_NAMES,
         "screenings": screenings,
     }
@@ -302,6 +321,8 @@ def _public_movie(m: dict) -> dict:
     for k in ("year", "runtime", "country", "director", "rating", "lang", "tmdb_id", "imdb_id"):
         if m.get(k):
             out[k] = m[k]
+    if m.get("country"):
+        out["country_en"] = country_en(m["country"])
     if m.get("poster_small") or m.get("poster"):
         out["poster"] = m.get("poster_small") or m.get("poster")
     scores = public_scores(m.get("scores") or {})

@@ -210,3 +210,8 @@ a.score:hover { border-color: var(--muted); }
 @media (prefers-reduced-motion: no-preference) {
   .day, .type, .seg button { transition: background-color .15s, color .15s; }
 }
+
+/* romaji for Japanese terms */
+.rj { font-style: italic; }
+h1 .rj { font-family: var(--sans); font-weight: 500; font-style: italic; }
+.ja.rj { font-family: var(--sans); font-weight: 500; font-size: .92rem; }

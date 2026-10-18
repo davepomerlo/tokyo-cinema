@@ -2,23 +2,26 @@
   "use strict";
 
   const TYPES = [
-    { id: "arthouse", en: "Arthouse", ja: "ミニシアター" },
-    { id: "repertory", en: "Revival", ja: "名画座" },
-    { id: "community", en: "Community", ja: "地域の映画館" },
-    { id: "institution", en: "Institutions", ja: "文化施設" },
-    { id: "multiplex", en: "Multiplex", ja: "シネコン" },
+    { id: "arthouse", en: "Arthouse", ja: "minishiataa" },
+    { id: "repertory", en: "Revival", ja: "meigaza" },
+    { id: "community", en: "Community", ja: "chiiki no eigakan" },
+    { id: "institution", en: "Institutions", ja: "bunka shisetsu" },
+    { id: "multiplex", en: "Multiplex", ja: "shinekon" },
   ];
   const TYPE_ORDER = Object.fromEntries(TYPES.map((t, i) => [t.id, i]));
+  // Format labels from eiga.com: [English, romaji]
   const FORMATS = {
-    "字幕": "Subtitled", "日本語字幕": "Japanese subtitles", "英語字幕": "English subtitles",
-    "吹替": "Dubbed", "吹き替え": "Dubbed", "バリアフリー": "Barrier-free",
-    "日本語音声ガイド": "Audio guide", "極上音響": "Enhanced sound", "轟音": "Loud sound",
-    "爆音": "Extra-loud sound", "ドルビーシネマ": "Dolby Cinema", "ドルビーアトモス": "Dolby Atmos",
-    "応援上映": "Cheering screening", "発声可能": "Cheering allowed", "デジタル": "Digital",
-    "プレミアムシアター": "Premium screen", "IMAXレーザー": "IMAX Laser",
+    "字幕": ["Subtitled", "jimaku"], "日本語字幕": ["Japanese subtitles", "nihongo jimaku"],
+    "英語字幕": ["English subtitles", "eigo jimaku"], "吹替": ["Dubbed", "fukikae"], "吹き替え": ["Dubbed", "fukikae"],
+    "バリアフリー": ["Barrier-free", "bariafurii"], "日本語音声ガイド": ["Audio guide", "nihongo onsei gaido"],
+    "極上音響": ["Enhanced sound", "gokujou onkyou"], "轟音": ["Loud sound", "gouon"], "爆音": ["Extra-loud sound", "bakuon"],
+    "ドルビーシネマ": ["Dolby Cinema", "dorubii shinema"], "ドルビーアトモス": ["Dolby Atmos", "dorubii atomosu"],
+    "応援上映": ["Cheering screening", "ouen jouei"], "発声可能": ["Cheering allowed", "hassei kanou"],
+    "デジタル": ["Digital", "dejitaru"], "プレミアムシアター": ["Premium screen", "puremiamu shiataa"],
+    "IMAXレーザー": ["IMAX Laser", "IMAX reezaa"],
   };
   const WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  const WD_JA = ["日", "月", "火", "水", "木", "金", "土"];
+  const WD_JA = ["nichi", "getsu", "ka", "sui", "moku", "kin", "do"];
   const SOON_MIN = 90;
 
   const $ = (s) => document.querySelector(s);
@@ -52,26 +55,35 @@
   let data = null;
   let theaters = {};
 
+  // Japanese is shown as romaji; the original script stays in the tooltip.
+  const JP = /[\u3040-\u30ff\u3400-\u9fff]/;
+  const romaji = (s) => (s && JP.test(s) ? ((data && data.romaji && data.romaji[s]) || s) : s);
+  const rj = (s) => (s ? `<span class="rj" title="${esc(s)}">${esc(romaji(s))}</span>` : "");
+
   function fmtLabel(f) {
     if (!f) return "";
-    const en = f.split(" ").map((x) => FORMATS[x] || x).join(", ");
-    return en === f ? esc(f) : `${esc(en)} <span lang="ja">${esc(f)}</span>`;
+    const toks = f.split(" ");
+    const en = toks.map((x) => (FORMATS[x] ? FORMATS[x][0] : romaji(x))).join(", ");
+    const ro = toks.filter((x) => JP.test(x)).map((x) => (FORMATS[x] ? FORMATS[x][1] : romaji(x))).join(" ");
+    return ro && en !== ro ? `${esc(en)} <span class="rj" title="${esc(f)}">${esc(ro)}</span>` : esc(en);
   }
 
   function filmTitle(m, tag = "h2", href) {
     const en = m.en && m.en !== m.ja ? m.en : null;
-    const main = en || m.ja;
+    const ro = romaji(m.ja);
+    const main = en || ro;
     const auto = en && m.en_auto ? `<span class="auto" title="Machine-translated title">auto</span>` : "";
     const link = href ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(main)}</a>` : esc(main);
-    return `<${tag}>${link}${auto}${en ? `<span class="ja" lang="ja">${esc(m.ja)}</span>` : ""}</${tag}>`;
+    const sub = en && ro && ro.toLowerCase() !== en.toLowerCase() ? `<span class="ja rj" title="${esc(m.ja)}">${esc(ro)}</span>` : "";
+    return `<${tag}>${link}${auto}${sub}</${tag}>`;
   }
 
   function filmMeta(m) {
     const bits = [];
     if (m.year) bits.push(m.year);
     if (m.runtime) bits.push(`${m.runtime} min`);
-    if (m.country) bits.push(`<span lang="ja">${esc(m.country)}</span>`);
-    if (m.director) bits.push(`Dir. <span lang="ja">${esc(m.director)}</span>`);
+    if (m.country) bits.push(m.country_en ? `<span title="${esc(m.country)}">${esc(m.country_en)}</span>` : rj(m.country));
+    if (m.director) bits.push(`Dir. ${rj(m.director)}`);
     return bits.length ? `<p class="meta">${bits.join("／")}</p>` : "";
   }
 
@@ -101,14 +113,14 @@
 
   function langName(code) {
     const n = (data.languages || {})[code];
-    return n ? `${esc(n[0])} <span lang="ja">${esc(n[1])}</span>` : esc(code);
+    return n ? `${esc(n[0])} ${rj(n[1])}` : esc(code);
   }
 
   function langLine(r) {
     const parts = [];
-    if (r.a) parts.push(`<span><b>Audio</b> <span lang="ja">音声</span> ${langName(r.a)}</span>`);
-    if (r.sub === "none") parts.push(`<span>No subtitles <span lang="ja">字幕なし</span></span>`);
-    else if (r.sub) parts.push(`<span class="${r.sub === "en" ? "en-subs" : ""}"><b>Subtitles</b> <span lang="ja">字幕</span> ${langName(r.sub)}</span>`);
+    if (r.a) parts.push(`<span><b>Audio</b> <span class="rj">onsei</span> ${langName(r.a)}</span>`);
+    if (r.sub === "none") parts.push(`<span>No subtitles <span class="rj">jimaku nashi</span></span>`);
+    else if (r.sub) parts.push(`<span class="${r.sub === "en" ? "en-subs" : ""}"><b>Subtitles</b> <span class="rj">jimaku</span> ${langName(r.sub)}</span>`);
     if (!parts.length) parts.push(`<span>Language not listed</span>`);
     const extra = (r.f || "").replace(LANG_WORDS, "").trim();
     if (extra) parts.push(`<span>${fmtLabel(extra)}</span>`);
@@ -146,19 +158,18 @@
       : t.price_varies ? `<span class="price varies" title="General admission price depends on the film">Varies by film</span>` : "";
     if (compact) return general;
     const row = (p) =>
-      `<li><span>${p.label_en ? esc(p.label_en) + ` <span lang="ja">${esc(p.label_ja)}</span>` : `<span lang="ja">${esc(p.label_ja)}</span>`}</span><span class="yen">${yen(p.yen)}</span></li>`;
+      `<li><span>${p.label_en ? esc(p.label_en) + " " : ""}${rj(p.label_ja)}</span><span class="yen">${yen(p.yen)}</span></li>`;
     const prices = (t.prices || []).map(row).join("");
     const disc = (t.discounts || []).map(row).join("");
     if (!prices && !disc) return "";
-    const varies = t.price_varies ? `<li class="note"><span>General admission varies by film <span lang="ja">作品により異なる</span></span><span></span></li>` : "";
-    return `<details class="prices"><summary>All ticket prices</summary><ul>${varies}${prices}${disc ? `<li class="sub"><span>Discounts <span lang="ja">割引</span></span><span></span></li>${disc}` : ""}</ul></details>`;
+    const varies = t.price_varies ? `<li class="note"><span>General admission varies by film <span class="rj">sakuhin ni yori kotonaru</span></span><span></span></li>` : "";
+    return `<details class="prices"><summary>All ticket prices</summary><ul>${varies}${prices}${disc ? `<li class="sub"><span>Discounts <span class="rj">waribiki</span></span><span></span></li>${disc}` : ""}</ul></details>`;
   }
 
   function venueName(t) {
     const href = t.official_url || t.eiga;
-    return `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(t.name_en)}</a>` +
-      (t.name_ja !== t.name_en ? `<span class="vja" lang="ja">${esc(t.name_ja)}</span>` : "") +
-      `<span class="area">${esc(t.area_en || "")}</span>`;
+    return `<a href="${esc(href)}" target="_blank" rel="noopener" title="${esc(t.name_ja)}">${esc(t.name_en)}</a>` +
+      `<span class="area" title="${esc(t.area_ja || "")}">${esc(t.area_en || "")}</span>`;
   }
 
   function matches(s) {
@@ -171,7 +182,8 @@
     if (state.lang === "dub" && s.a !== "ja-dub") return false;
     if (!state.q) return true;
     const m = data.movies[s.m] || {};
-    const hay = [m.en, m.ja, m.director, t.name_en, t.name_ja, t.area_en, t.area_ja].join(" ").toLowerCase();
+    const hay = [m.en, m.ja, romaji(m.ja), m.director, romaji(m.director), t.name_en, t.name_ja, t.area_en, t.area_ja]
+      .join(" ").toLowerCase();
     return state.q.split(/\s+/).every((w) => hay.includes(w));
   }
 
@@ -236,8 +248,8 @@
         const type = TYPES.find((x) => x.id === t.type);
         const fl = [...films.entries()].sort((a, b) => byRating(a[0], b[0]) || nextKey(a[1]) - nextKey(b[1]));
         return `<article class="house venue" style="--tc:var(--t-${esc(t.type)})">` +
-          `<h2><a href="${esc(t.official_url || t.eiga)}" target="_blank" rel="noopener">${esc(t.name_en)}</a>${t.name_ja !== t.name_en ? `<span class="ja" lang="ja">${esc(t.name_ja)}</span>` : ""}</h2>` +
-          `<p class="house-meta"><span>${esc(t.area_en || "")} <span lang="ja">${esc(t.area_ja || "")}</span></span><span>${type ? esc(type.en) : ""}</span>${t.price_general ? `<span>General ${yen(t.price_general)}</span>` : ""}</p>` +
+          `<h2><a href="${esc(t.official_url || t.eiga)}" target="_blank" rel="noopener">${esc(t.name_en)}</a></h2>` +
+          `<p class="house-meta"><span title="${esc(t.area_ja || "")}">${esc(t.area_en || "")}</span><span>${type ? esc(type.en) : ""}</span>${t.price_general ? `<span>General ${yen(t.price_general)}</span>` : ""}</p>` +
           priceHTML(t, false) +
           fl.map(([mid, rs]) => {
             const m = data.movies[mid] || { ja: "?" };
@@ -257,20 +269,19 @@
       const wd = new Date(Date.UTC(y, mo - 1, da)).getUTCDay();
       const day = Number(d.slice(8, 10));
       const name = d === now.date ? "Today" : WD[wd];
-      return `<button type="button" class="day${wd === 0 ? " sun" : wd === 6 ? " sat" : ""}" data-day="${d}" aria-pressed="${d === state.day}" aria-label="${name} ${Number(d.slice(5, 7))}/${day}"><b>${day}</b><small>${name} <span lang="ja">${WD_JA[wd]}</span></small></button>`;
+      return `<button type="button" class="day${wd === 0 ? " sun" : wd === 6 ? " sat" : ""}" data-day="${d}" aria-pressed="${d === state.day}" aria-label="${name} ${Number(d.slice(5, 7))}/${day}"><b>${day}</b><small>${name} <span class="rj">${WD_JA[wd]}</span></small></button>`;
     }).join("");
   }
 
   function drawTypes() {
     $("#types").innerHTML = TYPES.map((t) =>
-      `<button type="button" class="type" style="--c:var(--t-${t.id})" data-type="${t.id}" aria-pressed="${state.types.has(t.id)}">${t.en} <span lang="ja">${t.ja}</span></button>`).join("");
+      `<button type="button" class="type" style="--c:var(--t-${t.id})" data-type="${t.id}" aria-pressed="${state.types.has(t.id)}">${t.en} <span class="rj">${t.ja}</span></button>`).join("");
   }
 
   function drawAreas() {
     const areas = [...new Set(Object.values(theaters).map((t) => t.area_en).filter(Boolean))].sort();
-    const ja = Object.fromEntries(Object.values(theaters).map((t) => [t.area_en, t.area_ja]));
     $("#area").innerHTML = `<option value="">All areas</option>` +
-      areas.map((a) => `<option value="${esc(a)}">${esc(a)} ${esc(ja[a] || "")}</option>`).join("");
+      areas.map((a) => `<option value="${esc(a)}">${esc(a)}</option>`).join("");
     if (!areas.includes(state.area)) state.area = "";
     $("#area").value = state.area;
   }
@@ -282,9 +293,9 @@
     $("#updated").textContent = `Updated ${when} JST`;
     $("#health").querySelector("summary").textContent = `Scan status: ${ok} of ${data.theaters.length} theaters have listings`;
     const why = { error: "could not be fetched", unparsed: "page not understood", empty: "no screenings listed this week",
-      closed: `temporarily closed <span lang="ja">臨時休館</span>` };
+      closed: `temporarily closed <span class="rj">rinji kyuukan</span>` };
     $("#health-list").innerHTML = data.theaters.filter((t) => t.status !== "ok").map((t) =>
-      `<li class="${["empty", "closed"].includes(t.status) ? "" : "bad"}">${esc(t.name_en)}: ${why[t.status] || esc(t.status)}${t.error ? ` (${esc(t.error)})` : ""}${t.notice ? `<br><small lang="ja">${esc(t.notice)}</small>` : ""}</li>`).join("") || "<li>All theaters scanned.</li>";
+      `<li class="${["empty", "closed"].includes(t.status) ? "" : "bad"}">${esc(t.name_en)}: ${why[t.status] || esc(t.status)}${t.error ? ` (${esc(t.error)})` : ""}${t.notice ? `<br><small class="rj" title="${esc(t.notice)}">${esc(romaji(t.notice))}</small>` : ""}</li>`).join("") || "<li>All theaters scanned.</li>";
   }
 
   function save() {
