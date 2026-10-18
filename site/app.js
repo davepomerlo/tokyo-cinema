@@ -141,12 +141,17 @@
   }
 
   function priceHTML(t, compact) {
-    const general = t.price_general ? `<span class="price" title="General admission">${yen(t.price_general)}</span>` : "";
+    const general = t.price_general
+      ? `<span class="price" title="General admission">${yen(t.price_general)}</span>`
+      : t.price_varies ? `<span class="price varies" title="General admission price depends on the film">Varies by film</span>` : "";
     if (compact) return general;
-    if (!t.prices || !t.prices.length) return "";
-    const items = t.prices.map((p) =>
-      `<li><span>${p.label_en ? esc(p.label_en) + ` <span lang="ja">${esc(p.label_ja)}</span>` : `<span lang="ja">${esc(p.label_ja)}</span>`}</span><span class="yen">${yen(p.yen)}</span></li>`).join("");
-    return `<details class="prices"><summary>All ticket prices</summary><ul>${items}</ul></details>`;
+    const row = (p) =>
+      `<li><span>${p.label_en ? esc(p.label_en) + ` <span lang="ja">${esc(p.label_ja)}</span>` : `<span lang="ja">${esc(p.label_ja)}</span>`}</span><span class="yen">${yen(p.yen)}</span></li>`;
+    const prices = (t.prices || []).map(row).join("");
+    const disc = (t.discounts || []).map(row).join("");
+    if (!prices && !disc) return "";
+    const varies = t.price_varies ? `<li class="note"><span>General admission varies by film <span lang="ja">作品により異なる</span></span><span></span></li>` : "";
+    return `<details class="prices"><summary>All ticket prices</summary><ul>${varies}${prices}${disc ? `<li class="sub"><span>Discounts <span lang="ja">割引</span></span><span></span></li>${disc}` : ""}</ul></details>`;
   }
 
   function venueName(t) {
@@ -276,9 +281,10 @@
     const ok = data.theaters.filter((t) => t.status === "ok").length;
     $("#updated").textContent = `Updated ${when} JST`;
     $("#health").querySelector("summary").textContent = `Scan status: ${ok} of ${data.theaters.length} theaters have listings`;
-    const why = { error: "could not be fetched", unparsed: "page not understood", empty: "no screenings this week" };
+    const why = { error: "could not be fetched", unparsed: "page not understood", empty: "no screenings listed this week",
+      closed: `temporarily closed <span lang="ja">臨時休館</span>` };
     $("#health-list").innerHTML = data.theaters.filter((t) => t.status !== "ok").map((t) =>
-      `<li class="${t.status === "empty" ? "" : "bad"}">${esc(t.name_en)}: ${why[t.status] || t.status}${t.error ? ` (${esc(t.error)})` : ""}</li>`).join("") || "<li>All theaters scanned.</li>";
+      `<li class="${["empty", "closed"].includes(t.status) ? "" : "bad"}">${esc(t.name_en)}: ${why[t.status] || esc(t.status)}${t.error ? ` (${esc(t.error)})` : ""}${t.notice ? `<br><small lang="ja">${esc(t.notice)}</small>` : ""}</li>`).join("") || "<li>All theaters scanned.</li>";
   }
 
   function save() {

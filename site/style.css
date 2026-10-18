@@ -176,6 +176,9 @@ details.prices { margin-top: 4px; font-size: .8rem; color: var(--muted); }
 details.prices summary { cursor: pointer; width: fit-content; }
 details.prices ul { margin: 4px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr auto; gap: 1px 16px; max-width: 360px; }
 details.prices li { display: contents; }
+details.prices li.sub span:first-child { margin-top: 6px; font-weight: 700; color: var(--ink); }
+details.prices li.note span:first-child { font-style: italic; }
+.price.varies { font-size: .8rem; color: var(--muted); font-weight: 400; }
 details.prices .yen { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink); }
 
 .house .film-line { margin-top: 12px; }

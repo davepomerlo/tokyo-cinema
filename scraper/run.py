@@ -131,10 +131,15 @@ def main() -> int:
             continue
 
         prices = [dict(p, label_en=price_label_en(p["label_ja"])) for p in page.prices]
+        discounts = [dict(p, label_en=price_label_en(p["label_ja"])) for p in page.discounts]
         general = t.get("price_general") or next(
+            (p["yen"] for p in prices if p["label_ja"].startswith("一般")), None) or next(
             (p["yen"] for p in prices if "一般" in p["label_ja"]), None)
-        entry.update(prices=prices, price_general=general,
+        entry.update(prices=prices, discounts=discounts, price_general=general,
+                     price_varies=bool(page.price_note and not general),
                      official_url=t.get("official_url") or page.official_url)
+        if page.notice:
+            entry["notice"] = page.notice
 
         n = 0
         for s in page.screenings:
@@ -143,15 +148,22 @@ def main() -> int:
             screenings.append({"t": tid, "m": s.movie_id, "d": s.date, "s": s.start,
                                "e": s.end, "f": s.fmt})
             n += 1
+        showing = {sc["m"] for sc in screenings if sc["t"] == tid}
         for mid, stub in page.movies.items():
+            if mid not in showing:      # upcoming films with no showings this week
+                continue
             seen_movie_ids.add(mid)
             m = movies.setdefault(mid, {"title_ja": stub.title_ja})
             m["title_ja"] = stub.title_ja
             if stub.runtime and not m.get("runtime"):
                 m["runtime"] = stub.runtime
+            if stub.poster:
+                m["poster_small"] = stub.poster
 
-        if n == 0:
-            entry["status"] = "empty" if page.movies else "unparsed"
+        if n == 0 and page.notice:
+            entry["status"] = "closed"
+        elif n == 0:
+            entry["status"] = "empty" if page.movies or page.prices else "unparsed"
             (DEBUG_DIR / f"{tid}.html").write_text(html, encoding="utf-8")
         else:
             entry["status"] = "ok"
@@ -281,9 +293,11 @@ def _public_movie(m: dict) -> dict:
     human = m.get("title_en_override") or m.get("title_en") or m.get("title_en_tmdb")
     title_en = human or m.get("title_en_auto")
     out = {"ja": m.get("title_ja"), "en": title_en, "en_auto": bool(not human and title_en)}
-    for k in ("year", "runtime", "country", "director", "rating", "poster", "lang", "tmdb_id", "imdb_id"):
+    for k in ("year", "runtime", "country", "director", "rating", "lang", "tmdb_id", "imdb_id"):
         if m.get(k):
             out[k] = m[k]
+    if m.get("poster_small") or m.get("poster"):
+        out["poster"] = m.get("poster_small") or m.get("poster")
     scores = public_scores(m.get("scores") or {})
     if scores:
         out["scores"] = scores

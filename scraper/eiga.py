@@ -61,6 +61,7 @@ class MovieStub:
     movie_id: str
     title_ja: str
     runtime: int | None = None
+    poster: str | None = None
 
 
 @dataclass
@@ -69,6 +70,9 @@ class TheaterPage:
     screenings: list[Screening] = field(default_factory=list)
     prices: list[dict] = field(default_factory=list)
     official_url: str | None = None
+    notice: str | None = None          # e.g. temporary closure message
+    price_note: str | None = None      # e.g. "作品によって料金に差異あり"
+    discounts: list[dict] = field(default_factory=list)
 
 
 # ── helpers ────────────────────────────────────────────────────────────────
@@ -293,12 +297,130 @@ def parse_prices(soup: BeautifulSoup) -> list[dict]:
     return prices[:20]
 
 
+# ── eiga.com's own layout (primary) ─────────────────────────────────────────
+#
+# <section id="m104848"><h2><a href="/movie/104848/">title</a></h2>
+#   <div class="movie-image"><img src=…><p class="data"><span>124分</span>…</p></div>
+#   <div class="movie-schedule">                       (one per version)
+#     <div class="movie-type"><span class="type-subtitled">字幕</span></div>
+#     <table class="weekly-schedule"><tr>
+#       <td data-date="20261018"><p class="date">10/18（日）</p>
+#           <a data-time=…>10:25</a> <a>15:25<small>～17:39</small></a></td> …
+
+CLOSED_RE = re.compile(r"(臨時休館|休館中|閉館|営業を休止|休業)")
+
+
+def _parse_structured(soup: BeautifulSoup, today: dt.date, page: TheaterPage) -> bool:
+    sections = [sec for sec in soup.select("section[id^=m]") if sec.select_one(".movie-schedule, table.weekly-schedule")]
+    if not sections:
+        return False
+    links: list[str] = []
+    for sec in sections:
+        a = sec.select_one("h2 a[href*='/movie/']") or sec.find("a", href=MOVIE_HREF)
+        m = MOVIE_HREF.match(a["href"].strip()) if a else None
+        mid = m.group(1) if m else sec["id"][1:]
+        if not mid.isdigit():
+            continue
+        title = clean(a.get_text(" ")) if a else clean(sec.get("data-title", ""))
+        stub = page.movies.setdefault(mid, MovieStub(mid, title))
+        data_p = sec.select_one(".movie-image .data, p.data")
+        if data_p:
+            rt = RUNTIME_RE.search(data_p.get_text(" "))
+            if rt:
+                stub.runtime = int(rt.group(1))
+        img = sec.select_one(".movie-image img")
+        if img and img.get("src", "").startswith("http"):
+            stub.poster = img["src"]
+
+        blocks = sec.select(".movie-schedule") or [sec]
+        seen = set()
+        for blk in blocks:
+            types = [clean(x.get_text(" ")) for x in blk.select(".movie-type span, .movie-type li")]
+            fmt = " ".join(t for t in types if t) or None
+            for td in blk.select("td[data-date]"):
+                d = cell_date(td, today)
+                if not d:
+                    continue
+                for date_p in td.select("p.date"):
+                    date_p.extract()
+                for s_, e_ in extract_times(clean(td.get_text(" "))):
+                    key = (d, s_, fmt)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    page.screenings.append(Screening(mid, d, s_, e_, fmt, None))
+                for lk in td.find_all("a", href=True):
+                    h = lk["href"]
+                    if h.startswith("http") and "eiga.com" not in h:
+                        links.append(h)
+    if links and not page.official_url:
+        page.official_url = max(set(links), key=links.count)
+    return True
+
+
+def _parse_theater_table(soup: BeautifulSoup, page: TheaterPage) -> bool:
+    """Prices, discounts and official site from eiga.com's theater info table."""
+    table = soup.select_one("table.theater-table")
+    if not table:
+        return False
+    section = None
+    for tr in table.find_all("tr"):
+        th = tr.find("th")
+        if th:
+            section = clean(th.get_text(" "))
+        off = tr.select_one("a.official[href], a.icon.official[href]")
+        if off and not page.official_url:
+            page.official_url = off["href"]
+        if section == "基本料金":
+            for td in tr.find_all("td"):
+                t = clean(td.get_text(" "))
+                m = re.match(r"^(.+?)\s*[¥￥]?\s*([\d,]{3,6})\s*円", t)
+                if m:
+                    page.prices.append({"label_ja": m.group(1).strip(), "yen": int(m.group(2).replace(",", ""))})
+                elif "差異" in t or "異なる" in t:
+                    page.price_note = t.strip("（）()")
+        elif section == "割引情報":
+            for li in tr.select("li") or tr.find_all("td"):
+                t = clean(li.get_text(" "))
+                for m in re.finditer(r"([^/／、。]{1,40}?)\s*([\d,]{3,5})\s*円", t):
+                    label = m.group(1).strip(" ・:：")
+                    yen = int(m.group(2).replace(",", ""))
+                    if not (300 <= yen <= 5000) or len(label) < 2 or re.match(r"^[\d)）\]】]", label):
+                        continue
+                    if not re.search(r"[\u3040-\u30ff\u3400-\u9fff]", label) or label.endswith(("で", "常時")):
+                        continue
+                    if len(page.discounts) < 6:
+                        page.discounts.append({"label_ja": label, "yen": yen})
+    return True
+
+
 def parse_theater_page(html: str, today: dt.date) -> TheaterPage:
     soup = BeautifulSoup(html, "lxml")
-    heads = _movie_headings(soup)
     page = TheaterPage()
+    main = soup.find("main") or soup
+    for node in main.find_all(string=CLOSED_RE):
+        el = node.parent
+        if el.name in ("script", "style") or el.find_parent(["section", "table", "nav"]):
+            continue
+        text = clean(el.get_text(" "))
+        if 6 <= len(text) <= 300:
+            page.notice = text
+            break
+    has_table = _parse_theater_table(soup, page)
+    if _parse_structured(soup, today, page):
+        if not has_table:
+            page.prices = parse_prices(soup)
+        return page
+    page.prices = page.prices or []
+    return _parse_generic(soup, today, page, has_table)
+
+
+def _parse_generic(soup: BeautifulSoup, today: dt.date, page: TheaterPage, has_table: bool) -> TheaterPage:
+    """Layout-agnostic fallback, used if eiga.com changes its markup."""
+    heads = _movie_headings(soup)
     if not heads:
-        page.prices = parse_prices(soup)
+        if not has_table:
+            page.prices = parse_prices(soup)
         return page
 
     current: str | None = None
@@ -364,7 +486,8 @@ def parse_theater_page(html: str, today: dt.date) -> TheaterPage:
         if rt and 30 <= int(rt.group(1)) <= 400:
             stub.runtime = int(rt.group(1))
 
-    page.prices = parse_prices(soup)
+    if not has_table:
+        page.prices = parse_prices(soup)
     if links:
         page.official_url = max(set(links), key=links.count)
     return page
