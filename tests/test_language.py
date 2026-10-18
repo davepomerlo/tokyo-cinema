@@ -41,6 +41,9 @@ class TestLanguage(unittest.TestCase):
         self.assertEqual(decide("字幕", "フランス・西ドイツ・イタリア合作", lang="en"),
                          {"a": "en", "sub": "ja", "sure": True})
 
+    def test_foreign_language_subtitles(self):
+        self.assertEqual(decide("外国語字幕", "日本"), {"a": "ja", "sub": "en", "sure": False})
+
     def test_unknown(self):
         self.assertEqual(decide(None), {"a": None, "sub": None, "sure": False})
 

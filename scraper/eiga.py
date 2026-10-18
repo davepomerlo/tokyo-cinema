@@ -35,7 +35,7 @@ YEN_RE = re.compile(
 
 # Words that label a screening format (subtitles, dubbing, premium screens…).
 FORMAT_WORDS = [
-    "日本語字幕", "英語字幕", "字幕", "吹替", "吹き替え",
+    "日本語字幕", "英語字幕", "外国語字幕", "字幕", "吹替", "吹き替え",
     "English Subtitles", "English subtitles", "ENGLISH SUBTITLES", "English Subtitled",
     "ENG SUB", "Eng Sub", "with English subtitles", "英語字幕付", "英語字幕版",
     "日本語字幕付", "原語版", "IMAX", "ドルビーシネマ",

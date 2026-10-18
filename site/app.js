@@ -12,7 +12,7 @@
   // Format labels from eiga.com: [English, romaji]
   const FORMATS = {
     "字幕": ["Subtitled", "jimaku"], "日本語字幕": ["Japanese subtitles", "nihongo jimaku"],
-    "英語字幕": ["English subtitles", "eigo jimaku"], "吹替": ["Dubbed", "fukikae"], "吹き替え": ["Dubbed", "fukikae"],
+    "英語字幕": ["English subtitles", "eigo jimaku"], "外国語字幕": ["Foreign-language subtitles", "gaikokugo jimaku"], "吹替": ["Dubbed", "fukikae"], "吹き替え": ["Dubbed", "fukikae"],
     "バリアフリー": ["Barrier-free", "bariafurii"], "日本語音声ガイド": ["Audio guide", "nihongo onsei gaido"],
     "極上音響": ["Enhanced sound", "gokujou onkyou"], "轟音": ["Loud sound", "gouon"], "爆音": ["Extra-loud sound", "bakuon"],
     "ドルビーシネマ": ["Dolby Cinema", "dorubii shinema"], "ドルビーアトモス": ["Dolby Atmos", "dorubii atomosu"],
@@ -70,7 +70,9 @@
 
   function filmTitle(m, tag = "h2", href) {
     const en = m.en && m.en !== m.ja ? romaji(m.en) : null;
-    const ro = romaji(m.ja);
+    let ro = romaji(m.ja);
+    // "The Ozu Diaries 小津ダイアリー": don't repeat the English part in the romaji line
+    if (en && ro && ro.toLowerCase().startsWith(en.toLowerCase())) ro = ro.slice(en.length).trim();
     const main = en || ro;
     const auto = en && m.en_auto ? `<span class="auto" title="Machine-translated title">auto</span>` : "";
     const link = href ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(main)}</a>` : esc(main);
@@ -109,7 +111,7 @@
   }
 
   // Format words that only restate language/subtitles; the language line covers them.
-  const LANG_WORDS = /(日本語字幕付?|英語字幕[付版]?|字幕|吹替|吹き替え|原語版|with English subtitles|English Subtitle[sd]?|ENGLISH SUBTITLES|ENG SUB|Eng Sub)/g;
+  const LANG_WORDS = /(外国語字幕|日本語字幕付?|英語字幕[付版]?|字幕|吹替|吹き替え|原語版|with English subtitles|English Subtitle[sd]?|ENGLISH SUBTITLES|ENG SUB|Eng Sub)/g;
 
   function langName(code) {
     const n = (data.languages || {})[code];

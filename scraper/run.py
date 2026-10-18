@@ -293,10 +293,10 @@ def main() -> int:
     for sc in screenings:
         if sc.get("f"):
             jp_strings.update(sc["f"].split(" "))
-    for en, ja in LANG_NAMES.values():
-        jp_strings.add(ja)
     romaji = {x: to_romaji(x) for x in sorted(jp_strings) if JP_RE.search(x)}
     romaji.update({x: name_romaji(x) for x in sorted(names) if JP_RE.search(x)})
+    # Language names are single words in lower case: 英語 -> eigo, イタリア語 -> itariago
+    romaji.update({ja: (to_romaji(ja) or ja).replace(" ", "").lower() for _, ja in LANG_NAMES.values()})
 
     data = {
         "generated_at": now.isoformat(timespec="minutes"),

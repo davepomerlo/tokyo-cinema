@@ -131,6 +131,9 @@ def audio_subs(fmt: str | None, film_lang: str | None, lang_certain: bool) -> di
 
     if "吹替" in f or "吹き替え" in f or "dub" in f:
         return {"a": "ja-dub", "sub": "none", "sure": True}
+    if "外国語字幕" in f:
+        # "foreign-language subtitles": subtitles for non-Japanese speakers, usually English
+        return {"a": film_lang, "sub": "en", "sure": False}
     if "英語字幕" in f or "english sub" in f or "eng sub" in f:
         return {"a": film_lang, "sub": "en", "sure": film_lang is not None and lang_certain}
     if "日本語字幕" in f or "字幕" in f:
