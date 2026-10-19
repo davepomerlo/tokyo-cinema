@@ -54,6 +54,7 @@
   };
   let data = null;
   let theaters = {};
+  const expanded = new Set();   // films whose theaters are shown (film view)
 
   // Japanese is shown as romaji; the original script stays in the tooltip.
   const JP = /[\u3040-\u30ff\u3400-\u9fff]/;
@@ -68,7 +69,7 @@
     return ro && en !== ro ? `${esc(en)} <span class="rj" title="${esc(f)}">${esc(ro)}</span>` : esc(en);
   }
 
-  function filmTitle(m, tag = "h2", href) {
+  function filmTitle(m, tag = "h2", href, toggleId) {
     const en = m.en && m.en !== m.ja ? romaji(m.en) : null;
     let ro = romaji(m.ja);
     // "The Ozu Diaries 小津ダイアリー": don't repeat the English part in the romaji line
@@ -76,6 +77,12 @@
     const main = en || ro;
     const auto = en && m.en_auto ? `<span class="auto" title="Machine-translated title">auto</span>` : "";
     const link = href ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(main)}</a>` : esc(main);
+    if (toggleId) {
+      const open = expanded.has(toggleId);
+      return `<${tag}><button type="button" class="film-toggle" aria-expanded="${open}" aria-controls="v${esc(toggleId)}">` +
+        `<span class="ft-main">${esc(main)}</span>${auto}${en && ro && ro.toLowerCase() !== en.toLowerCase() ? `<span class="ja rj" title="${esc(m.ja)}">${esc(ro)}</span>` : ""}` +
+        `</button></${tag}>`;
+    }
     const sub = en && ro && ro.toLowerCase() !== en.toLowerCase() ? `<span class="ja rj" title="${esc(m.ja)}">${esc(ro)}</span>` : "";
     return `<${tag}>${link}${auto}${sub}</${tag}>`;
   }
@@ -223,16 +230,35 @@
         mid, venues, key: nextKey([...venues.values()].flat().sort((a, b) => mins(a.s) - mins(b.s))),
       })).sort((a, b) => byRating(a.mid, b.mid) || a.key - b.key);
 
+      // A single result (e.g. after searching) opens straight away.
+      if (films.length === 1) expanded.add(films[0].mid);
+
       list.innerHTML = films.map(({ mid, venues }) => {
         const m = data.movies[mid] || { ja: "?" };
         const vs = [...venues.entries()].sort((a, b) =>
           (TYPE_ORDER[theaters[a[0]].type] - TYPE_ORDER[theaters[b[0]].type]) || (nextKey(a[1]) - nextKey(b[1])));
+        const all = [...venues.values()].flat().sort((a, b) => mins(a.s) - mins(b.s));
+        const upcoming = isToday ? all.filter((r) => mins(r.s) >= now.min) : all;
+        const next = upcoming[0];
+        const enFriendly = all.some((r) => r.a === "en" || r.sub === "en");
+        const sum = [
+          `${vs.length} ${vs.length === 1 ? "theater" : "theaters"}`,
+          next ? `next ${esc(next.s)}` : "no more showings today",
+          enFriendly ? `<span class="en-subs">English-friendly</span>` : "",
+          m.scores && m.scores.eiga ? `★ ${m.scores.eiga.v.toFixed(1)}` : "",
+        ].filter(Boolean).join(" · ");
+        const open = expanded.has(mid);
         const poster = m.poster ? `<img class="poster" src="${esc(m.poster)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : "";
-        return `<article class="film"><div class="film-head"><div>${filmTitle(m, "h2", `https://eiga.com/movie/${mid}/`)}${filmMeta(m)}${scoresHTML(m, mid, false)}</div>${poster}</div>` +
-          vs.map(([tid, rs]) => {
+        return `<article class="film${open ? " open" : ""}" data-mid="${esc(mid)}">` +
+          `<div class="film-head"><div>${filmTitle(m, "h2", null, mid)}<p class="film-sum">${sum}<span class="chev" aria-hidden="true"></span></p></div>${poster}</div>` +
+          `<div class="film-body" id="v${esc(mid)}"${open ? "" : " hidden"}>` +
+          `${filmMeta(m)}${scoresHTML(m, mid, false)}` +
+          `<p class="film-link"><a href="https://eiga.com/movie/${esc(mid)}/" target="_blank" rel="noopener">Film details on eiga.com</a></p>` +
+          (open ? vs.map(([tid, rs]) => {
             const t = theaters[tid];
             return `<div class="venue" style="--tc:var(--t-${esc(t.type)})"><div class="venue-name">${venueName(t)}${priceHTML(t, true)}</div>${slotsHTML(rs, isToday, now.min)}</div>`;
-          }).join("") + `</article>`;
+          }).join("") : "") +
+          `</div></article>`;
       }).join("");
     } else {
       const byT = new Map();
@@ -309,6 +335,18 @@
   }
 
   function bind() {
+    // Film view: tap a film's title (or anywhere on its header) to show/hide its theaters.
+    $("#list").addEventListener("click", (e) => {
+      const head = e.target.closest(".film-head");
+      if (!head || e.target.closest("a")) return;
+      const art = head.closest("article.film");
+      const mid = art.dataset.mid;
+      if (expanded.has(mid)) expanded.delete(mid); else expanded.add(mid);
+      render();
+      // keep the tapped film where it was on screen
+      const again = document.querySelector(`article.film[data-mid="${CSS.escape(mid)}"]`);
+      if (again && again.getBoundingClientRect().top < 120) again.scrollIntoView({ block: "start" });
+    });
     $("#days").addEventListener("click", (e) => {
       const b = e.target.closest(".day"); if (!b) return;
       state.day = b.dataset.day;

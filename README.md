@@ -111,6 +111,9 @@ To uninstall, long-press the icon → **Uninstall**. (On iPhone: Safari → Shar
 - **Offline** (subway, plane): you get the last scan and a note saying when it's from.
 - **Before about 5:45 JST**, or if a scan failed, a note says today's update hasn't
   arrived and offers *Check again*.
+- **Film list**: each film shows as one compact entry (theaters showing it, next time,
+  English-friendly, eiga.com score). Tap a title to see its theaters and times; tap
+  again to close it.
 - **Coming back to it** after 20 minutes or more refreshes the listings. Tap
   "Updated …" under the title to refresh at any time.
 - **New versions** of the app install themselves; a note offers *Reload* when one is ready.

@@ -215,3 +215,26 @@ a.score:hover { border-color: var(--muted); }
 .rj { font-style: italic; }
 h1 .rj { font-family: var(--sans); font-weight: 500; font-style: italic; }
 .ja.rj { font-family: var(--sans); font-weight: 500; font-size: .92rem; }
+
+/* film list: collapsed until the title is tapped */
+.film { padding: 14px 0 12px; }
+.film-head { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.film-toggle {
+  all: unset; display: block; cursor: pointer; border-radius: 4px;
+  font: inherit; color: inherit; text-wrap: balance;
+}
+.film-toggle:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.film-sum { margin: 5px 0 0; font-size: .84rem; color: var(--muted); display: flex; align-items: center; flex-wrap: wrap; gap: 0 2px; }
+.film-sum .en-subs { color: var(--t-institution); font-weight: 700; }
+.chev { display: inline-block; width: 8px; height: 8px; margin-left: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: translateY(-2px) rotate(45deg); }
+.film.open .chev { transform: translateY(2px) rotate(-135deg); }
+.film-body { margin-top: 6px; }
+.film-body .meta { margin-top: 2px; }
+.film-link { margin: 6px 0 0; font-size: .8rem; }
+.film-link a { color: var(--muted); }
+.film .poster { width: 44px; height: 63px; }
+.film.open .poster { width: 56px; height: 80px; }
+@media (min-width: 640px) { .film .poster { width: 52px; height: 75px; } .film.open .poster { width: 72px; height: 104px; } }
+@media (prefers-reduced-motion: no-preference) { .chev { transition: transform .15s; } }
+.film:not(.open) .film-toggle .ja { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.film-toggle .ja { display: block; }
