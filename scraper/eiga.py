@@ -548,6 +548,7 @@ def parse_movie_page(html: str) -> dict:
         meta = soup.find("meta", attrs={"name": "description"}) or soup.find("meta", attrs={"property": "og:description"})
         synopsis = (meta.get("content") if meta else "") or ""
     title_el = soup.find("h1")
+    info["synopsis"] = clean(synopsis)[:400]   # kept so genres can be recalculated
     info["genres_eiga"] = from_synopsis(synopsis, clean(title_el.get_text(" ")) if title_el else None)
 
     rating = parse_eiga_rating(text)

@@ -11,7 +11,7 @@
   const TYPE_ORDER = Object.fromEntries(TYPES.map((t, i) => [t.id, i]));
   // Genres: [English, romaji]
   const GENRES = {
-    anime: ["Anime", ""], comedy: ["Comedy", "komedii"], drama: ["Drama", "dorama"], action: ["Action", "akushon"],
+    anime: ["Anime", ""], comedy: ["Comedy", "komedii"], drama: ["Drama", "dorama"], action: ["Action & adventure", "akushon"],
     suspense: ["Suspense", "sasupensu"], thriller: ["Thriller", "suriraa"], mystery: ["Mystery", "misuterii"],
     horror: ["Horror", "horaa"], romance: ["Romance", "ren'ai"], scifi: ["Sci-fi", "esu efu"],
     fantasy: ["Fantasy", "fantajii"], documentary: ["Documentary", "dokyumentarii"], music: ["Music", "ongaku"],

@@ -24,7 +24,7 @@ _RULES: list[tuple[str, str, str]] = [
     ("stage", r"ナショナル・シアター・ライブ|ライブビューイング|ライブ・ビューイング|METライブ|オペラ|バレエ|歌舞伎|舞台を映画館|舞台映像|演劇公演", "all"),
     ("comedy", r"コメディ|喜劇|爆笑|コミカル|ラブコメ", "lead"),
     ("drama", r"ドラマ(?!シリーズ|化)|人間ドラマ|ヒューマンドラマ|青春映画|家族の物語", "lead"),
-    ("action", r"アクション|カンフー|格闘|カーチェイス|ガンアクション|スパイ", "lead"),
+    ("action", r"アクション|カンフー|格闘|カーチェイス|ガンアクション|スパイ|アドベンチャー|冒険|スペクタクル", "lead"),
     ("suspense", r"サスペンス", "lead"),
     ("thriller", r"スリラー|サイコ(?:パス|スリラー)?", "lead"),
     ("mystery", r"ミステリー|ミステリ|推理|謎解き|探偵", "lead"),
@@ -69,6 +69,9 @@ def from_synopsis(synopsis: str | None, title: str | None = None) -> list[str]:
     # A stage recording isn't a drama film, whatever the play is.
     if "stage" in found:
         found.discard("drama")
+    # A story with no genre word is, nearly always, a drama.
+    if not found and re.search(r"描く|描いた|描き|描写|物語|ストーリー|人生|主人公|少女|少年|男|女", _lead(text)):
+        found.add("drama")
     return [g for g in GENRES if g in found]
 
 

@@ -22,7 +22,7 @@ import requests
 import yaml
 
 from .eiga import RATING_RE, parse_movie_page, parse_theater_page
-from .genres import GENRES, combine, from_tmdb
+from .genres import GENRES, combine, from_synopsis, from_tmdb
 from .romaji import JP_RE, country_en, latin_part, name_romaji, to_romaji
 from .ratings import omdb_scores, public_scores, tmdb_details
 from .language import LANG_NAMES, audio_subs, film_language, tmdb_lookup
@@ -192,7 +192,7 @@ def main() -> int:
 
     if not args.no_movies and not args.from_dir:
         # Films cached before genres existed get their page read again once.
-        no_genre = [mid for mid in seen_movie_ids if "genres_eiga" not in movies[mid]]
+        no_genre = [mid for mid in seen_movie_ids if "synopsis" not in movies[mid]]
         todo = list(dict.fromkeys(no_genre + due("fetched")))[:MAX_NEW_MOVIES]
         print(f"Fetching {len(todo)} film pages")
         for mid in todo:
@@ -335,7 +335,8 @@ def _public_movie(m: dict) -> dict:
         out["country_en"] = country_en(m["country"])
     if m.get("poster_small") or m.get("poster"):
         out["poster"] = m.get("poster_small") or m.get("poster")
-    genres = combine(m.get("genres_eiga"), m.get("genres_tmdb"))
+    eiga_g = from_synopsis(m["synopsis"], m.get("title_ja")) if m.get("synopsis") else m.get("genres_eiga")
+    genres = combine(eiga_g, m.get("genres_tmdb"))
     if genres:
         out["g"] = genres
     scores = public_scores(m.get("scores") or {})

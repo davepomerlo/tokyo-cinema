@@ -10,17 +10,19 @@ class TestGenres(unittest.TestCase):
     def test_synopsis(self):
         self.assertEqual(from_synopsis("ウクライナ侵攻後からロシアで行われている愛国教育の全貌を暴いたドキュメンタリー。教師たちの葛藤を描く。"),
                          ["documentary"])
-        self.assertEqual(from_synopsis("人気漫画を原作にした劇場アニメ。少年たちの友情と冒険を描く。"), ["anime"])
+        self.assertEqual(from_synopsis("人気漫画を原作にした劇場アニメ。少年たちの友情と冒険を描く。"), ["anime", "action"])
         self.assertEqual(from_synopsis("孤独な刑事が連続殺人事件の真相に迫るサスペンススリラー。"),
                          ["suspense", "thriller", "crime"])
         self.assertEqual(from_synopsis("離婚寸前の夫婦が旅に出るヒューマンドラマ。笑いと涙のコメディ要素も。"), ["comedy", "drama"])
         self.assertEqual(from_synopsis("近未来を舞台にしたSFアクション。"), ["action", "scifi"])
         self.assertEqual(from_synopsis("英国ナショナル・シアター・ライブの舞台ドラマを映画館で上映。"), ["stage"])
         self.assertEqual(from_synopsis(""), [])
+        self.assertEqual(from_synopsis("英雄オデュッセウスの壮大な冒険を描く。"), ["action"])
+        self.assertEqual(from_synopsis("北海道の小さな町で暮らす少女の初恋と成長を描く。"), ["drama"])
 
     def test_lead_only(self):
         # "ドラマ" late in a long synopsis (e.g. "TVドラマで知られる監督") shouldn't count
-        text = "老人と犬の旅を描く。二人は海を目指す。監督はテレビドラマで知られる人物。"
+        text = "老人と犬が海を目指す。二人の旅路。監督はテレビドラマで知られる人物。"
         self.assertNotIn("drama", from_synopsis(text))
 
     def test_tmdb(self):
