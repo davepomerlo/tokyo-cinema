@@ -71,7 +71,31 @@ minutes late.
 5. Install the app (below). The web address is
    `https://<your-username>.github.io/tokyo-cinema/`.
 
-### Installing the app on Android
+### The Android app (recommended)
+
+A real Android app, built by GitHub Actions from `android/` and published on the
+repository's **Releases** page.
+
+1. On your phone, open
+   <https://github.com/davepomerlo/tokyo-cinema/releases/latest/download/tokyo-cinema.apk>
+   (or the *Download the Android app* link at the bottom of the site in Chrome).
+2. Open the downloaded file and allow Chrome to install apps when Android asks.
+3. Tokyo Cinema appears in your app drawer.
+
+It shows the same listings full screen, works offline with the last scan, opens
+theater/IMDb/eiga.com links in Chrome, and you can pull down to refresh.
+Long-press the icon for *English* and *Theaters* shortcuts.
+
+The listings update by themselves; a new app version is only needed when `android/`
+changes. Each change rebuilds the app automatically (**Actions → Android app**), and
+the new APK installs over the old one.
+
+**Signing key.** Android only installs an update over the app if both are signed with
+the same key. The permanent key is the repository secret `ANDROID_SIGNING_KEY`
+(base64 of a PKCS12 keystore, password `tokyocinema`, alias `tokyocinema`). Without
+the secret, builds use a temporary key and each new version needs an uninstall first.
+
+### Installing the web app instead
 
 1. Open the address above in **Chrome** on your phone.
 2. Tap **Install app** at the top of the page (or Chrome's ⋮ menu → **Install app**).
@@ -175,4 +199,6 @@ those optional sources locally.
 | `site/` | The app (`index.html`, `app.js`, `style.css`, `data/`) |
 | `site/manifest.webmanifest`, `site/icons/` | App name, icons and shortcuts for installing |
 | `site/sw.js` | Offline support (saves the app and last listings on the phone) |
+| `android/` | The Android app (Kotlin; shows the site full screen) |
+| `.github/workflows/android.yml` | Builds the APK and publishes it to Releases |
 | `tests/` | Parser, language and score tests |
