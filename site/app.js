@@ -55,6 +55,7 @@
   let data = null;
   let theaters = {};
   const expanded = new Set();   // films whose theaters are shown (film view)
+  const expandedT = new Set();  // theaters whose films are shown (theater view)
 
   // Japanese is shown as romaji; the original script stays in the tooltip.
   const JP = /[\u3040-\u30ff\u3400-\u9fff]/;
@@ -271,18 +272,36 @@
       const ts = [...byT.entries()].sort((a, b) =>
         (TYPE_ORDER[theaters[a[0]].type] - TYPE_ORDER[theaters[b[0]].type]) ||
         theaters[a[0]].name_en.localeCompare(theaters[b[0]].name_en));
+      if (ts.length === 1) expandedT.add(ts[0][0]);
+
       list.innerHTML = ts.map(([tid, films]) => {
         const t = theaters[tid];
         const type = TYPES.find((x) => x.id === t.type);
         const fl = [...films.entries()].sort((a, b) => byRating(a[0], b[0]) || nextKey(a[1]) - nextKey(b[1]));
-        return `<article class="house venue" style="--tc:var(--t-${esc(t.type)})">` +
-          `<h2><a href="${esc(t.official_url || t.eiga)}" target="_blank" rel="noopener">${esc(t.name_en)}</a></h2>` +
-          `<p class="house-meta"><span title="${esc(t.area_ja || "")}">${esc(t.area_en || "")}</span><span>${type ? esc(type.en) : ""}</span>${t.price_general ? `<span>General ${yen(t.price_general)}</span>` : ""}</p>` +
-          priceHTML(t, false) +
-          fl.map(([mid, rs]) => {
-            const m = data.movies[mid] || { ja: "?" };
-            return `<div class="film-line">${filmTitle(m, "h3", `https://eiga.com/movie/${mid}/`)}${scoresHTML(m, mid, true)}${slotsHTML(rs, isToday, now.min)}</div>`;
-          }).join("") + `</article>`;
+        const all = [...films.values()].flat().sort((a, b) => mins(a.s) - mins(b.s));
+        const upcoming = isToday ? all.filter((r) => mins(r.s) >= now.min) : all;
+        const enFriendly = all.some((r) => r.a === "en" || r.sub === "en");
+        const price = t.price_general ? yen(t.price_general) : t.price_varies ? "price varies" : "";
+        const sum = [
+          esc(t.area_en || ""),
+          type ? esc(type.en) : "",
+          price,
+          `${fl.length} ${fl.length === 1 ? "film" : "films"}`,
+          upcoming[0] ? `next ${esc(upcoming[0].s)}` : "no more showings today",
+          enFriendly ? `<span class="en-subs">English-friendly</span>` : "",
+        ].filter(Boolean).join(" · ");
+        const open = expandedT.has(tid);
+        return `<article class="house venue${open ? " open" : ""}" data-tid="${esc(tid)}" style="--tc:var(--t-${esc(t.type)})">` +
+          `<div class="house-head"><h2><button type="button" class="film-toggle" aria-expanded="${open}" aria-controls="t${esc(tid)}" title="${esc(t.name_ja)}">${esc(t.name_en)}</button></h2>` +
+          `<p class="film-sum">${sum}<span class="chev" aria-hidden="true"></span></p></div>` +
+          `<div class="house-body" id="t${esc(tid)}"${open ? "" : " hidden"}>` +
+          (open ? `<p class="film-link"><a href="${esc(t.official_url || t.eiga)}" target="_blank" rel="noopener">Theater website</a> · <a href="${esc(t.eiga)}" target="_blank" rel="noopener">eiga.com page</a></p>` +
+            priceHTML(t, false) +
+            fl.map(([mid, rs]) => {
+              const m = data.movies[mid] || { ja: "?" };
+              return `<div class="film-line">${filmTitle(m, "h3", `https://eiga.com/movie/${mid}/`)}${scoresHTML(m, mid, true)}${slotsHTML(rs, isToday, now.min)}</div>`;
+            }).join("") : "") +
+          `</div></article>`;
       }).join("");
     }
   }
@@ -336,15 +355,19 @@
 
   function bind() {
     // Film view: tap a film's title (or anywhere on its header) to show/hide its theaters.
+    // Theater view: the same with a theater's name.
     $("#list").addEventListener("click", (e) => {
-      const head = e.target.closest(".film-head");
+      const head = e.target.closest(".film-head, .house-head");
       if (!head || e.target.closest("a")) return;
-      const art = head.closest("article.film");
-      const mid = art.dataset.mid;
-      if (expanded.has(mid)) expanded.delete(mid); else expanded.add(mid);
+      const art = head.closest("article");
+      const isFilm = art.classList.contains("film");
+      const key = isFilm ? art.dataset.mid : art.dataset.tid;
+      const set = isFilm ? expanded : expandedT;
+      if (set.has(key)) set.delete(key); else set.add(key);
       render();
-      // keep the tapped film where it was on screen
-      const again = document.querySelector(`article.film[data-mid="${CSS.escape(mid)}"]`);
+      // keep the tapped entry where it was on screen
+      const sel = isFilm ? `article.film[data-mid="${CSS.escape(key)}"]` : `article.house[data-tid="${CSS.escape(key)}"]`;
+      const again = document.querySelector(sel);
       if (again && again.getBoundingClientRect().top < 120) again.scrollIntoView({ block: "start" });
     });
     $("#days").addEventListener("click", (e) => {

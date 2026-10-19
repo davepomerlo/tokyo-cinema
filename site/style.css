@@ -238,3 +238,10 @@ h1 .rj { font-family: var(--sans); font-weight: 500; font-style: italic; }
 @media (prefers-reduced-motion: no-preference) { .chev { transition: transform .15s; } }
 .film:not(.open) .film-toggle .ja { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .film-toggle .ja { display: block; }
+
+/* theater list: collapsed until the name is tapped */
+.house { padding: 14px 0 12px 12px; }
+.house-head { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.house.open .chev { transform: translateY(2px) rotate(-135deg); }
+.house-body { margin-top: 6px; }
+.house-body .film-line:first-of-type { margin-top: 8px; }

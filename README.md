@@ -113,7 +113,7 @@ To uninstall, long-press the icon → **Uninstall**. (On iPhone: Safari → Shar
   arrived and offers *Check again*.
 - **Film list**: each film shows as one compact entry (theaters showing it, next time,
   English-friendly, eiga.com score). Tap a title to see its theaters and times; tap
-  again to close it.
+  again to close it. *By theater* works the same way: tap a theater's name to see its films.
 - **Coming back to it** after 20 minutes or more refreshes the listings. Tap
   "Updated …" under the title to refresh at any time.
 - **New versions** of the app install themselves; a note offers *Reload* when one is ready.
