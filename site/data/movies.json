@@ -2,7 +2,8 @@
 "100940": {
 "country": "日本",
 "director": "ウトユウマ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/100940/photo/25c05872e8877b88.jpg",
 "poster_small": "https://media.eiga.com/images/movie/100940/photo/25c05872e8877b88/320.jpg",
@@ -14,7 +15,10 @@
 "101264": {
 "country": "日本",
 "director": "清原惟",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/101264/photo/fea553105e78c39a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/101264/photo/fea553105e78c39a/320.jpg",
@@ -50,7 +54,8 @@
 "101666": {
 "country": "台湾",
 "director": "ワン・チャイシアン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/101666/photo/3309333cf37fd097.jpg",
 "poster_small": "https://media.eiga.com/images/movie/101666/photo/3309333cf37fd097/320.jpg",
@@ -68,7 +73,10 @@
 "101689": {
 "country": "アメリカ",
 "director": "レイチェル・ランバート",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/101689/photo/07a5203f4dfd88f6.jpg",
 "poster_small": "https://media.eiga.com/images/movie/101689/photo/07a5203f4dfd88f6/320.jpg",
@@ -87,7 +95,10 @@
 "101811": {
 "country": "日本",
 "director": "岩井澤健治",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/101811/photo/adc0112c4cac934c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/101811/photo/adc0112c4cac934c/320.jpg",
@@ -105,7 +116,10 @@
 "102093": {
 "country": "アメリカ",
 "director": "アントワン・フークア",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"history"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/102093/photo/d1b3ebd544042e07.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102093/photo/d1b3ebd544042e07/320.jpg",
@@ -113,7 +127,7 @@
 "runtime": 127,
 "scores": {
 "eiga": {
-"n": 1462,
+"n": 1463,
 "v": 4.1
 }
 },
@@ -137,7 +151,10 @@
 "102726": {
 "country": "チリ・フランス合作",
 "director": "パトリシオ・グスマン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/102726/photo/7f714d09930aa5b5.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102726/photo/7f714d09930aa5b5/320.jpg",
@@ -156,7 +173,10 @@
 "103045": {
 "country": "日本",
 "director": "本広克行",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"crime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/103045/photo/7aa8ee64d24d9b41.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103045/photo/7aa8ee64d24d9b41/320.jpg",
@@ -164,7 +184,7 @@
 "runtime": 142,
 "scores": {
 "eiga": {
-"n": 749,
+"n": 752,
 "v": 3.2
 }
 },
@@ -174,7 +194,10 @@
 "103151": {
 "country": "日本",
 "director": "深川栄洋",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/103151/photo/0f64cefaa45a808b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103151/photo/0f64cefaa45a808b/320.jpg",
@@ -192,7 +215,10 @@
 "103321": {
 "country": "イギリス",
 "director": "ケン・ローチ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/103321/photo/49870d9dcd7d0a4a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103321/photo/49870d9dcd7d0a4a/320.jpg",
@@ -211,7 +237,11 @@
 "103469": {
 "country": "アメリカ",
 "director": "メアリー・ブロンスタイン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/103469/photo/e1895496f3358f36.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103469/photo/e1895496f3358f36/320.jpg",
@@ -219,7 +249,7 @@
 "runtime": 113,
 "scores": {
 "eiga": {
-"n": 61,
+"n": 62,
 "v": 2.9
 }
 },
@@ -230,7 +260,10 @@
 "103668": {
 "country": "アルゼンチン",
 "director": "ラウラ・シタレラ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"mystery"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/103668/photo/a8b4f0a2fc23468b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103668/photo/a8b4f0a2fc23468b/320.jpg",
@@ -248,7 +281,10 @@
 "103669": {
 "country": "アルゼンチン",
 "director": "ラウラ・シタレラ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"mystery"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/103669/photo/a0cd8835ea6c64d3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103669/photo/a0cd8835ea6c64d3/320.jpg",
@@ -279,7 +315,11 @@
 "103735": {
 "country": "フランス・イラン・ルクセンブルク合作",
 "director": "ジャファル・パナヒ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"suspense",
+"thriller"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/103735/photo/c0906377f29c9693.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103735/photo/c0906377f29c9693/320.jpg",
@@ -298,7 +338,10 @@
 "103782": {
 "country": "日本",
 "director": "小林賢太郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/103782/photo/3d2eb5a68de396c6.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103782/photo/3d2eb5a68de396c6/320.jpg",
@@ -316,7 +359,10 @@
 "103908": {
 "country": "フランス・日本・ドイツ・ベルギー合作",
 "director": "濱口竜介",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/103908/photo/687f3afacff2f49c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103908/photo/687f3afacff2f49c/320.jpg",
@@ -324,7 +370,7 @@
 "runtime": 196,
 "scores": {
 "eiga": {
-"n": 470,
+"n": 471,
 "v": 4.1
 }
 },
@@ -334,7 +380,11 @@
 "104009": {
 "country": "アイスランド・アメリカ合作",
 "director": "パメラ・ホーガン",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime",
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104009/photo/bae4ea08f6f7eb4d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104009/photo/bae4ea08f6f7eb4d/320.jpg",
@@ -353,7 +403,10 @@
 "104209": {
 "country": "アメリカ",
 "director": "フィル・ロード",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"scifi"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104209/photo/edd2dbd570705394.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104209/photo/edd2dbd570705394/320.jpg",
@@ -361,7 +414,7 @@
 "runtime": 156,
 "scores": {
 "eiga": {
-"n": 1296,
+"n": 1295,
 "v": 3.8
 }
 },
@@ -372,7 +425,10 @@
 "104217": {
 "country": "日本",
 "director": "藤井道人",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104217/photo/1851208b7444526e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104217/photo/1851208b7444526e/320.jpg",
@@ -380,7 +436,7 @@
 "runtime": 135,
 "scores": {
 "eiga": {
-"n": 372,
+"n": 395,
 "v": 4.1
 }
 },
@@ -390,7 +446,10 @@
 "104252": {
 "country": "チリ・ドイツ合作",
 "director": "タナ・ヒルベルト",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104252/photo/02c8446807a0d811.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104252/photo/02c8446807a0d811/320.jpg",
@@ -416,7 +475,10 @@
 "104254": {
 "country": "コンゴ・ベルギー・ドイツ・ブルキナファソ・カタール合作",
 "director": "ネルソン・マケンゴ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104254/photo/bb6f639dd70f2949.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104254/photo/bb6f639dd70f2949/320.jpg",
@@ -429,7 +491,10 @@
 "104256": {
 "country": "ラトビア・チェコ・ウクライナ合作",
 "director": "ビタリー・マンスキー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104256/photo/ee04ae54c3cfde04.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104256/photo/ee04ae54c3cfde04/320.jpg",
@@ -442,7 +507,10 @@
 "104258": {
 "country": "フランス・ベルギー・オランダ合作",
 "director": "アナスタシア・ミロシュニチェンコ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104258/photo/41607029cbbf7692.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104258/photo/41607029cbbf7692/320.jpg",
@@ -455,7 +523,10 @@
 "104259": {
 "country": "パレスチナ・ドイツ・フランス・カタール合作",
 "director": "カマール・アルジャアファリー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104259/photo/d75604e8438f83c5.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104259/photo/d75604e8438f83c5/320.jpg",
@@ -468,7 +539,8 @@
 "104266": {
 "country": "日本",
 "director": "佐藤信介",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104266/photo/c829986aabe99339.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104266/photo/c829986aabe99339/320.jpg",
@@ -486,7 +558,8 @@
 "104267": {
 "country": "アメリカ",
 "director": "クリストファー・ノーラン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104267/photo/dc451218e0054670.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104267/photo/dc451218e0054670/320.jpg",
@@ -494,7 +567,7 @@
 "runtime": 172,
 "scores": {
 "eiga": {
-"n": 1138,
+"n": 1146,
 "v": 4.0
 }
 },
@@ -505,7 +578,10 @@
 "104382": {
 "country": "フランス",
 "director": "デルフィーヌ・セイリグ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104382/photo/aa10f31dfd90fe10.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104382/photo/aa10f31dfd90fe10/320.jpg",
@@ -524,7 +600,10 @@
 "104398": {
 "country": "チュニジア・フランス合作",
 "director": "カウテール・ベン・ハニア",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104398/photo/1f9a65f4ac80efba.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104398/photo/1f9a65f4ac80efba/320.jpg",
@@ -532,7 +611,7 @@
 "runtime": 89,
 "scores": {
 "eiga": {
-"n": 199,
+"n": 201,
 "v": 4.1
 }
 },
@@ -543,7 +622,10 @@
 "104411": {
 "country": "イタリア",
 "director": "ジャンフランコ・ロージ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104411/photo/a1d6103178642861.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104411/photo/a1d6103178642861/320.jpg",
@@ -551,7 +633,7 @@
 "runtime": 119,
 "scores": {
 "eiga": {
-"n": 11,
+"n": 14,
 "v": 2.5
 }
 },
@@ -562,7 +644,10 @@
 "104427": {
 "country": "パレスチナ・日本合作",
 "director": "ムハンマド・サウワーフ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104427/photo/663a15564a8e37f0.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104427/photo/663a15564a8e37f0/320.jpg",
@@ -580,7 +665,11 @@
 "104428": {
 "country": "日本",
 "director": "谷口悟朗",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime",
+"stage"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104428/photo/9d8f620c1dcccc05.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104428/photo/9d8f620c1dcccc05/320.jpg",
@@ -598,7 +687,10 @@
 "104436": {
 "country": "日本",
 "director": "雑賀俊朗",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104436/photo/5fc8c341bf771af9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104436/photo/5fc8c341bf771af9/320.jpg",
@@ -616,7 +708,8 @@
 "104446": {
 "country": "日本",
 "director": "井上森人",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104446/photo/2c2d40dba0e86dcf.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104446/photo/2c2d40dba0e86dcf/320.jpg",
@@ -624,7 +717,7 @@
 "runtime": 88,
 "scores": {
 "eiga": {
-"n": 56,
+"n": 57,
 "v": 3.7
 }
 },
@@ -634,7 +727,10 @@
 "104470": {
 "country": "日本",
 "director": "安藤尚也",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104470/photo/5415885f43d2b031.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104470/photo/5415885f43d2b031/320.jpg",
@@ -652,7 +748,11 @@
 "104473": {
 "country": "日本",
 "director": "は「BanG Dream!」のアニメシリーズを多く手がけてきた柿本広大。",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime",
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104473/photo/0cd6d8163ed53068.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104473/photo/0cd6d8163ed53068/320.jpg",
@@ -660,8 +760,8 @@
 "runtime": 56,
 "scores": {
 "eiga": {
-"n": 10,
-"v": 2.7
+"n": 12,
+"v": 2.9
 }
 },
 "title_ja": "BanG Dream! Ave Mujica prima aurora",
@@ -670,7 +770,10 @@
 "104579": {
 "country": "チリ",
 "director": "パトリシオ・グスマン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104579/photo/0b62b4effb1c2d8a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104579/photo/0b62b4effb1c2d8a/320.jpg",
@@ -689,7 +792,11 @@
 "104715": {
 "country": "日本",
 "director": "増井壮一",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime",
+"fantasy"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104715/photo/e4ccea857b37e685.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104715/photo/e4ccea857b37e685/320.jpg",
@@ -697,8 +804,8 @@
 "runtime": 118,
 "scores": {
 "eiga": {
-"n": 48,
-"v": 4.3
+"n": 62,
+"v": 4.2
 }
 },
 "title_ja": "青春ブタ野郎はディアフレンドの夢を見ない",
@@ -707,7 +814,10 @@
 "104752": {
 "country": "ギリシャ・ドイツ・ハンガリー合作",
 "director": "パールフィ・ジョルジ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104752/photo/02cf55ae4cc743cf.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104752/photo/02cf55ae4cc743cf/320.jpg",
@@ -726,7 +836,10 @@
 "104799": {
 "country": "アメリカ",
 "director": "ダニエル・レイム",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104799/photo/df81e09c1dff84b6.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104799/photo/df81e09c1dff84b6/320.jpg",
@@ -745,7 +858,11 @@
 "104848": {
 "country": "日本",
 "director": "相原裕美",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary",
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104848/photo/008fea0f1bd0b664.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104848/photo/008fea0f1bd0b664/320.jpg",
@@ -763,7 +880,8 @@
 "104885": {
 "country": "日本",
 "director": "内山拓也",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104885/photo/bb9511fc940c6188.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104885/photo/bb9511fc940c6188/320.jpg",
@@ -771,7 +889,7 @@
 "runtime": 118,
 "scores": {
 "eiga": {
-"n": 101,
+"n": 102,
 "v": 3.3
 }
 },
@@ -781,7 +899,8 @@
 "104898": {
 "country": "台湾・フランス・アメリカ・イギリス合作",
 "director": "ツォウ・シーチン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104898/photo/020128b18191d69b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104898/photo/020128b18191d69b/320.jpg",
@@ -800,7 +919,8 @@
 "104983": {
 "country": "中国",
 "director": "ダー・ポン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104983/photo/274301074272e504.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104983/photo/274301074272e504/320.jpg",
@@ -819,7 +939,10 @@
 "104992": {
 "country": "日本",
 "director": "𠮷田恵輔",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/104992/photo/6e63d2147745fd2e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104992/photo/6e63d2147745fd2e/320.jpg",
@@ -827,8 +950,8 @@
 "runtime": 115,
 "scores": {
 "eiga": {
-"n": 210,
-"v": 4.3
+"n": 262,
+"v": 4.4
 }
 },
 "title_ja": "mentor",
@@ -837,7 +960,10 @@
 "105011": {
 "country": "日本",
 "director": "山下清悟",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105011/photo/a50bac68030c0d85.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105011/photo/a50bac68030c0d85/320.jpg",
@@ -855,7 +981,11 @@
 "105013": {
 "country": "フィンランド・フランス・イギリス・リトアニア合作",
 "director": "ハンナ・ベルイホルム",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"thriller",
+"horror"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105013/photo/37bcbea402f4a21a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105013/photo/37bcbea402f4a21a/320.jpg",
@@ -874,7 +1004,10 @@
 "105075": {
 "country": "日本",
 "director": "門脇康平",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105075/photo/1d3bc3c7c5e4ce26.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105075/photo/1d3bc3c7c5e4ce26/320.jpg",
@@ -882,7 +1015,7 @@
 "runtime": 118,
 "scores": {
 "eiga": {
-"n": 371,
+"n": 382,
 "v": 4.0
 }
 },
@@ -892,7 +1025,10 @@
 "105083": {
 "country": "日本",
 "director": "水島努",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105083/photo/6cdc695b5eca6d16.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105083/photo/6cdc695b5eca6d16/320.jpg",
@@ -900,7 +1036,7 @@
 "runtime": 55,
 "scores": {
 "eiga": {
-"n": 67,
+"n": 69,
 "v": 4.1
 }
 },
@@ -910,7 +1046,10 @@
 "105109": {
 "country": "日本",
 "director": "及川啓",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105109/photo/48db1bb8de88d0b8.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105109/photo/48db1bb8de88d0b8/320.jpg",
@@ -918,7 +1057,7 @@
 "runtime": 99,
 "scores": {
 "eiga": {
-"n": 1047,
+"n": 1050,
 "v": 3.7
 }
 },
@@ -928,7 +1067,10 @@
 "105185": {
 "country": "日本",
 "director": "是枝裕和",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105185/photo/2207a11effeeec0d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105185/photo/2207a11effeeec0d/320.jpg",
@@ -936,7 +1078,7 @@
 "runtime": 99,
 "scores": {
 "eiga": {
-"n": 556,
+"n": 557,
 "v": 3.8
 }
 },
@@ -946,7 +1088,12 @@
 "105204": {
 "country": "日本",
 "director": "内田英治",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"suspense",
+"thriller",
+"horror"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105204/photo/e215d457fa6b18f9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105204/photo/e215d457fa6b18f9/320.jpg",
@@ -964,7 +1111,10 @@
 "105207": {
 "country": "インド",
 "director": "アディティア・ダール",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"action"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105207/photo/a4c76e3aecd2085a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105207/photo/a4c76e3aecd2085a/320.jpg",
@@ -983,7 +1133,10 @@
 "105225": {
 "country": "韓国",
 "director": "キム・ヨンファン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105225/photo/95c440ad0e553ff7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105225/photo/95c440ad0e553ff7/320.jpg",
@@ -1020,7 +1173,11 @@
 "105232": {
 "country": "日本",
 "director": "上田誠",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy",
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105232/photo/2f1c4eab956d794e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105232/photo/2f1c4eab956d794e/320.jpg",
@@ -1038,7 +1195,11 @@
 "105261": {
 "country": "アメリカ",
 "director": "スティーブン・スピルバーグ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"suspense",
+"scifi"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105261/photo/18386ba4b0e07077.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105261/photo/18386ba4b0e07077/320.jpg",
@@ -1046,7 +1207,7 @@
 "runtime": 145,
 "scores": {
 "eiga": {
-"n": 733,
+"n": 749,
 "v": 3.3
 }
 },
@@ -1057,7 +1218,8 @@
 "105275": {
 "country": "アメリカ",
 "director": "アレハンドロ・G・イニャリトゥ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105275/photo/1126d7139b341ab3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105275/photo/1126d7139b341ab3/320.jpg",
@@ -1065,7 +1227,7 @@
 "runtime": 130,
 "scores": {
 "eiga": {
-"n": 484,
+"n": 508,
 "v": 3.5
 }
 },
@@ -1076,7 +1238,10 @@
 "105306": {
 "country": "日本",
 "director": "石井裕也",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105306/photo/8c4e01a1515dbdea.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105306/photo/8c4e01a1515dbdea/320.jpg",
@@ -1094,7 +1259,10 @@
 "105327": {
 "country": "韓国",
 "director": "ナム・デジュン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105327/photo/cf551168354c6485.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105327/photo/cf551168354c6485/320.jpg",
@@ -1113,7 +1281,11 @@
 "105328": {
 "country": "韓国",
 "director": "カン・ヒョンチョル",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy",
+"action"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105328/photo/6210ca0c19fc0d5f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105328/photo/6210ca0c19fc0d5f/320.jpg",
@@ -1121,8 +1293,8 @@
 "runtime": 119,
 "scores": {
 "eiga": {
-"n": 27,
-"v": 3.9
+"n": 30,
+"v": 3.8
 }
 },
 "title_en": "Hi-Five",
@@ -1132,7 +1304,10 @@
 "105335": {
 "country": "日本",
 "director": "はまださつき",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105335/photo/4f5aed4b9861d9a3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105335/photo/4f5aed4b9861d9a3/320.jpg",
@@ -1149,7 +1324,10 @@
 "105345": {
 "country": "イギリス・ポルトガル合作",
 "director": "ローラ・カレイラ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105345/photo/00b2e50e2c9b435e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105345/photo/00b2e50e2c9b435e/320.jpg",
@@ -1167,7 +1345,8 @@
 },
 "105384": {
 "country": "アメリカ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105384/photo/d0849076fa996d03.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105384/photo/d0849076fa996d03/320.jpg",
@@ -1186,7 +1365,10 @@
 "105416": {
 "country": "日本",
 "director": "酒井麻衣",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105416/photo/aa877c59fd7fd21c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105416/photo/aa877c59fd7fd21c/320.jpg",
@@ -1194,7 +1376,7 @@
 "runtime": 119,
 "scores": {
 "eiga": {
-"n": 280,
+"n": 283,
 "v": 3.8
 }
 },
@@ -1204,7 +1386,10 @@
 "105457": {
 "country": "カナダ",
 "director": "アンソニー・シム",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105457/photo/1988fcc806b91a99.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105457/photo/1988fcc806b91a99/320.jpg",
@@ -1223,7 +1408,10 @@
 "105470": {
 "country": "日本",
 "director": "岸善幸",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"mystery"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105470/photo/d45472f50a97c678.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105470/photo/d45472f50a97c678/320.jpg",
@@ -1241,7 +1429,10 @@
 "105477": {
 "country": "日本",
 "director": "清水崇",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"mystery"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105477/photo/22ae70136e47747c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105477/photo/22ae70136e47747c/320.jpg",
@@ -1249,7 +1440,7 @@
 "runtime": 117,
 "scores": {
 "eiga": {
-"n": 391,
+"n": 392,
 "v": 2.5
 }
 },
@@ -1259,7 +1450,10 @@
 "105503": {
 "country": "日本",
 "director": "和田純一",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105503/photo/f598ae4cea35505c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105503/photo/f598ae4cea35505c/320.jpg",
@@ -1267,8 +1461,8 @@
 "runtime": 116,
 "scores": {
 "eiga": {
-"n": 104,
-"v": 3.8
+"n": 110,
+"v": 3.9
 }
 },
 "title_ja": "どこよりも遠い場所にいる君へ",
@@ -1277,7 +1471,10 @@
 "105510": {
 "country": "アメリカ",
 "director": "マーク・タートルトーブ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105510/photo/1e17fea9066a0e27.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105510/photo/1e17fea9066a0e27/320.jpg",
@@ -1296,7 +1493,10 @@
 "105511": {
 "country": "日本・フランス合作",
 "director": "中野量太",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"suspense"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105511/photo/a850bcb8d78b1952.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105511/photo/a850bcb8d78b1952/320.jpg",
@@ -1314,7 +1514,10 @@
 "105515": {
 "country": "デンマーク・チェコ合作",
 "director": "デビッド・ボレンスタイン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105515/photo/cb10b1e92791f719.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105515/photo/cb10b1e92791f719/320.jpg",
@@ -1322,7 +1525,7 @@
 "runtime": 90,
 "scores": {
 "eiga": {
-"n": 36,
+"n": 40,
 "v": 3.8
 }
 },
@@ -1333,7 +1536,10 @@
 "105571": {
 "country": "日本",
 "director": "小林聖太郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105571/photo/a5a679f4402b86ef.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105571/photo/a5a679f4402b86ef/320.jpg",
@@ -1341,7 +1547,7 @@
 "runtime": 118,
 "scores": {
 "eiga": {
-"n": 273,
+"n": 274,
 "v": 4.1
 }
 },
@@ -1352,6 +1558,9 @@
 "country": "日本",
 "director": "竹村謙太郎",
 "fetched": "2026-10-20",
+"genres_eiga": [
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105584/photo/989193627b2f6f36.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105584/photo/989193627b2f6f36/320.jpg",
@@ -1364,7 +1573,11 @@
 "105621": {
 "country": "日本",
 "director": "吉野竜平",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"suspense",
+"crime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105621/photo/93313e63fd2f98f9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105621/photo/93313e63fd2f98f9/320.jpg",
@@ -1382,7 +1595,10 @@
 "105690": {
 "country": "香港",
 "director": "アルバート・マック",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"action"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105690/photo/f4199e9da1c55d16.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105690/photo/f4199e9da1c55d16/320.jpg",
@@ -1401,7 +1617,10 @@
 "105717": {
 "country": "アメリカ",
 "director": "スカーレット・ヨハンソン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105717/photo/aac53eaf8662deb9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105717/photo/aac53eaf8662deb9/320.jpg",
@@ -1409,8 +1628,8 @@
 "runtime": 98,
 "scores": {
 "eiga": {
-"n": 69,
-"v": 3.7
+"n": 70,
+"v": 3.8
 }
 },
 "title_en": "Eleanor the Great",
@@ -1420,7 +1639,11 @@
 "105726": {
 "country": "日本・フランス・シンガポール・フィリピン合作",
 "director": "深田晃司",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105726/photo/4349ed9777933ecb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105726/photo/4349ed9777933ecb/320.jpg",
@@ -1428,7 +1651,7 @@
 "runtime": 110,
 "scores": {
 "eiga": {
-"n": 122,
+"n": 123,
 "v": 3.5
 }
 },
@@ -1438,7 +1661,10 @@
 "105727": {
 "country": "日本",
 "director": "早川嗣",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105727/photo/5a68642961c31117.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105727/photo/5a68642961c31117/320.jpg",
@@ -1455,7 +1681,10 @@
 "105730": {
 "country": "日本",
 "director": "片野坂亮",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105730/photo/28b0959e53972af3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105730/photo/28b0959e53972af3/320.jpg",
@@ -1473,7 +1702,10 @@
 "105732": {
 "country": "アメリカ・日本合作",
 "director": "キタオ・サクライ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"action"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105732/photo/dee223d17c41163c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105732/photo/dee223d17c41163c/320.jpg",
@@ -1481,8 +1713,8 @@
 "runtime": 120,
 "scores": {
 "eiga": {
-"n": 100,
-"v": 2.9
+"n": 121,
+"v": 3.0
 }
 },
 "title_en": "Street Fighter",
@@ -1492,7 +1724,10 @@
 "105767": {
 "country": "日本",
 "director": "西山将貴",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"horror"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105767/photo/a0b59d99f3a71740.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105767/photo/a0b59d99f3a71740/320.jpg",
@@ -1510,7 +1745,10 @@
 "105770": {
 "country": "イギリス・アメリカ合作",
 "director": "ニコラス・ハイトナー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105770/photo/b9af4d23cf00440a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105770/photo/b9af4d23cf00440a/320.jpg",
@@ -1529,7 +1767,10 @@
 "105804": {
 "country": "日本",
 "director": "吉川鮎太",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105804/photo/106d141665a12986.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105804/photo/106d141665a12986/320.jpg",
@@ -1548,6 +1789,12 @@
 "country": "日本",
 "director": "三池崇史",
 "fetched": "2026-10-20",
+"genres_eiga": [
+"action",
+"suspense",
+"crime",
+"stage"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105831/photo/c71b09145d56830a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105831/photo/c71b09145d56830a/320.jpg",
@@ -1565,7 +1812,8 @@
 "105872": {
 "country": "フランス・スイス合作",
 "director": "ジャン＝リュック・ゴダール",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105872/photo/c8bbb84f019d8434.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105872/photo/c8bbb84f019d8434/320.jpg",
@@ -1577,7 +1825,10 @@
 },
 "105885": {
 "country": "イギリス",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"stage"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105885/photo/a9073125189d9bc9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105885/photo/a9073125189d9bc9/320.jpg",
@@ -1592,6 +1843,9 @@
 "country": "日本",
 "director": "山元隼一",
 "fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105887/photo/b099e8d6c96130fb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105887/photo/b099e8d6c96130fb/320.jpg",
@@ -1604,7 +1858,10 @@
 "105906": {
 "country": "日本",
 "director": "赤羽博",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105906/photo/4b6ea79578761f42.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105906/photo/4b6ea79578761f42/320.jpg",
@@ -1612,8 +1869,8 @@
 "runtime": 98,
 "scores": {
 "eiga": {
-"n": 20,
-"v": 3.8
+"n": 27,
+"v": 3.5
 }
 },
 "title_ja": "影を売る女",
@@ -1622,7 +1879,11 @@
 "105911": {
 "country": "日本",
 "director": "塚本晋也",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105911/photo/4e6bf60e94be3492.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105911/photo/4e6bf60e94be3492/320.jpg",
@@ -1630,7 +1891,7 @@
 "runtime": 116,
 "scores": {
 "eiga": {
-"n": 199,
+"n": 200,
 "v": 4.4
 }
 },
@@ -1640,7 +1901,11 @@
 "105969": {
 "country": "日本",
 "director": "上田華子",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime",
+"mystery"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105969/photo/d57c18dbd6b98e78.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105969/photo/d57c18dbd6b98e78/320.jpg",
@@ -1658,7 +1923,12 @@
 "105977": {
 "country": "アメリカ",
 "director": "クリストファー・ボルグリ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"action",
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/105977/photo/ea7b93d692a8ecbd.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105977/photo/ea7b93d692a8ecbd/320.jpg",
@@ -1677,7 +1947,8 @@
 "106025": {
 "country": "日本",
 "director": "錦織良成",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106025/photo/40ba82f64ce5522d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106025/photo/40ba82f64ce5522d/320.jpg",
@@ -1685,7 +1956,7 @@
 "runtime": 126,
 "scores": {
 "eiga": {
-"n": 30,
+"n": 32,
 "v": 3.7
 }
 },
@@ -1695,7 +1966,10 @@
 "106032": {
 "country": "日本",
 "director": "山田卓",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106032/photo/b8a32502c70512a4.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106032/photo/b8a32502c70512a4/320.jpg",
@@ -1708,7 +1982,10 @@
 "106044": {
 "country": "日本",
 "director": "山戸結希",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106044/photo/72ab3e6bf17d3b38.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106044/photo/72ab3e6bf17d3b38/320.jpg",
@@ -1716,7 +1993,7 @@
 "runtime": 124,
 "scores": {
 "eiga": {
-"n": 124,
+"n": 126,
 "v": 3.5
 }
 },
@@ -1726,7 +2003,10 @@
 "106045": {
 "country": "日本・中国・韓国合作",
 "director": "ワン・チイ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"mystery"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106045/photo/3c4867c89e5ff80e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106045/photo/3c4867c89e5ff80e/320.jpg",
@@ -1744,7 +2024,10 @@
 "106095": {
 "country": "日本",
 "director": "小川太一",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106095/photo/9b4e0e68e7c96c5e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106095/photo/9b4e0e68e7c96c5e/320.jpg",
@@ -1762,7 +2045,10 @@
 "106115": {
 "country": "日本",
 "director": "千葉誠治",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"horror"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106115/photo/805f3aaa5f7d657d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106115/photo/805f3aaa5f7d657d/320.jpg",
@@ -1780,7 +2066,10 @@
 "106117": {
 "country": "日本",
 "director": "斉藤俊幸",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106117/photo/929365fc81b423f0.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106117/photo/929365fc81b423f0/320.jpg",
@@ -1798,7 +2087,10 @@
 "106121": {
 "country": "日本",
 "director": "荻野欣士郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106121/photo/3b76e0fc548edccb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106121/photo/3b76e0fc548edccb/320.jpg",
@@ -1816,7 +2108,10 @@
 "106123": {
 "country": "アメリカ",
 "director": "ザック・クレッガー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"horror"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106123/photo/91595e98277060d1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106123/photo/91595e98277060d1/320.jpg",
@@ -1824,7 +2119,7 @@
 "runtime": 94,
 "scores": {
 "eiga": {
-"n": 609,
+"n": 639,
 "v": 3.6
 }
 },
@@ -1835,7 +2130,10 @@
 "106146": {
 "country": "日本",
 "director": "沖田修一",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106146/photo/c4dd888bdc81c95e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106146/photo/c4dd888bdc81c95e/320.jpg",
@@ -1843,7 +2141,7 @@
 "runtime": 139,
 "scores": {
 "eiga": {
-"n": 220,
+"n": 221,
 "v": 3.9
 }
 },
@@ -1853,7 +2151,8 @@
 "106185": {
 "country": "ペルー・チリ合作",
 "director": "フランコ・ガルシア・ベセラ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106185/photo/c4a6415561af75b3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106185/photo/c4a6415561af75b3/320.jpg",
@@ -1872,7 +2171,10 @@
 "106187": {
 "country": "日本",
 "director": "西川美和",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106187/photo/d0cc1a7ff1d5ac32.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106187/photo/d0cc1a7ff1d5ac32/320.jpg",
@@ -1880,7 +2182,7 @@
 "runtime": 150,
 "scores": {
 "eiga": {
-"n": 102,
+"n": 134,
 "v": 4.1
 }
 },
@@ -1890,7 +2192,12 @@
 "106195": {
 "country": "韓国",
 "director": "ヨン・サンホ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"suspense",
+"mystery",
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106195/photo/47279f513aa5f36d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106195/photo/47279f513aa5f36d/320.jpg",
@@ -1909,7 +2216,10 @@
 "106200": {
 "country": "ブラジル",
 "director": "スザーナ・アマラウ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106200/photo/b1e11d02367d6fd7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106200/photo/b1e11d02367d6fd7/320.jpg",
@@ -1928,7 +2238,11 @@
 "106211": {
 "country": "日本",
 "director": "遠藤協",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime",
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106211/photo/9857673f4893796c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106211/photo/9857673f4893796c/320.jpg",
@@ -1945,7 +2259,11 @@
 "106215": {
 "country": "日本",
 "director": "三池崇史",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary",
+"stage"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106215/photo/ed083bd538f56349.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106215/photo/ed083bd538f56349/320.jpg",
@@ -1953,8 +2271,8 @@
 "runtime": 97,
 "scores": {
 "eiga": {
-"n": 11,
-"v": 4.1
+"n": 12,
+"v": 3.9
 }
 },
 "title_ja": "襲名",
@@ -1963,7 +2281,10 @@
 "106230": {
 "country": "チェコ",
 "director": "オンドジェイ・プロバズニーク",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106230/photo/fdcead242540f1dc.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106230/photo/fdcead242540f1dc/320.jpg",
@@ -1981,7 +2302,10 @@
 "106254": {
 "country": "日本",
 "director": "坂本麻人",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106254/photo/bf264b094d874168.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106254/photo/bf264b094d874168/320.jpg",
@@ -1994,7 +2318,10 @@
 "106276": {
 "country": "フランス・オランダ・カタール・アフガニスタン合作",
 "director": "ナジーバ・ヌーリ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106276/photo/f2c7b023eb26085c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106276/photo/f2c7b023eb26085c/320.jpg",
@@ -2013,7 +2340,11 @@
 "106287": {
 "country": "アメリカ",
 "director": "ケイン・パーソンズ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"thriller",
+"horror"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106287/photo/d9d010bd78f3cfcc.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106287/photo/d9d010bd78f3cfcc/320.jpg",
@@ -2021,7 +2352,7 @@
 "runtime": 126,
 "scores": {
 "eiga": {
-"n": 520,
+"n": 524,
 "v": 3.1
 }
 },
@@ -2032,7 +2363,10 @@
 "106291": {
 "country": "日本",
 "director": "前田哲",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106291/photo/855db3759f470dfd.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106291/photo/855db3759f470dfd/320.jpg",
@@ -2040,7 +2374,7 @@
 "runtime": 105,
 "scores": {
 "eiga": {
-"n": 187,
+"n": 194,
 "v": 3.9
 }
 },
@@ -2050,7 +2384,10 @@
 "106311": {
 "country": "日本",
 "director": "太田信吾",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106311/photo/48458a01ed09e8ff.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106311/photo/48458a01ed09e8ff/320.jpg",
@@ -2058,8 +2395,8 @@
 "runtime": 80,
 "scores": {
 "eiga": {
-"n": 16,
-"v": 3.3
+"n": 17,
+"v": 3.2
 }
 },
 "title_ja": "沼影市民プール",
@@ -2068,7 +2405,10 @@
 "106324": {
 "country": "アメリカ",
 "director": "ブライアン・ダッフィールド",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"thriller"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106324/photo/a853f38c6b83bf4a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106324/photo/a853f38c6b83bf4a/320.jpg",
@@ -2076,7 +2416,7 @@
 "runtime": 106,
 "scores": {
 "eiga": {
-"n": 110,
+"n": 136,
 "v": 3.3
 }
 },
@@ -2087,7 +2427,8 @@
 "106331": {
 "country": "日本",
 "director": "武井佑吏",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106331/photo/c46b26c458872d5c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106331/photo/c46b26c458872d5c/320.jpg",
@@ -2105,7 +2446,10 @@
 "106332": {
 "country": "アメリカ",
 "director": "デビッド・エアー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106332/photo/7cca6653fde1f9cc.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106332/photo/7cca6653fde1f9cc/320.jpg",
@@ -2113,7 +2457,7 @@
 "runtime": 101,
 "scores": {
 "eiga": {
-"n": 567,
+"n": 572,
 "v": 3.8
 }
 },
@@ -2124,7 +2468,10 @@
 "106358": {
 "country": "フランス",
 "director": "セドリック・クラピッシュ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106358/photo/fa449782e423d7dc.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106358/photo/fa449782e423d7dc/320.jpg",
@@ -2132,7 +2479,7 @@
 "runtime": 126,
 "scores": {
 "eiga": {
-"n": 92,
+"n": 95,
 "v": 4.1
 }
 },
@@ -2143,7 +2490,10 @@
 "106365": {
 "country": "日本",
 "director": "矢崎仁司",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106365/photo/33e9683c1908ea92.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106365/photo/33e9683c1908ea92/320.jpg",
@@ -2151,8 +2501,8 @@
 "runtime": 123,
 "scores": {
 "eiga": {
-"n": 149,
-"v": 4.1
+"n": 171,
+"v": 4.2
 }
 },
 "title_ja": "沖晴くんの涙を殺して",
@@ -2161,7 +2511,10 @@
 "106369": {
 "country": "リトアニア・アメリカ合作",
 "director": "マット・ウィテカー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106369/photo/5c43052e057e19a2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106369/photo/5c43052e057e19a2/320.jpg",
@@ -2169,8 +2522,8 @@
 "runtime": 121,
 "scores": {
 "eiga": {
-"n": 9,
-"v": 3.4
+"n": 11,
+"v": 3.2
 }
 },
 "title_en": "Truth & Treason",
@@ -2180,7 +2533,11 @@
 "106373": {
 "country": "フランス・カナダ合作",
 "director": "クロード・シャブロル",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"suspense"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106373/photo/9a4844331a4793f4.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106373/photo/9a4844331a4793f4/320.jpg",
@@ -2199,7 +2556,8 @@
 "106374": {
 "country": "フランス",
 "director": "クロード・シャブロル",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106374/photo/860355ad7c1579cc.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106374/photo/860355ad7c1579cc/320.jpg",
@@ -2218,7 +2576,10 @@
 "106388": {
 "country": "アメリカ",
 "director": "トレイシー・レイモン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106388/photo/5f3a352148cecf29.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106388/photo/5f3a352148cecf29/320.jpg",
@@ -2237,7 +2598,10 @@
 "106415": {
 "country": "スウェーデン・アイルランド合作",
 "director": "デニス・ハーベイ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106415/photo/fb5f7eccfae58168.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106415/photo/fb5f7eccfae58168/320.jpg",
@@ -2255,7 +2619,10 @@
 "106417": {
 "country": "ウクライナ",
 "director": "ミスティスラフ・チェルノフ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106417/photo/26f19f6c387b0cbe.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106417/photo/26f19f6c387b0cbe/320.jpg",
@@ -2274,7 +2641,8 @@
 "106423": {
 "country": "イタリア",
 "director": "ミケランジェロ・アントニオーニ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106423/photo/747f0f1ddc57300c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106423/photo/747f0f1ddc57300c/320.jpg",
@@ -2292,7 +2660,10 @@
 "106444": {
 "country": "スウェーデン",
 "director": "エミリア・エクマン・ラーソン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106444/photo/6eb8e38a36e9bd69.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106444/photo/6eb8e38a36e9bd69/320.jpg",
@@ -2311,7 +2682,10 @@
 "106445": {
 "country": "日本",
 "director": "大墻敦",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106445/photo/2341fe4fa3357413.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106445/photo/2341fe4fa3357413/320.jpg",
@@ -2329,7 +2703,10 @@
 "106465": {
 "country": "イギリス",
 "director": "パコ・ヒーローズ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106465/photo/552caf84f81e3295.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106465/photo/552caf84f81e3295/320.jpg",
@@ -2348,7 +2725,11 @@
 "106480": {
 "country": "日本",
 "director": "井田彰彦",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime",
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106480/photo/e69f6b49448a0733.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106480/photo/e69f6b49448a0733/320.jpg",
@@ -2366,7 +2747,10 @@
 "106488": {
 "country": "デンマーク・日本・スウェーデン合作",
 "director": "キャスパー・アストラップ・シュローダー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106488/photo/87a743502c7ccfa9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106488/photo/87a743502c7ccfa9/320.jpg",
@@ -2384,7 +2768,11 @@
 "106491": {
 "country": "イタリア",
 "director": "デビッド・グリエコ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"thriller",
+"crime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106491/photo/77bea5a044b0e1b1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106491/photo/77bea5a044b0e1b1/320.jpg",
@@ -2403,7 +2791,10 @@
 "106499": {
 "country": "日本",
 "director": "小林賢太郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"stage"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106499/photo/12c9d890e5676ced.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106499/photo/12c9d890e5676ced/320.jpg",
@@ -2421,7 +2812,10 @@
 "106505": {
 "country": "韓国",
 "director": "パク・ジュンホ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106505/photo/1e4c25645bc544cd.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106505/photo/1e4c25645bc544cd/320.jpg",
@@ -2440,7 +2834,10 @@
 "106515": {
 "country": "日本",
 "director": "髙村剛志",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -2458,7 +2855,10 @@
 "106532": {
 "country": "日本",
 "director": "ジャッキー・ウー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106532/photo/7a842da7ffbed94d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106532/photo/7a842da7ffbed94d/320.jpg",
@@ -2466,7 +2866,7 @@
 "runtime": 84,
 "scores": {
 "eiga": {
-"n": 3,
+"n": 4,
 "v": 2.3
 }
 },
@@ -2476,7 +2876,10 @@
 "106552": {
 "country": "スウェーデン・ノルウェー・デンマーク合作",
 "director": "マリア・フレデリクソン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106552/photo/493034eb83d7e998.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106552/photo/493034eb83d7e998/320.jpg",
@@ -2495,7 +2898,8 @@
 "106561": {
 "country": "フィンランド",
 "director": "ヘッラ・ウルッポ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106561/photo/ba195aa4451603db.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106561/photo/ba195aa4451603db/320.jpg",
@@ -2513,7 +2917,10 @@
 "106577": {
 "country": "日本",
 "director": "大浦信行",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106577/photo/384db9eed7993be1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106577/photo/384db9eed7993be1/320.jpg",
@@ -2530,7 +2937,10 @@
 "106578": {
 "country": "アメリカ",
 "director": "ヤノーシュ・ソンブリアイ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106578/photo/824a6da0bbbe88d8.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106578/photo/824a6da0bbbe88d8/320.jpg",
@@ -2548,7 +2958,11 @@
 "106585": {
 "country": "アメリカ",
 "director": "ハンス・ペテル・モランド",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"action",
+"crime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106585/photo/e3c5914a02c3c9a3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106585/photo/e3c5914a02c3c9a3/320.jpg",
@@ -2556,7 +2970,7 @@
 "runtime": 112,
 "scores": {
 "eiga": {
-"n": 33,
+"n": 34,
 "v": 3.2
 }
 },
@@ -2567,7 +2981,10 @@
 "106587": {
 "country": "日本",
 "director": "柴田昌平",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106587/photo/9476f341a00f6141.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106587/photo/9476f341a00f6141/320.jpg",
@@ -2584,7 +3001,8 @@
 "106590": {
 "country": "アメリカ",
 "director": "アンソニー・ルッソ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106590/photo/25bbcbf1166812ba.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106590/photo/25bbcbf1166812ba/320.jpg",
@@ -2603,7 +3021,8 @@
 "106641": {
 "country": "韓国",
 "director": "ホン・ドクピョ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -2616,7 +3035,8 @@
 "106642": {
 "country": "韓国",
 "director": "ホン・ドクピョ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -2629,7 +3049,10 @@
 "106643": {
 "country": "アメリカ",
 "director": "ジェームズ・ブリッジス",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106643/photo/d598ef2246666185.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106643/photo/d598ef2246666185/320.jpg",
@@ -2642,7 +3065,10 @@
 "106647": {
 "country": "アメリカ",
 "director": "ベサン・ハーディソン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106647/photo/b2a6acb8958fd797.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106647/photo/b2a6acb8958fd797/320.jpg",
@@ -2656,27 +3082,36 @@
 "106649": {
 "country": "日本",
 "director": "オガワセイイチ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106649/photo/f4377a0edd641a03.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106649/photo/f4377a0edd641a03/320.jpg",
 "rating": "G",
 "runtime": 85,
-"scores": {},
+"scores": {
+"eiga": {
+"n": 2,
+"v": 2.2
+}
+},
 "title_ja": "ごじゃっぺタクシー",
 "year": 2026
 },
 "106677": {
 "country": "日本",
 "director": "伊藤ちひろ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106677/photo/f5a617df1cdc3e48.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106677/photo/f5a617df1cdc3e48/320.jpg",
 "runtime": 100,
 "scores": {
 "eiga": {
-"n": 33,
+"n": 34,
 "v": 2.6
 }
 },
@@ -2686,7 +3121,11 @@
 "106688": {
 "country": "アメリカ",
 "director": "アンドレ・レリス",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary",
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106688/photo/cfd14039aafa0c90.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106688/photo/cfd14039aafa0c90/320.jpg",
@@ -2704,15 +3143,16 @@
 "106694": {
 "country": "日本",
 "director": "ギヨーム・トーブロン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106694/photo/f0cd0baea8285a28.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106694/photo/f0cd0baea8285a28/320.jpg",
 "runtime": 85,
 "scores": {
 "eiga": {
-"n": 1,
-"v": 1.0
+"n": 2,
+"v": 3.0
 }
 },
 "title_ja": "愛しのサキュバス",
@@ -2721,7 +3161,8 @@
 "106707": {
 "country": "日本",
 "director": "前田弘二",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106707/photo/cd5ca9372b7d5bcc.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106707/photo/cd5ca9372b7d5bcc/320.jpg",
@@ -2738,15 +3179,18 @@
 "106732": {
 "country": "アメリカ",
 "director": "アダム・デュビン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106732/photo/371dfe7e35a7b02e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106732/photo/371dfe7e35a7b02e/320.jpg",
 "runtime": 92,
 "scores": {
 "eiga": {
-"n": 2,
-"v": 3.0
+"n": 3,
+"v": 2.8
 }
 },
 "title_en": "Murder in the Front Row: The San Francisco Bay Area Thrash Metal Story",
@@ -2756,7 +3200,10 @@
 "106733": {
 "country": "カナダ",
 "director": "フェリペ・ベラルカサル",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106733/photo/300ce4ce4c7b70d4.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106733/photo/300ce4ce4c7b70d4/320.jpg",
@@ -2774,7 +3221,8 @@
 "106775": {
 "country": "イギリス・アメリカ合作",
 "director": "レスリー・ウッドヘッド",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106775/photo/06e7751e08b14bef.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106775/photo/06e7751e08b14bef/320.jpg",
@@ -2792,7 +3240,10 @@
 "106859": {
 "country": "日本",
 "director": "金聖雄",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106859/photo/b2a6b14a3acd414e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106859/photo/b2a6b14a3acd414e/320.jpg",
@@ -2821,7 +3272,8 @@
 "106937": {
 "country": "ベルギー・フランス合作",
 "director": "シャンタル・アケルマン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -2833,7 +3285,8 @@
 },
 "106976": {
 "country": "日本",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/106976/photo/c5d0f63fa49d6e60.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106976/photo/c5d0f63fa49d6e60/320.jpg",
@@ -2865,6 +3318,10 @@
 "country": "フィンランド・イギリス・ドイツ・スウェーデン合作",
 "director": "アキ・カウリスマキ",
 "fetched": "2026-10-20",
+"genres_eiga": [
+"comedy",
+"suspense"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/12299/photo/8d7928a3fd44b3af.jpg",
 "poster_small": "https://media.eiga.com/images/movie/12299/photo/8d7928a3fd44b3af/320.jpg",
@@ -2882,7 +3339,10 @@
 "1257": {
 "country": "フランス・スイス合作",
 "director": "ジャン＝リュック・ゴダール",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/1257/photo/91cb7b35795f7837.jpg",
 "poster_small": "https://media.eiga.com/images/movie/1257/photo/91cb7b35795f7837/320.jpg",
@@ -2900,7 +3360,12 @@
 "1275": {
 "country": "フランス",
 "director": "ジャン＝リュック・ゴダール",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy",
+"drama",
+"crime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/1275/photo/1f4e261a227c7d5b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/1275/photo/1f4e261a227c7d5b/320.jpg",
@@ -2918,7 +3383,8 @@
 "13531": {
 "country": "アメリカ",
 "director": "キャメロン・クロウ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/13531/photo/c4daacf5ed26bdd7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/13531/photo/c4daacf5ed26bdd7/320.jpg",
@@ -2936,7 +3402,8 @@
 "1414": {
 "country": "日本",
 "director": "高田雅博",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/1414/photo/a33005b6ccd13d44.jpg",
 "poster_small": "https://media.eiga.com/images/movie/1414/photo/a33005b6ccd13d44/320.jpg",
@@ -2954,6 +3421,9 @@
 "country": "フィンランド",
 "director": "アキ・カウリスマキ",
 "fetched": "2026-10-20",
+"genres_eiga": [
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/1465/photo/bf12104cabfaed83.jpg",
 "poster_small": "https://media.eiga.com/images/movie/1465/photo/bf12104cabfaed83/320.jpg",
@@ -2971,7 +3441,8 @@
 "1584": {
 "country": "フランス・スイス合作",
 "director": "ジャン＝リュック・ゴダール",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/1584/photo/00464b84cfe60b86.jpg",
 "poster_small": "https://media.eiga.com/images/movie/1584/photo/00464b84cfe60b86/320.jpg",
@@ -2989,7 +3460,8 @@
 "17126": {
 "country": "日本",
 "director": "岩井俊二",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/17126/photo/463c006dced40415.jpg",
 "poster_small": "https://media.eiga.com/images/movie/17126/photo/463c006dced40415/320.jpg",
@@ -3007,7 +3479,8 @@
 "19570": {
 "country": "日本",
 "director": "小津安二郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/19570/photo/2b6fb034b143c29c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/19570/photo/2b6fb034b143c29c/320.jpg",
@@ -3025,14 +3498,15 @@
 "20052": {
 "country": "日本",
 "director": "黒澤明",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/20052/photo/6b5273429647e0b8.jpg",
 "poster_small": "https://media.eiga.com/images/movie/20052/photo/6b5273429647e0b8/320.jpg",
 "runtime": 96,
 "scores": {
 "eiga": {
-"n": 86,
+"n": 92,
 "v": 4.3
 }
 },
@@ -3042,7 +3516,8 @@
 "21804": {
 "country": "アメリカ",
 "director": "ガス・バン・サント",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/21804/photo/b9bc0ca904e4af61.jpg",
 "poster_small": "https://media.eiga.com/images/movie/21804/photo/b9bc0ca904e4af61/320.jpg",
@@ -3061,7 +3536,8 @@
 "22716": {
 "country": "イタリア・フランス合作",
 "director": "ジュゼッペ・トルナトーレ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/22716/photo/78a0968de84263ed.jpg",
 "poster_small": "https://media.eiga.com/images/movie/22716/photo/78a0968de84263ed/320.jpg",
@@ -3080,7 +3556,8 @@
 "24872": {
 "country": "フィンランド",
 "director": "アキ・カウリスマキ",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/24872/photo/73cf71d2bd13722a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/24872/photo/73cf71d2bd13722a/320.jpg",
@@ -3115,7 +3592,8 @@
 "2585": {
 "country": "日本・フランス合作",
 "director": "大島渚",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/2585/photo/933dc1860dcbd74c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/2585/photo/933dc1860dcbd74c/320.jpg",
@@ -3134,7 +3612,10 @@
 "31509": {
 "country": "フィンランド",
 "director": "アキ・カウリスマキ",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"stage"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/31509/photo/af9615bc4783383e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/31509/photo/af9615bc4783383e/320.jpg",
@@ -3152,7 +3633,8 @@
 "31576": {
 "country": "日本",
 "director": "岩井俊二",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/31576/photo/fb027a590676ad08.jpg",
 "poster_small": "https://media.eiga.com/images/movie/31576/photo/fb027a590676ad08/320.jpg",
@@ -3170,7 +3652,10 @@
 "33570": {
 "country": "日本",
 "director": "池谷薫",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/33570/photo/b7b3953d3a775a8f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/33570/photo/b7b3953d3a775a8f/320.jpg",
@@ -3187,7 +3672,10 @@
 "33922": {
 "country": "香港",
 "director": "ウィルソン・イップ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"action"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/33922/photo/b3d2c16d999dddcf.jpg",
 "poster_small": "https://media.eiga.com/images/movie/33922/photo/b3d2c16d999dddcf/320.jpg",
@@ -3205,7 +3693,8 @@
 "34558": {
 "country": "日本",
 "director": "木村荘十二",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3217,7 +3706,10 @@
 "34616": {
 "country": "日本",
 "director": "松田優作",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"action"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3234,7 +3726,8 @@
 "34750": {
 "country": "日本",
 "director": "生野慈朗",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3269,7 +3762,8 @@
 "35182": {
 "country": "日本",
 "director": "千葉泰樹",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3281,7 +3775,8 @@
 "35183": {
 "country": "日本",
 "director": "千葉泰樹",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3294,7 +3789,8 @@
 "35344": {
 "country": "日本",
 "director": "小津安二郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/35344/photo/2d7183b02ce1cf6e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/35344/photo/2d7183b02ce1cf6e/320.jpg",
@@ -3311,7 +3807,10 @@
 "35540": {
 "country": "日本",
 "director": "阪本順治",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3328,7 +3827,10 @@
 "35589": {
 "country": "日本",
 "director": "加藤泰",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"history"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3341,7 +3843,8 @@
 "35601": {
 "country": "日本",
 "director": "小津安二郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/35601/photo/e3c616a5cfb2c551.jpg",
 "poster_small": "https://media.eiga.com/images/movie/35601/photo/e3c616a5cfb2c551/320.jpg",
@@ -3358,7 +3861,8 @@
 "36043": {
 "country": "日本",
 "director": "市川崑",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3375,7 +3879,8 @@
 "36242": {
 "country": "日本",
 "director": "塩田明彦",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/36242/photo/7aabd8f70a93a6ff.jpg",
 "poster_small": "https://media.eiga.com/images/movie/36242/photo/7aabd8f70a93a6ff/320.jpg",
@@ -3393,7 +3898,8 @@
 "36318": {
 "country": "日本",
 "director": "中島貞夫",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3410,7 +3916,8 @@
 "36799": {
 "country": "日本",
 "director": "小津安二郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/36799/photo/09d741a28675c848.jpg",
 "poster_small": "https://media.eiga.com/images/movie/36799/photo/09d741a28675c848/320.jpg",
@@ -3427,7 +3934,10 @@
 "37677": {
 "country": "日本",
 "director": "長谷川和彦",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"action"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/37677/photo/4c97eac4b69eb517.jpg",
 "poster_small": "https://media.eiga.com/images/movie/37677/photo/4c97eac4b69eb517/320.jpg",
@@ -3435,7 +3945,7 @@
 "runtime": 147,
 "scores": {
 "eiga": {
-"n": 88,
+"n": 93,
 "v": 4.0
 }
 },
@@ -3445,7 +3955,8 @@
 "37996": {
 "country": "日本",
 "director": "石井隆",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3479,7 +3990,10 @@
 "38250": {
 "country": "日本",
 "director": "小原宏裕",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"mystery"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3496,7 +4010,8 @@
 "38288": {
 "country": "日本",
 "director": "小津安二郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/38288/photo/2f2317c24d29a603.jpg",
 "poster_small": "https://media.eiga.com/images/movie/38288/photo/2f2317c24d29a603/320.jpg",
@@ -3530,7 +4045,10 @@
 "38889": {
 "country": "日本",
 "director": "野村芳太郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"crime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3548,7 +4066,8 @@
 "38976": {
 "country": "日本",
 "director": "小津安二郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/38976/photo/331d3699dbaecbd0.jpg",
 "poster_small": "https://media.eiga.com/images/movie/38976/photo/331d3699dbaecbd0/320.jpg",
@@ -3566,7 +4085,8 @@
 "39062": {
 "country": "日本",
 "director": "大森一樹",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3584,7 +4104,8 @@
 "39462": {
 "country": "日本",
 "director": "太田圭",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3601,7 +4122,11 @@
 "39688": {
 "country": "日本",
 "director": "こだま兼嗣",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime",
+"mystery"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/39688/photo/9dae7500eb8d3339.jpg",
 "poster_small": "https://media.eiga.com/images/movie/39688/photo/9dae7500eb8d3339/320.jpg",
@@ -3636,7 +4161,10 @@
 "39709": {
 "country": "日本",
 "director": "小沢啓一",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3653,7 +4181,8 @@
 "39890": {
 "country": "日本",
 "director": "マキノ雅弘",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3665,7 +4194,10 @@
 "39908": {
 "country": "日本",
 "director": "原一男",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/39908/photo/f55ca25bc99c4483.jpg",
 "poster_small": "https://media.eiga.com/images/movie/39908/photo/f55ca25bc99c4483/320.jpg",
@@ -3682,7 +4214,10 @@
 "39925": {
 "country": "日本",
 "director": "森崎東",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3698,7 +4233,8 @@
 "40165": {
 "country": "日本",
 "director": "森崎東",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/40165/photo/17f79963389ca2c4.jpg",
 "poster_small": "https://media.eiga.com/images/movie/40165/photo/17f79963389ca2c4/320.jpg",
@@ -3715,7 +4251,10 @@
 "40388": {
 "country": "日本",
 "director": "行定勲",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -3732,7 +4271,10 @@
 "40452": {
 "country": "日本",
 "director": "こだま兼嗣",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"mystery"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/40452/photo/e7be689c68645d8e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/40452/photo/e7be689c68645d8e/320.jpg",
@@ -3747,18 +4289,24 @@
 "year": 2001
 },
 "40758": {
+"country": "日本",
 "director": "諏訪敦彦",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/40758/photo/b9fd19672f562d11.jpg",
 "poster_small": "https://media.eiga.com/images/movie/40758/photo/b9fd19672f562d11/320.jpg",
 "scores": {},
-"title_ja": "H story"
+"title_ja": "H story",
+"year": 2001
 },
 "41432": {
 "country": "日本",
 "director": "市川準",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/41432/photo/eeb1370644a4ddf6.jpg",
 "poster_small": "https://media.eiga.com/images/movie/41432/photo/eeb1370644a4ddf6/320.jpg",
@@ -3775,7 +4323,11 @@
 "41768": {
 "country": "イタリア",
 "director": "ミケランジェロ・アントニオーニ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"crime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/41768/photo/fecdf2190e9f9039.jpg",
 "poster_small": "https://media.eiga.com/images/movie/41768/photo/fecdf2190e9f9039/320.jpg",
@@ -3793,7 +4345,10 @@
 "41910": {
 "country": "イタリア・フランス合作",
 "director": "ミケランジェロ・アントニオーニ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/41910/photo/2362287ad457bb9a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/41910/photo/2362287ad457bb9a/320.jpg",
@@ -3826,7 +4381,8 @@
 "43025": {
 "country": "台湾",
 "director": "エドワード・ヤン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/43025/photo/b4408f48da73693c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/43025/photo/b4408f48da73693c/320.jpg",
@@ -3862,7 +4418,8 @@
 "43177": {
 "country": "イタリア",
 "director": "ミケランジェロ・アントニオーニ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/43177/photo/9f9c8286c1fe4711.jpg",
 "poster_small": "https://media.eiga.com/images/movie/43177/photo/9f9c8286c1fe4711/320.jpg",
@@ -3880,7 +4437,12 @@
 "43186": {
 "country": "フランス",
 "director": "ジャン＝リュック・ゴダール",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy",
+"romance",
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/43186/photo/a0d8f7cd00c9f8b4.jpg",
 "poster_small": "https://media.eiga.com/images/movie/43186/photo/a0d8f7cd00c9f8b4/320.jpg",
@@ -3898,7 +4460,12 @@
 "44431": {
 "country": "ベルギー・フランス・スイス合作",
 "director": "シャンタル・アケルマン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy",
+"romance",
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/44431/photo/6b76cc534a9154c2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/44431/photo/6b76cc534a9154c2/320.jpg",
@@ -3916,7 +4483,11 @@
 "44675": {
 "country": "スイス",
 "director": "フレディ・M・ムーラー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"fantasy",
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/44675/photo/3a36b60006a0ca2b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/44675/photo/3a36b60006a0ca2b/320.jpg",
@@ -3929,7 +4500,10 @@
 "45735": {
 "country": "フランス・イタリア・西ドイツ合作",
 "director": "オーソン・ウェルズ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/45735/photo/792cb113ba1838cb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/45735/photo/792cb113ba1838cb/320.jpg",
@@ -3948,7 +4522,11 @@
 "47435": {
 "country": "イギリス",
 "director": "ジェームズ・アイボリー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/47435/photo/74f6470341edc920.jpg",
 "poster_small": "https://media.eiga.com/images/movie/47435/photo/74f6470341edc920/320.jpg",
@@ -3967,7 +4545,10 @@
 "47508": {
 "country": "フランス",
 "director": "マチュー・カソビッツ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/47508/photo/8ca1dd2bb60f4d4c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/47508/photo/8ca1dd2bb60f4d4c/320.jpg",
@@ -3986,7 +4567,8 @@
 "47515": {
 "country": "イタリア・フランス合作",
 "director": "マルコ・ベロッキオ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/47515/photo/16cca17c074e7ee7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/47515/photo/16cca17c074e7ee7/320.jpg",
@@ -3999,7 +4581,10 @@
 "48136": {
 "country": "フランス",
 "director": "ジャン・ドゥーシェ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/48136/photo/4ff65e2b4dc9d5a1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/48136/photo/4ff65e2b4dc9d5a1/320.jpg",
@@ -4015,8 +4600,12 @@
 "year": 1965
 },
 "48440": {
+"country": "チリ",
 "director": "イグナシオ・アグエロ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4028,12 +4617,14 @@
 }
 },
 "title_en": "Cien Ninos Esperando un Tren",
-"title_ja": "100人の子供たちが列車を待っている"
+"title_ja": "100人の子供たちが列車を待っている",
+"year": 1988
 },
 "48880": {
 "country": "西ドイツ",
 "director": "ウルリケ・オッティンガー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/48880/photo/a7605de30ab384bb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/48880/photo/a7605de30ab384bb/320.jpg",
@@ -4051,7 +4642,10 @@
 "49013": {
 "country": "アメリカ",
 "director": "ジョン・ヒューズ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/49013/photo/a491d98ff807d7f3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/49013/photo/a491d98ff807d7f3/320.jpg",
@@ -4068,8 +4662,10 @@
 "year": 1985
 },
 "49602": {
+"country": "アメリカ",
 "director": "ジョージ・T・ニーレンバーグ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/49602/photo/f23432d630f9ceea.jpg",
 "poster_small": "https://media.eiga.com/images/movie/49602/photo/f23432d630f9ceea/320.jpg",
@@ -4081,12 +4677,16 @@
 }
 },
 "title_en": "Say Amen, Somebody",
-"title_ja": "マザー（1982）"
+"title_ja": "マザー（1982）",
+"year": 1982
 },
 "49890": {
 "country": "イギリス・フランス合作",
 "director": "ローランド・ジョフィ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/49890/photo/fc201091b37b51a5.jpg",
 "poster_small": "https://media.eiga.com/images/movie/49890/photo/fc201091b37b51a5/320.jpg",
@@ -4094,8 +4694,8 @@
 "runtime": 126,
 "scores": {
 "eiga": {
-"n": 32,
-"v": 3.9
+"n": 33,
+"v": 4.0
 }
 },
 "title_en": "The Mission",
@@ -4105,7 +4705,8 @@
 "50251": {
 "country": "スイス",
 "director": "フレディ・M・ムーラー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/50251/photo/60320c7422d884d0.jpg",
 "poster_small": "https://media.eiga.com/images/movie/50251/photo/60320c7422d884d0/320.jpg",
@@ -4123,7 +4724,8 @@
 "50458": {
 "country": "イタリア",
 "director": "ロベルト・ベニーニ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/50458/photo/d31700ccf0dffca1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/50458/photo/d31700ccf0dffca1/320.jpg",
@@ -4143,6 +4745,7 @@
 "country": "フィンランド",
 "director": "アキ・カウリスマキ",
 "fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/5105/photo/c0fcafd12a314f68.jpg",
 "poster_small": "https://media.eiga.com/images/movie/5105/photo/c0fcafd12a314f68/320.jpg",
@@ -4160,7 +4763,10 @@
 "53029": {
 "country": "香港",
 "director": "パトリック・レオン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/53029/photo/547b2c467b71cc5c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/53029/photo/547b2c467b71cc5c/320.jpg",
@@ -4195,7 +4801,8 @@
 "54283": {
 "country": "アメリカ",
 "director": "デビッド・リンチ",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/54283/photo/e8845a2dc3dd56e1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/54283/photo/e8845a2dc3dd56e1/320.jpg",
@@ -4213,7 +4820,12 @@
 "54466": {
 "country": "アメリカ",
 "director": "クリストファー・ノーラン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"action",
+"scifi",
+"crime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/54466/photo/e6b43a05c7bed751.jpg",
 "poster_small": "https://media.eiga.com/images/movie/54466/photo/e6b43a05c7bed751/320.jpg",
@@ -4232,7 +4844,10 @@
 "55066": {
 "country": "日本",
 "director": "番場秀一",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/55066/photo/bd9447105a1bb886.jpg",
 "poster_small": "https://media.eiga.com/images/movie/55066/photo/bd9447105a1bb886/320.jpg",
@@ -4250,7 +4865,11 @@
 "55165": {
 "country": "日本",
 "director": "本広克行",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"crime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/55165/photo/cb8c195b0bf6ee95.jpg",
 "poster_small": "https://media.eiga.com/images/movie/55165/photo/cb8c195b0bf6ee95/320.jpg",
@@ -4267,7 +4886,8 @@
 },
 "55593": {
 "country": "日本",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/55593/photo/9f31e1d231d740c3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/55593/photo/9f31e1d231d740c3/320.jpg",
@@ -4284,7 +4904,8 @@
 "55820": {
 "country": "スイス・フランス合作",
 "director": "ジャン＝リュック・ゴダール",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/55820/photo/d18b358fafb904d0.jpg",
 "poster_small": "https://media.eiga.com/images/movie/55820/photo/d18b358fafb904d0/320.jpg",
@@ -4303,7 +4924,8 @@
 "61818": {
 "country": "アメリカ",
 "director": "デニス・サンダース",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/61818/photo/0bcf534a3466eec2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/61818/photo/0bcf534a3466eec2/320.jpg",
@@ -4337,18 +4959,24 @@
 "year": 1960
 },
 "69782": {
+"country": "日本",
 "director": "木村荘十二",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {},
-"title_ja": "未来につながる子ら"
+"title_ja": "未来につながる子ら",
+"year": 1962
 },
 "70772": {
 "country": "日本",
 "director": "野村芳太郎",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4361,7 +4989,8 @@
 "71004": {
 "country": "日本",
 "director": "野村芳太郎",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4379,7 +5008,8 @@
 "71240": {
 "country": "日本",
 "director": "野村芳太郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/71240/photo/6ea35f321e8e4569.jpg",
 "poster_small": "https://media.eiga.com/images/movie/71240/photo/6ea35f321e8e4569/320.jpg",
@@ -4396,7 +5026,8 @@
 "71793": {
 "country": "日本",
 "director": "野村芳太郎",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/71793/photo/0e516d80c3a8653e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/71793/photo/0e516d80c3a8653e/320.jpg",
@@ -4414,7 +5045,10 @@
 "72057": {
 "country": "日本",
 "director": "野村芳太郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4432,7 +5066,10 @@
 "72427": {
 "country": "日本",
 "director": "野村芳太郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4444,7 +5081,10 @@
 "72751": {
 "country": "日本",
 "director": "野村芳太郎",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"comedy"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4469,7 +5109,11 @@
 "73254": {
 "country": "日本",
 "director": "酒井辰雄",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"crime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4481,7 +5125,8 @@
 "74668": {
 "country": "日本",
 "director": "小川紳介",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4493,7 +5138,8 @@
 "74850": {
 "country": "日本",
 "director": "渡辺義充",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4506,7 +5152,10 @@
 "77521": {
 "country": "ドイツ・ルクセンブルク・フランス合作",
 "director": "マルガレーテ・フォン・トロッタ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/77521/photo/81c4234c9f6675f7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/77521/photo/81c4234c9f6675f7/320.jpg",
@@ -4525,7 +5174,10 @@
 "79466": {
 "country": "チリ",
 "director": "イグナシオ・アグエロ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4537,7 +5189,8 @@
 },
 "81206": {
 "country": "日本",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/81206/photo/ebd7a45379d178d7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/81206/photo/ebd7a45379d178d7/320.jpg",
@@ -4574,7 +5227,11 @@
 "81434": {
 "country": "日本・フランス合作",
 "director": "柴田昌平",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"mystery",
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/81434/photo/ac32132ceb4fce71.jpg",
 "poster_small": "https://media.eiga.com/images/movie/81434/photo/ac32132ceb4fce71/320.jpg",
@@ -4591,7 +5248,10 @@
 "81442": {
 "country": "フランス",
 "director": "フレデリック・チェン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/81442/photo/5ed702e5307914a5.jpg",
 "poster_small": "https://media.eiga.com/images/movie/81442/photo/5ed702e5307914a5/320.jpg",
@@ -4628,7 +5288,10 @@
 "82212": {
 "country": "アメリカ",
 "director": "キャメロン・クロウ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/82212/photo/443c93657221c1e8.jpg",
 "poster_small": "https://media.eiga.com/images/movie/82212/photo/443c93657221c1e8/320.jpg",
@@ -4666,7 +5329,8 @@
 "83162": {
 "country": "イタリア・フランス・スイス合作",
 "director": "マルコ・ベロッキオ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/83162/photo/3ae7f5819dfbb96a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/83162/photo/3ae7f5819dfbb96a/320.jpg",
@@ -4684,7 +5348,8 @@
 "85779": {
 "country": "台湾",
 "director": "エドワード・ヤン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/85779/photo/808e2a015b2bea0f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/85779/photo/808e2a015b2bea0f/320.jpg",
@@ -4703,7 +5368,10 @@
 "86306": {
 "country": "アメリカ",
 "director": "マイケル・グレイシー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"music"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/86306/photo/3ebcbf58dbba2e4e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/86306/photo/3ebcbf58dbba2e4e/320.jpg",
@@ -4722,7 +5390,8 @@
 "86500": {
 "country": "イギリス・アメリカ合作",
 "director": "ミック・ジャクソン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/86500/photo/b7332be9e586ac5f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/86500/photo/b7332be9e586ac5f/320.jpg",
@@ -4741,7 +5410,11 @@
 "87766": {
 "country": "日本・韓国合作",
 "director": "チョン・ジェウン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/87766/photo/68495037ddddb2ee.jpg",
 "poster_small": "https://media.eiga.com/images/movie/87766/photo/68495037ddddb2ee/320.jpg",
@@ -4759,7 +5432,8 @@
 "88403": {
 "country": "韓国",
 "director": "ヨン・サンホ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/88403/photo/b0bf067daa2a27e0.jpg",
 "poster_small": "https://media.eiga.com/images/movie/88403/photo/b0bf067daa2a27e0/320.jpg",
@@ -4777,7 +5451,12 @@
 "89230": {
 "country": "アメリカ",
 "director": "ブライアン・シンガー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama",
+"music",
+"history"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/89230/photo/76429d58a335ef67.jpg",
 "poster_small": "https://media.eiga.com/images/movie/89230/photo/76429d58a335ef67/320.jpg",
@@ -4796,7 +5475,10 @@
 "92267": {
 "country": "日本",
 "director": "永岡智佳",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"mystery"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/92267/photo/54e60d364a7be976.jpg",
 "poster_small": "https://media.eiga.com/images/movie/92267/photo/54e60d364a7be976/320.jpg",
@@ -4814,7 +5496,10 @@
 "92381": {
 "country": "スイス",
 "director": "フレディ・M・ムーラー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/92381/photo/3122d6e77c074fe2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/92381/photo/3122d6e77c074fe2/320.jpg",
@@ -4827,7 +5512,10 @@
 "92382": {
 "country": "スイス",
 "director": "フレディ・M・ムーラー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/92382/photo/682f9f2af9f18511.jpg",
 "poster_small": "https://media.eiga.com/images/movie/92382/photo/682f9f2af9f18511/320.jpg",
@@ -4840,7 +5528,11 @@
 "92400": {
 "country": "アメリカ",
 "director": "クリストファー・ノーラン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"action",
+"suspense"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/92400/photo/7d74cf524e08578b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/92400/photo/7d74cf524e08578b/320.jpg",
@@ -4859,7 +5551,10 @@
 "92417": {
 "country": "チリ・フランス合作",
 "director": "パトリシオ・グスマン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/92417/photo/dd121747379fcc85.jpg",
 "poster_small": "https://media.eiga.com/images/movie/92417/photo/dd121747379fcc85/320.jpg",
@@ -4878,7 +5573,8 @@
 "92967": {
 "country": "アメリカ",
 "director": "エロール・モリス",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
@@ -4891,7 +5587,10 @@
 "94928": {
 "country": "日本",
 "director": "宮本幸裕",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"anime"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/94928/photo/71a6cf3425985f2c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/94928/photo/71a6cf3425985f2c/320.jpg",
@@ -4899,7 +5598,7 @@
 "runtime": 120,
 "scores": {
 "eiga": {
-"n": 516,
+"n": 517,
 "v": 3.1
 }
 },
@@ -4909,7 +5608,8 @@
 "9588": {
 "country": "香港・台湾合作",
 "director": "エドワード・ヤン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/9588/photo/2d65bd1dbe60409a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/9588/photo/2d65bd1dbe60409a/320.jpg",
@@ -4927,7 +5627,8 @@
 "96804": {
 "country": "フランス・ベルギー・ドイツ合作",
 "director": "シャンタル・アケルマン",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/96804/photo/bb1072973b455aed.jpg",
 "poster_small": "https://media.eiga.com/images/movie/96804/photo/bb1072973b455aed/320.jpg",
@@ -4946,7 +5647,8 @@
 "96805": {
 "country": "フランス・ベルギー合作",
 "director": "シャンタル・アケルマン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/96805/photo/8fec2cb8476b264c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/96805/photo/8fec2cb8476b264c/320.jpg",
@@ -4965,7 +5667,8 @@
 "96806": {
 "country": "ベルギー・フランス合作",
 "director": "シャンタル・アケルマン",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/96806/photo/029f9944de31ead8.jpg",
 "poster_small": "https://media.eiga.com/images/movie/96806/photo/029f9944de31ead8/320.jpg",
@@ -4984,7 +5687,10 @@
 "96903": {
 "country": "インド",
 "director": "S・S・ラージャマウリ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"action"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/96903/photo/be97daa4240fb283.jpg",
 "poster_small": "https://media.eiga.com/images/movie/96903/photo/be97daa4240fb283/320.jpg",
@@ -5003,14 +5709,18 @@
 "97622": {
 "country": "イラン",
 "director": "ジャファル・パナヒ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"suspense",
+"documentary"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/97622/photo/5c3eb35d82fc94f6.jpg",
 "poster_small": "https://media.eiga.com/images/movie/97622/photo/5c3eb35d82fc94f6/320.jpg",
 "runtime": 107,
 "scores": {
 "eiga": {
-"n": 52,
+"n": 51,
 "v": 3.7
 }
 },
@@ -5021,7 +5731,8 @@
 "98077": {
 "country": "フランス",
 "director": "サミー・フレイ",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/98077/photo/61bc57215ca2131b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/98077/photo/61bc57215ca2131b/320.jpg",
@@ -5057,7 +5768,8 @@
 "99280": {
 "country": "西ドイツ",
 "director": "ウルリケ・オッティンガー",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/99280/photo/23278246a59707e2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/99280/photo/23278246a59707e2/320.jpg",
@@ -5093,7 +5805,10 @@
 "99293": {
 "country": "フィンランド・ドイツ合作",
 "director": "アキ・カウリスマキ",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"romance"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/99293/photo/07a711efef46f978.jpg",
 "poster_small": "https://media.eiga.com/images/movie/99293/photo/07a711efef46f978/320.jpg",
@@ -5112,7 +5827,10 @@
 "99304": {
 "country": "イギリス・フランス・ベルギー合作",
 "director": "ケン・ローチ",
-"fetched": "2026-10-18",
+"fetched": "2026-10-20",
+"genres_eiga": [
+"drama"
+],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/99304/photo/def63a937450f99e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/99304/photo/def63a937450f99e/320.jpg",
@@ -5131,7 +5849,8 @@
 "99435": {
 "country": "ベルギー・フランス合作",
 "director": "シャンタル・アケルマン",
-"fetched": "2026-10-19",
+"fetched": "2026-10-20",
+"genres_eiga": [],
 "last_seen": "2026-10-20",
 "poster": "https://media.eiga.com/images/movie/99435/photo/0723e777496e7a29.jpg",
 "poster_small": "https://media.eiga.com/images/movie/99435/photo/0723e777496e7a29/320.jpg",
