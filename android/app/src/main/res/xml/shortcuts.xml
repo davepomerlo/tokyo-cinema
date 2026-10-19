@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="english"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_en_short"
+        android:shortcutLongLabel="@string/shortcut_en_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="io.github.davepomerlo.tokyocinema"
+            android:targetClass="io.github.davepomerlo.tokyocinema.MainActivity"
+            android:data="tokyocinema://open?lang=en" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="theaters"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_theater_short"
+        android:shortcutLongLabel="@string/shortcut_theater_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="io.github.davepomerlo.tokyocinema"
+            android:targetClass="io.github.davepomerlo.tokyocinema.MainActivity"
+            android:data="tokyocinema://open?view=theater" />
+    </shortcut>
+</shortcuts>

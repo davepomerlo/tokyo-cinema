@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tokyo Cinema</title>
+<style>
+  :root { --paper:#e9ece8; --ink:#1f2a44; --muted:#5b6375; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#131926; --ink:#e8eaf0; --muted:#9aa2b4; } }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; background:var(--paper); color:var(--ink);
+         font:16px/1.5 system-ui, sans-serif; padding:24px; box-sizing:border-box; text-align:center; }
+  h1 { font-size:1.3rem; margin:0 0 8px; }
+  p { color:var(--muted); margin:0 0 20px; max-width:28em; }
+  button { font:inherit; font-weight:700; border:0; border-radius:999px; padding:10px 22px; background:var(--ink); color:var(--paper); }
+</style>
+</head>
+<body>
+<main>
+  <h1>No connection</h1>
+  <p>Tokyo Cinema needs to go online once to download the listings. After that, the latest listings are kept on your phone for offline use.</p>
+  <button type="button" onclick="location.href='https://davepomerlo.github.io/tokyo-cinema/?source=android'">Try again</button>
+</main>
+</body>
+</html>

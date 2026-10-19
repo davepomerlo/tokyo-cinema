@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tokyo Cinema</string>
+    <string name="shortcut_en_short">English</string>
+    <string name="shortcut_en_long">English-friendly showings</string>
+    <string name="shortcut_theater_short">Theaters</string>
+    <string name="shortcut_theater_long">By theater</string>
+</resources>

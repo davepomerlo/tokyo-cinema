@@ -1,0 +1,90 @@
+name: Android app
+
+# Builds the Android app (android/) and publishes it as tokyo-cinema.apk on the
+# repository's Releases page. Stable download link:
+#   https://github.com/davepomerlo/tokyo-cinema/releases/latest/download/tokyo-cinema.apk
+#
+# The listings themselves don't need a new app: they come from the daily scan.
+# A new build is only needed when the files in android/ change.
+
+on:
+  push:
+    branches: [main]
+    paths: ["android/**", ".github/workflows/android.yml"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.10.2"
+
+      - name: Signing key
+        # Android only installs an update over the app if both are signed with the
+        # same key. The permanent key is the ANDROID_SIGNING_KEY secret; without it,
+        # this build uses a throwaway key (fine to try, but updates need a reinstall).
+        env:
+          SIGNING_KEY: ${{ secrets.ANDROID_SIGNING_KEY }}
+        run: |
+          if [ -n "$SIGNING_KEY" ]; then
+            echo "$SIGNING_KEY" | base64 -d > android/app/release.p12
+            echo "KEY_KIND=permanent" >> "$GITHUB_ENV"
+          else
+            keytool -genkeypair -keyalg EC -groupname secp256r1 -sigalg SHA256withECDSA \
+              -storetype PKCS12 -alias tokyocinema -validity 10000 \
+              -dname "CN=Tokyo Cinema (temporary key)" \
+              -keystore android/app/release.p12 -storepass tokyocinema -keypass tokyocinema
+            echo "KEY_KIND=temporary" >> "$GITHUB_ENV"
+            echo "::warning::ANDROID_SIGNING_KEY secret not set: signed with a temporary key."
+          fi
+
+      - name: Build APK
+        working-directory: android
+        env:
+          KEYSTORE_PASSWORD: tokyocinema
+          VERSION_CODE: ${{ github.run_number }}
+          VERSION_NAME: 1.${{ github.run_number }}
+        run: gradle --no-daemon --stacktrace assembleRelease
+
+      - name: Publish to Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: 1.${{ github.run_number }}
+        run: |
+          cp android/app/build/outputs/apk/release/app-release.apk tokyo-cinema.apk
+          if [ "$KEY_KIND" = "permanent" ]; then
+            KEY_NOTE="Signed with the permanent key: future versions install over this one."
+          else
+            KEY_NOTE="Signed with a temporary key: when the permanent key is added, uninstall this version once before installing the next."
+          fi
+          cat > notes.md <<EOF
+          Tokyo Cinema for Android, version ${VERSION}.
+
+          **Install:** on your Android phone, tap **tokyo-cinema.apk** below, open the download, and allow installing from this source when asked.
+
+          The listings update by themselves every morning; you only need a new app version when this page shows one.
+
+          ${KEY_NOTE}
+          EOF
+          sed -i 's/^          //' notes.md
+          gh release delete android --yes --cleanup-tag 2>/dev/null || true
+          gh release create android tokyo-cinema.apk \
+            --title "Tokyo Cinema for Android ${VERSION}" \
+            --notes-file notes.md --latest --target "${GITHUB_SHA}"

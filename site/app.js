@@ -406,8 +406,12 @@
   }
 
   // ── install + updates ─────────────────────────────────
+  const IN_ANDROID_APP = /TokyoCinemaAndroid\//.test(navigator.userAgent);
+
   function setupApp() {
-    const standalone = matchMedia("(display-mode: standalone)").matches;
+    const standalone = matchMedia("(display-mode: standalone)").matches || IN_ANDROID_APP;
+    // Offer the Android app to Android visitors who aren't already in it.
+    if (!IN_ANDROID_APP && /Android/.test(navigator.userAgent)) $("#get-android").hidden = false;
     let deferred = null;
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault();
