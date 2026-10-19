@@ -24,16 +24,16 @@ _RULES: list[tuple[str, str, str]] = [
     ("stage", r"ナショナル・シアター・ライブ|ライブビューイング|ライブ・ビューイング|METライブ|オペラ|バレエ|歌舞伎|舞台を映画館|舞台映像|演劇公演", "all"),
     ("comedy", r"コメディ|喜劇|爆笑|コミカル|ラブコメ", "lead"),
     ("drama", r"ドラマ(?!シリーズ|化)|人間ドラマ|ヒューマンドラマ|青春映画|家族の物語", "lead"),
-    ("action", r"アクション|カンフー|格闘|カーチェイス|ガンアクション|スパイ|アドベンチャー|冒険|スペクタクル", "lead"),
+    ("action", r"アクション|カンフー|格闘|カーチェイス|ガンアクション|スパイ|アドベンチャー|冒険|スペクタクル|叙事詩|英雄|殺陣|チャンバラ|剣劇", "lead"),
     ("suspense", r"サスペンス", "lead"),
     ("thriller", r"スリラー|サイコ(?:パス|スリラー)?", "lead"),
     ("mystery", r"ミステリー|ミステリ|推理|謎解き|探偵", "lead"),
     ("horror", r"ホラー|ゾンビ|怪談|心霊|スプラッター|恐怖を描", "lead"),
-    ("romance", r"ラブストーリー|ラブロマンス|ロマンス|恋愛|純愛|ラブコメ", "lead"),
+    ("romance", r"ラブストーリー|ラブロマンス|ロマンス|恋愛|純愛|ラブコメ|初恋|恋人|恋心|恋に落ち", "lead"),
     ("scifi", r"\bSF\b|ＳＦ|SF(?=[ァ-ヶー一-龯])|サイエンス・?フィクション", "lead"),
     ("fantasy", r"ファンタジー", "lead"),
-    ("music", r"ミュージカル|音楽映画|音楽ドキュメンタリー|コンサート|ライブ映像|ライブフィルム|バンドの", "all"),
-    ("history", r"時代劇|歴史劇|史劇|戦争映画|戦争ドラマ|史実|伝記", "lead"),
+    ("music", r"ミュージカル|音楽映画|音楽ドキュメンタリー|コンサート|ライブ映像|ライブフィルム|ライブツアー|ライブの模様|Music Film|バンドの", "all"),
+    ("history", r"時代劇|歴史劇|史劇|戦争映画|戦争ドラマ|史実|伝記|若侍|侍|武士|剣豪|浪人|大河", "lead"),
     ("crime", r"犯罪|クライム|ヤクザ|ギャング|マフィア|刑事|ノワール", "lead"),
     ("family", r"ファミリー映画|家族で楽しめる|子ども向け|親子で", "all"),
 ]
@@ -63,14 +63,20 @@ def from_synopsis(synopsis: str | None, title: str | None = None) -> list[str]:
     for genre, rx, where in _COMPILED:
         if rx.search(lead if where == "lead" else whole):
             found.add(genre)
+    lead_found = set(found)
+    # Big releases often open with the cast and only name the genre later on.
+    if not found - {"anime", "documentary", "stage", "music", "family"}:
+        for genre, rx, where in _COMPILED:
+            if where == "lead" and genre != "drama" and rx.search(whole):
+                found.add(genre)
     # A documentary "about" crime or war is still a documentary first.
     if "documentary" in found:
         found -= {"drama", "crime", "history"}
     # A stage recording isn't a drama film, whatever the play is.
     if "stage" in found:
         found.discard("drama")
-    # A story with no genre word is, nearly always, a drama.
-    if not found and re.search(r"描く|描いた|描き|描写|物語|ストーリー|人生|主人公|少女|少年|男|女", _lead(text)):
+    # A story whose opening names no genre is, nearly always, a drama.
+    if not lead_found and "documentary" not in found and "stage" not in found and re.search(r"描く|描いた|描き|描写|物語|ストーリー|人生|主人公|少女|少年|男|女|紡|姿を", _lead(text)):
         found.add("drama")
     return [g for g in GENRES if g in found]
 

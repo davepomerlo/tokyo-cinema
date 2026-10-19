@@ -17,8 +17,9 @@ class TestGenres(unittest.TestCase):
         self.assertEqual(from_synopsis("近未来を舞台にしたSFアクション。"), ["action", "scifi"])
         self.assertEqual(from_synopsis("英国ナショナル・シアター・ライブの舞台ドラマを映画館で上映。"), ["stage"])
         self.assertEqual(from_synopsis(""), [])
+        self.assertEqual(from_synopsis("天国の恋人に宛てた1通の手紙を描く。"), ["romance"])
         self.assertEqual(from_synopsis("英雄オデュッセウスの壮大な冒険を描く。"), ["action"])
-        self.assertEqual(from_synopsis("北海道の小さな町で暮らす少女の初恋と成長を描く。"), ["drama"])
+        self.assertEqual(from_synopsis("北海道の小さな町で暮らす少女の成長を描く。"), ["drama"])
 
     def test_lead_only(self):
         # "ドラマ" late in a long synopsis (e.g. "TVドラマで知られる監督") shouldn't count

@@ -256,3 +256,5 @@ h1 .rj { font-family: var(--sans); font-weight: 500; font-style: italic; }
 .genre-chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 .genre-chip[aria-pressed="true"] .rj, .genre-chip[aria-pressed="true"] small { color: inherit; }
 .film-sum .genre { color: var(--ink); font-weight: 500; }
+.film-head > div, .house-head { min-width: 0; }
+.film-toggle { max-width: 100%; box-sizing: border-box; }
