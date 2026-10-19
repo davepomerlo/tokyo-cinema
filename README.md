@@ -55,6 +55,12 @@ The film's language comes from TMDB when available, otherwise from its productio
 country on eiga.com. Co-productions without TMDB data show "Original language" rather
 than a guess. Anything not stated on the listing is marked *likely*.
 
+**Genres.** eiga.com has no genre field, so each film's genres are read from its
+eiga.com synopsis, which nearly always names it ("…ヒューマンドラマ", "アニメーション",
+"サスペンス", "ドキュメンタリー"…). With TMDB set up, TMDB's genres are added too. A film
+can have several genres; a few whose synopsis names none have no genre and only appear
+under *All genres*. The rules are in `scraper/genres.py`.
+
 **Why 5:00 JST?** Theaters update their listings in the evening (and post the following
 week's schedule around Tuesday–Wednesday for Friday changeovers), so an early-morning
 scan catches the previous night's changes and is ready before the day's first screenings.
@@ -196,6 +202,7 @@ those optional sources locally.
 | `config/titles.yaml` | Manual English titles |
 | `scraper/eiga.py` | Page parsers (layout-tolerant: no reliance on CSS class names) |
 | `scraper/run.py` | The daily job |
+| `scraper/genres.py` | Genre rules (synopsis keywords, TMDB genre mapping) |
 | `scraper/ratings.py` | Score parsing and TMDB / OMDb lookups |
 | `scraper/language.py` | Audio/subtitle rules, country → language map, TMDB lookup |
 | `scraper/translate.py` | Price-label translations and optional title translation |

@@ -245,3 +245,14 @@ h1 .rj { font-family: var(--sans); font-weight: 500; font-style: italic; }
 .house.open .chev { transform: translateY(2px) rotate(-135deg); }
 .house-body { margin-top: 6px; }
 .house-body .film-line:first-of-type { margin-top: 8px; }
+
+/* genre filter */
+.genre-chip {
+  flex: 0 0 auto; white-space: nowrap; cursor: pointer;
+  border: 1px solid var(--line); background: transparent; color: var(--muted);
+  border-radius: 999px; padding: 3px 11px 4px; font-size: .82rem;
+}
+.genre-chip small { font-size: .72rem; opacity: .75; margin-left: 2px; font-variant-numeric: tabular-nums; }
+.genre-chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.genre-chip[aria-pressed="true"] .rj, .genre-chip[aria-pressed="true"] small { color: inherit; }
+.film-sum .genre { color: var(--ink); font-weight: 500; }

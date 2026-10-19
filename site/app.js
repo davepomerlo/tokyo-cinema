@@ -9,6 +9,16 @@
     { id: "multiplex", en: "Multiplex", ja: "shinekon" },
   ];
   const TYPE_ORDER = Object.fromEntries(TYPES.map((t, i) => [t.id, i]));
+  // Genres: [English, romaji]
+  const GENRES = {
+    anime: ["Anime", ""], comedy: ["Comedy", "komedii"], drama: ["Drama", "dorama"], action: ["Action", "akushon"],
+    suspense: ["Suspense", "sasupensu"], thriller: ["Thriller", "suriraa"], mystery: ["Mystery", "misuterii"],
+    horror: ["Horror", "horaa"], romance: ["Romance", "ren'ai"], scifi: ["Sci-fi", "esu efu"],
+    fantasy: ["Fantasy", "fantajii"], documentary: ["Documentary", "dokyumentarii"], music: ["Music", "ongaku"],
+    history: ["History & war", "rekishi"], crime: ["Crime", "hanzai"], family: ["Family", "famirii"],
+    stage: ["Stage & live", "butai"],
+  };
+  const genreNames = (g) => (g || []).filter((x) => GENRES[x]).map((x) => GENRES[x][0]).join(", ");
   // Format labels from eiga.com: [English, romaji]
   const FORMATS = {
     "字幕": ["Subtitled", "jimaku"], "日本語字幕": ["Japanese subtitles", "nihongo jimaku"],
@@ -51,6 +61,7 @@
     lang: store.get("lang", ""),
     sort: store.get("sort", "next"),
     types: new Set(store.get("types", ["arthouse", "repertory", "community", "institution"])),
+    genres: new Set(store.get("genres", [])),
   };
   let data = null;
   let theaters = {};
@@ -190,6 +201,7 @@
     if (state.lang === "ja" && s.a !== "ja") return false;
     if (state.lang === "orig-ja" && !(s.sub === "ja" && s.a && s.a !== "ja" && s.a !== "ja-dub")) return false;
     if (state.lang === "dub" && s.a !== "ja-dub") return false;
+    if (state.genres.size && !((data.movies[s.m] || {}).g || []).some((g) => state.genres.has(g))) return false;
     if (!state.q) return true;
     const m = data.movies[s.m] || {};
     const hay = [m.en, m.ja, romaji(m.ja), m.director, romaji(m.director), t.name_en, t.name_ja, t.area_en, t.area_ja]
@@ -198,6 +210,7 @@
   }
 
   function render() {
+    drawGenres();
     const now = nowJST();
     const isToday = state.day === now.date;
     const rows = data.screenings.filter((s) => s.d === state.day && matches(s));
@@ -209,7 +222,7 @@
         : "No listings for this day yet. Theaters usually publish the next week's schedule on Tuesday or Wednesday."}</p>${
         hidden ? `<button type="button" id="reset">Show all theaters</button>` : ""}</div>`;
       const b = $("#reset");
-      if (b) b.onclick = () => { state.q = ""; $("#q").value = ""; state.area = ""; $("#area").value = ""; state.lang = ""; $("#lang").value = ""; TYPES.forEach((t) => state.types.add(t.id)); save(); drawTypes(); render(); };
+      if (b) b.onclick = () => { state.q = ""; $("#q").value = ""; state.area = ""; $("#area").value = ""; state.lang = ""; $("#lang").value = ""; TYPES.forEach((t) => state.types.add(t.id)); state.genres.clear(); save(); drawTypes(); render(); };
       return;
     }
     const avg = (mid) => ((data.movies[mid] || {}).scores || {}).avg ?? -1;
@@ -243,6 +256,7 @@
         const next = upcoming[0];
         const enFriendly = all.some((r) => r.a === "en" || r.sub === "en");
         const sum = [
+          m.g && m.g.length ? `<span class="genre">${esc(genreNames(m.g))}</span>` : "",
           `${vs.length} ${vs.length === 1 ? "theater" : "theaters"}`,
           next ? `next ${esc(next.s)}` : "no more showings today",
           enFriendly ? `<span class="en-subs">English-friendly</span>` : "",
@@ -320,6 +334,29 @@
     }).join("");
   }
 
+  // Genre buttons for the chosen day, with how many films each has (ignoring the genre filter).
+  function drawGenres() {
+    const el = $("#genres");
+    if (!data) { el.innerHTML = ""; return; }
+    const count = {};
+    const seen = new Set();
+    const saved = state.genres;
+    state.genres = new Set();
+    for (const s of data.screenings) {
+      if (s.d !== state.day || seen.has(s.m) || !matches(s)) continue;
+      seen.add(s.m);
+      for (const g of (data.movies[s.m] || {}).g || []) count[g] = (count[g] || 0) + 1;
+    }
+    state.genres = saved;
+    const chips = Object.keys(GENRES).filter((g) => count[g] || state.genres.has(g)).map((g) => {
+      const [en, ro] = GENRES[g];
+      return `<button type="button" class="genre-chip" data-genre="${g}" aria-pressed="${state.genres.has(g)}">${en}${ro ? ` <span class="rj">${ro}</span>` : ""} <small>${count[g] || 0}</small></button>`;
+    });
+    el.innerHTML = chips.length
+      ? `<button type="button" class="genre-chip" data-genre="" aria-pressed="${state.genres.size === 0}">All genres</button>` + chips.join("")
+      : "";
+  }
+
   function drawTypes() {
     $("#types").innerHTML = TYPES.map((t) =>
       `<button type="button" class="type" style="--c:var(--t-${t.id})" data-type="${t.id}" aria-pressed="${state.types.has(t.id)}">${t.en} <span class="rj">${t.ja}</span></button>`).join("");
@@ -351,6 +388,7 @@
     store.set("lang", state.lang);
     store.set("sort", state.sort);
     store.set("types", [...state.types]);
+    store.set("genres", [...state.genres]);
   }
 
   function bind() {
@@ -375,6 +413,14 @@
       state.day = b.dataset.day;
       document.querySelectorAll(".day").forEach((x) => x.setAttribute("aria-pressed", x === b));
       render();
+    });
+    $("#genres").addEventListener("click", (e) => {
+      const b = e.target.closest(".genre-chip"); if (!b) return;
+      const g = b.dataset.genre;
+      if (!g) state.genres.clear();
+      else if (state.genres.has(g)) state.genres.delete(g);
+      else state.genres.add(g);
+      save(); render();
     });
     $("#types").addEventListener("click", (e) => {
       const b = e.target.closest(".type"); if (!b) return;

@@ -15,11 +15,13 @@ in meaning:
 from __future__ import annotations
 
 import datetime as dt
+import json
 import re
 from dataclasses import dataclass, field
 
 from bs4 import BeautifulSoup, NavigableString, Tag
 
+from .genres import from_synopsis
 from .ratings import parse_eiga_rating
 
 MOVIE_HREF = re.compile(r"(?:https?://eiga\.com)?/movie/(\d+)/?(?:[?#].*)?$")
@@ -531,6 +533,22 @@ def parse_movie_page(html: str) -> dict:
         if m:
             info["director"] = m.group(1).strip()
             break
+
+    # Synopsis (from the page's structured data) -> genres
+    synopsis = ""
+    for sc in soup.find_all("script", type="application/ld+json"):
+        try:
+            blob = json.loads(sc.string or "")
+        except ValueError:
+            continue
+        for item in blob if isinstance(blob, list) else [blob]:
+            if isinstance(item, dict) and item.get("@type") == "Movie":
+                synopsis = item.get("description") or ""
+    if not synopsis:
+        meta = soup.find("meta", attrs={"name": "description"}) or soup.find("meta", attrs={"property": "og:description"})
+        synopsis = (meta.get("content") if meta else "") or ""
+    title_el = soup.find("h1")
+    info["genres_eiga"] = from_synopsis(synopsis, clean(title_el.get_text(" ")) if title_el else None)
 
     rating = parse_eiga_rating(text)
     if rating:

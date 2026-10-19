@@ -59,6 +59,7 @@ def tmdb_details(session: requests.Session, tmdb_id: int) -> dict | None:
         "lang": d.get("original_language"),
         "imdb_id": d.get("imdb_id") or None,
         "tmdb_title": d.get("title"),
+        "genre_ids": [g.get("id") for g in d.get("genres", []) if g.get("id")],
     }
     if d.get("vote_count"):
         out["tmdb"] = {"v": round(float(d.get("vote_average") or 0), 1), "n": int(d["vote_count"])}
