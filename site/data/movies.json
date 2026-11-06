@@ -49,7 +49,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/100695/photo/c61121a412662530.jpg",
 "poster_small": "https://media.eiga.com/images/movie/100695/photo/c61121a412662530/320.jpg",
 "rating": "PG12",
@@ -72,7 +72,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/100696/photo/996dacc6cc70be7c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/100696/photo/996dacc6cc70be7c/320.jpg",
 "rating": "G",
@@ -111,7 +111,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/101214/photo/a6ce8b14aeac0c21.jpg",
 "poster_small": "https://media.eiga.com/images/movie/101214/photo/a6ce8b14aeac0c21/320.jpg",
 "rating": "PG12",
@@ -134,7 +134,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/101264/photo/fea553105e78c39a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/101264/photo/fea553105e78c39a/320.jpg",
 "rating": "G",
@@ -197,7 +197,7 @@
 "drama",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/101666/photo/3309333cf37fd097.jpg",
 "poster_small": "https://media.eiga.com/images/movie/101666/photo/3309333cf37fd097/320.jpg",
 "runtime": 83,
@@ -264,7 +264,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/101742/photo/aaa1cde95b4460e9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/101742/photo/aaa1cde95b4460e9/320.jpg",
 "runtime": 119,
@@ -285,7 +285,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/101811/photo/adc0112c4cac934c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/101811/photo/adc0112c4cac934c/320.jpg",
 "rating": "G",
@@ -307,7 +307,7 @@
 "genres_eiga": [
 "history"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/102093/photo/d1b3ebd544042e07.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102093/photo/d1b3ebd544042e07/320.jpg",
 "rating": "G",
@@ -420,7 +420,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/102527/photo/e62e498bbc449869.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102527/photo/e62e498bbc449869/320.jpg",
 "rating": "G",
@@ -443,7 +443,7 @@
 "genres_eiga": [
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/102562/photo/9057c70cfc34bf13.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102562/photo/9057c70cfc34bf13/320.jpg",
 "rating": "PG12",
@@ -462,12 +462,17 @@
 "102600": {
 "country": "ドイツ・フランス合作",
 "director": "ギョーム・カイヨー",
-"fetched": "2026-10-18",
-"last_seen": "2026-10-18",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"action",
+"documentary"
+],
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/102600/photo/d99b16ad73d2f232.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102600/photo/d99b16ad73d2f232/320.jpg",
 "runtime": 212,
 "scores": {},
+"synopsis": "2024年・第37回東京国際映画祭ワールド・フォーカス部門上映作品。山形国際ドキュメンタリー映画祭2025（25年10月9～16日）インターナショナル・コンペティション部門でロバート＆フランシス・フラハティ賞（大賞）受賞。",
 "title_en": "Direct Action",
 "title_ja": "ダイレクト・アクション",
 "year": 2024
@@ -479,7 +484,7 @@
 "music",
 "stage"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/102657/photo/35fa32b8ebf3a390.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102657/photo/35fa32b8ebf3a390/320.jpg",
 "rating": "G",
@@ -520,7 +525,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/102826/photo/2507bf5ccb7f773e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102826/photo/2507bf5ccb7f773e/320.jpg",
 "rating": "G",
@@ -543,7 +548,7 @@
 "anime",
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/102843/photo/ea3a561c0e14a7df.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102843/photo/ea3a561c0e14a7df/320.jpg",
 "rating": "G",
@@ -565,7 +570,7 @@
 "genres_eiga": [
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/102846/photo/5013d4bb24b0ccc2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/102846/photo/5013d4bb24b0ccc2/320.jpg",
 "rating": "G",
@@ -588,7 +593,7 @@
 "genres_eiga": [
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/103045/photo/7aa8ee64d24d9b41.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103045/photo/7aa8ee64d24d9b41/320.jpg",
 "rating": "G",
@@ -654,7 +659,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/103151/photo/0f64cefaa45a808b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103151/photo/0f64cefaa45a808b/320.jpg",
 "rating": "G",
@@ -808,7 +813,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/103729/photo/a48c87d33e4603f4.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103729/photo/a48c87d33e4603f4/320.jpg",
 "rating": "PG12",
@@ -829,7 +834,7 @@
 "director": "リチャード・リンクレイター",
 "fetched": "2026-11-01",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/103730/photo/d80eb1dc70350d6d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103730/photo/d80eb1dc70350d6d/320.jpg",
 "rating": "G",
@@ -920,7 +925,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/103908/photo/687f3afacff2f49c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/103908/photo/687f3afacff2f49c/320.jpg",
 "rating": "G",
@@ -981,6 +986,28 @@
 "title_ja": "ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party",
 "year": 2026
 },
+"104090": {
+"country": "日本",
+"director": "大西隼",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"documentary"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/104090/photo/04a1861746d88924.jpg",
+"poster_small": "https://media.eiga.com/images/movie/104090/photo/04a1861746d88924/320.jpg",
+"rating": "G",
+"runtime": 110,
+"scores": {
+"eiga": {
+"n": 55,
+"v": 4.3
+}
+},
+"synopsis": "新型コロナワクチンによる後遺症の影響に、多角的な視点から迫ったドキュメンタリー。 新型コロナウイルスの感染拡大で政府が初の緊急事態宣言を出してから5年が経ち、感染症法上の位置づけが5類に移行して2年が過ぎた。未曾有の危機を経て国の感染症対策は変化を重ねてきたが、従来のワクチンとは異なる新技術で開発された新型コロナワクチン（mRNA遺伝子製剤）による後遺症被害について、さまざまな情報が報道され始めている。過去に例のない「新薬」の認可と流通には、医学の盲点や限界のみならず、不都合な事実に目を向けさせないようにするデータのトリック、アカデミアやメディアの政府への忖度など、日本社会が抱える問題が集約されていた。そんな中、新型コロナワクチン後遺症の影響を科学的に究明しようとする医師たちがいた。 映画では、後遺症患者、遺族、当時のワクチン推進派など、多様な立場の人々の意見を多角的にとらえることで、科学",
+"title_ja": "ヒポクラテスの盲点",
+"year": 2025
+},
 "104119": {
 "country": "台湾",
 "director": "エンジェル・テン",
@@ -1011,7 +1038,7 @@
 "genres_eiga": [
 "mystery"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104121/photo/bc44da3a94ac62ed.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104121/photo/bc44da3a94ac62ed/320.jpg",
 "rating": "G",
@@ -1057,7 +1084,7 @@
 "genres_eiga": [
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104217/photo/1851208b7444526e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104217/photo/1851208b7444526e/320.jpg",
 "rating": "PG12",
@@ -1079,7 +1106,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104218/photo/ed69ea195883d1f8.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104218/photo/ed69ea195883d1f8/320.jpg",
 "rating": "PG12",
@@ -1114,11 +1141,11 @@
 "104250": {
 "country": "日本",
 "director": "板倉善之",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-10-31",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104250/photo/5b6ad8163f579993.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104250/photo/5b6ad8163f579993/320.jpg",
 "runtime": 100,
@@ -1236,7 +1263,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104257/photo/b44e9920d5a9beb1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104257/photo/b44e9920d5a9beb1/320.jpg",
 "runtime": 222,
@@ -1309,7 +1336,7 @@
 "genres_eiga": [
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104267/photo/dc451218e0054670.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104267/photo/dc451218e0054670/320.jpg",
 "rating": "G",
@@ -1398,7 +1425,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104398/photo/1f9a65f4ac80efba.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104398/photo/1f9a65f4ac80efba/320.jpg",
 "rating": "G",
@@ -1421,7 +1448,7 @@
 "genres_eiga": [
 "suspense"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104405/photo/3f9b06d964bd3d66.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104405/photo/3f9b06d964bd3d66/320.jpg",
 "rating": "PG12",
@@ -1444,7 +1471,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104411/photo/a1d6103178642861.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104411/photo/a1d6103178642861/320.jpg",
 "rating": "G",
@@ -1513,7 +1540,7 @@
 "anime",
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104435/photo/faecc9244075ac11.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104435/photo/faecc9244075ac11/320.jpg",
 "rating": "G",
@@ -1603,7 +1630,7 @@
 "anime",
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104473/photo/0cd6d8163ed53068.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104473/photo/0cd6d8163ed53068/320.jpg",
 "rating": "G",
@@ -1625,7 +1652,7 @@
 "genres_eiga": [
 "comedy"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104483/photo/0f126185dedf018e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104483/photo/0f126185dedf018e/320.jpg",
 "rating": "G",
@@ -1644,12 +1671,12 @@
 "104495": {
 "country": "アメリカ",
 "director": "リリー・キーバー",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "documentary",
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104495/photo/fc56f8d4252f7b77.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104495/photo/fc56f8d4252f7b77/320.jpg",
 "rating": "G",
@@ -1672,7 +1699,7 @@
 "genres_eiga": [
 "comedy"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104508/photo/79c9f6d87e1867fa.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104508/photo/79c9f6d87e1867fa/320.jpg",
 "rating": "G",
@@ -1689,7 +1716,7 @@
 "genres_eiga": [
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104509/photo/9475e2e83d77acf9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104509/photo/9475e2e83d77acf9/320.jpg",
 "rating": "G",
@@ -1735,7 +1762,7 @@
 "action",
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104585/photo/e3d379d08ea59df5.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104585/photo/e3d379d08ea59df5/320.jpg",
 "rating": "G",
@@ -1797,6 +1824,29 @@
 "title_ja": "キャトルミューティ玲子",
 "year": 2025
 },
+"104637": {
+"country": "イギリス",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"action",
+"stage"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/104637/photo/80d80b22f11d0c07.jpg",
+"poster_small": "https://media.eiga.com/images/movie/104637/photo/80d80b22f11d0c07/320.jpg",
+"rating": "G",
+"runtime": 83,
+"scores": {
+"eiga": {
+"n": 3,
+"v": 3.5
+}
+},
+"synopsis": "イギリスの国立劇場ロイヤル・ナショナル・シアターが厳選した名舞台を映像化し、映画館のスクリーンで上映する「ナショナル・シアター・ライブ」の1作。ロンドンのウエスト・エンドにある劇場「@sohoplace」で、フィン・デン・ハルトグの演出により上演されたデビッド・アイアランド作の「フィフス・ステップ」を収録する。 アルコール依存症の更生プログラム「12のステップ」に長年取り組んできたジェームスは、新入りのルカの世話役となる。2人はブラックコーヒーを飲み、互いの物語を語り合い、共通の経験を通じて壊れやすい友情を築いていく。しかし、ルカが更生プログラムの第5のステップである「告白の瞬間」に近づくにつれ、危険な真実が浮かび上がる。それは、2人の回復の糧となっていた「信頼」そのものを脅かすものだった。 出演は、映画「ダンケルク」やドラマシリーズ「窓際のスパイ」で知られるジャック・ロウデンと、ドラマ「",
+"title_en": "National Theatre Live: The Fifth Step",
+"title_ja": "ナショナル・シアター・ライブ「フィフス・ステップ」",
+"year": 2025
+},
 "104669": {
 "country": "日本",
 "director": "上坂龍之介",
@@ -1804,7 +1854,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104669/photo/2350eca8b68c592b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104669/photo/2350eca8b68c592b/320.jpg",
 "rating": "G",
@@ -1827,7 +1877,7 @@
 "anime",
 "fantasy"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104715/photo/e4ccea857b37e685.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104715/photo/e4ccea857b37e685/320.jpg",
 "rating": "G",
@@ -1863,7 +1913,7 @@
 "anime",
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104749/photo/72dfe1ccdaf6072f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104749/photo/72dfe1ccdaf6072f/320.jpg",
 "rating": "G",
@@ -1909,7 +1959,7 @@
 "drama",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104757/photo/ea6b1f8b494706b3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104757/photo/ea6b1f8b494706b3/320.jpg",
 "runtime": 122,
@@ -1931,7 +1981,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104792/photo/5e29772f9adb31ed.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104792/photo/5e29772f9adb31ed/320.jpg",
 "rating": "G",
@@ -1954,7 +2004,7 @@
 "romance",
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104799/photo/df81e09c1dff84b6.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104799/photo/df81e09c1dff84b6/320.jpg",
 "rating": "G",
@@ -2001,7 +2051,7 @@
 "documentary",
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104848/photo/008fea0f1bd0b664.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104848/photo/008fea0f1bd0b664/320.jpg",
 "rating": "G",
@@ -2023,7 +2073,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104885/photo/bb9511fc940c6188.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104885/photo/bb9511fc940c6188/320.jpg",
 "rating": "PG12",
@@ -2043,7 +2093,7 @@
 "director": "ユン・ガウン",
 "fetched": "2026-11-05",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104895/photo/cab1fa4dd7041fa6.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104895/photo/cab1fa4dd7041fa6/320.jpg",
 "rating": "G",
@@ -2130,7 +2180,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/104992/photo/6e63d2147745fd2e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/104992/photo/6e63d2147745fd2e/320.jpg",
 "rating": "G",
@@ -2175,7 +2225,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105011/photo/a50bac68030c0d85.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105011/photo/a50bac68030c0d85/320.jpg",
 "rating": "G",
@@ -2221,7 +2271,7 @@
 "genres_eiga": [
 "history"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105053/photo/d2bd678ba921ed22.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105053/photo/d2bd678ba921ed22/320.jpg",
 "rating": "G",
@@ -2244,7 +2294,7 @@
 "drama",
 "mystery"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105074/photo/02f30a3e4b7f15b6.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105074/photo/02f30a3e4b7f15b6/320.jpg",
 "rating": "PG12",
@@ -2266,7 +2316,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105075/photo/1d3bc3c7c5e4ce26.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105075/photo/1d3bc3c7c5e4ce26/320.jpg",
 "rating": "PG12",
@@ -2288,7 +2338,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105083/photo/d8a752878659d57b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105083/photo/d8a752878659d57b/320.jpg",
 "rating": "G",
@@ -2311,7 +2361,7 @@
 "anime",
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105109/photo/48db1bb8de88d0b8.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105109/photo/48db1bb8de88d0b8/320.jpg",
 "rating": "G",
@@ -2357,7 +2407,7 @@
 "thriller",
 "horror"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105204/photo/e215d457fa6b18f9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105204/photo/e215d457fa6b18f9/320.jpg",
 "rating": "PG12",
@@ -2444,7 +2494,7 @@
 "comedy",
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105232/photo/2f1c4eab956d794e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105232/photo/2f1c4eab956d794e/320.jpg",
 "rating": "G",
@@ -2488,7 +2538,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105245/photo/5b4d0801714408a7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105245/photo/5b4d0801714408a7/320.jpg",
 "rating": "G",
@@ -2511,7 +2561,7 @@
 "suspense",
 "scifi"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105261/photo/18386ba4b0e07077.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105261/photo/18386ba4b0e07077/320.jpg",
 "rating": "G",
@@ -2532,7 +2582,7 @@
 "director": "アレハンドロ・G・イニャリトゥ",
 "fetched": "2026-11-03",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105275/photo/1126d7139b341ab3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105275/photo/1126d7139b341ab3/320.jpg",
 "rating": "G",
@@ -2547,6 +2597,31 @@
 "title_en": "Digger",
 "title_ja": "DIGGER ディガー",
 "year": 2026
+},
+"105282": {
+"country": "南アフリカ・アメリカ合作",
+"director": "フィル・カニンガム",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"anime",
+"action",
+"music"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/105282/photo/56144f2339e5b413.jpg",
+"poster_small": "https://media.eiga.com/images/movie/105282/photo/56144f2339e5b413/320.jpg",
+"rating": "G",
+"runtime": 109,
+"scores": {
+"eiga": {
+"n": 5,
+"v": 2.7
+}
+},
+"synopsis": "世界で最も有名な英雄のひとりとして知られるダビデ王の少年時代を描いたミュージカルアニメーション。 羊飼いの少年ダビデは、預言者サムエルにより密かに“将来の王”に選ばれる。やがて彼は知恵と勇気だけを武器に巨人ゴリアテを倒し英雄となるが、その名声は現王サウルの嫉妬を招き、命を狙われる身となってしまう。逃亡と試練の日々を送るなかで、家族と仲間をアマレク人に奪われたダビデは自責の念にとらわれるが、母の言葉を思い出し、自らの原点を取り戻す。捕らわれた人々の前で彼が歌いはじめた瞬間、その揺るぎない想いが人々に勇気を与え、運命を切りひらく力となっていく。ダビデは“王国の魂”を守る者として、真の王へと歩みはじめる。 フィル・カニンガムとブレント・ドーズが共同で監督を務め、実写とアニメーションを融合させた映像と、80名のオーケストラと24名の合唱団による豊かな音楽で描き出す。「グレイテスト・ショーマン」「ス",
+"title_en": "David",
+"title_ja": "ダビデ 王になった少年",
+"year": 2025
 },
 "105306": {
 "country": "日本",
@@ -2601,7 +2676,7 @@
 "comedy",
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105328/photo/6210ca0c19fc0d5f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105328/photo/6210ca0c19fc0d5f/320.jpg",
 "rating": "G",
@@ -2705,7 +2780,7 @@
 "music",
 "history"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105395/photo/c7ce800559d573b7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105395/photo/c7ce800559d573b7/320.jpg",
 "rating": "G",
@@ -2750,7 +2825,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105451/photo/085d5b08f9fe94ed.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105451/photo/085d5b08f9fe94ed/320.jpg",
 "rating": "R15+",
@@ -2796,7 +2871,7 @@
 "genres_eiga": [
 "mystery"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105470/photo/d45472f50a97c678.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105470/photo/d45472f50a97c678/320.jpg",
 "rating": "G",
@@ -2864,7 +2939,7 @@
 "anime",
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105502/photo/50095c6e7b39a153.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105502/photo/50095c6e7b39a153/320.jpg",
 "rating": "G",
@@ -2887,7 +2962,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105503/photo/f598ae4cea35505c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105503/photo/f598ae4cea35505c/320.jpg",
 "rating": "G",
@@ -2909,7 +2984,7 @@
 "genres_eiga": [
 "horror"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105509/photo/a972562710d72239.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105509/photo/a972562710d72239/320.jpg",
 "rating": "G",
@@ -2976,7 +3051,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105515/photo/cb10b1e92791f719.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105515/photo/cb10b1e92791f719/320.jpg",
 "rating": "G",
@@ -3021,7 +3096,7 @@
 "genres_eiga": [
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105584/photo/989193627b2f6f36.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105584/photo/989193627b2f6f36/320.jpg",
 "rating": "G",
@@ -3044,7 +3119,7 @@
 "anime",
 "fantasy"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105618/photo/c5daf5f03c6351a2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105618/photo/c5daf5f03c6351a2/320.jpg",
 "rating": "G",
@@ -3114,7 +3189,7 @@
 "crime",
 "stage"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105714/photo/800b1226cabd7d19.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105714/photo/800b1226cabd7d19/320.jpg",
 "rating": "PG12",
@@ -3160,7 +3235,7 @@
 "drama",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105726/photo/4349ed9777933ecb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105726/photo/4349ed9777933ecb/320.jpg",
 "rating": "G",
@@ -3225,7 +3300,7 @@
 "genres_eiga": [
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105732/photo/dee223d17c41163c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105732/photo/dee223d17c41163c/320.jpg",
 "rating": "G",
@@ -3250,7 +3325,7 @@
 "drama",
 "scifi"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105735/photo/7d787e4174f1cdd1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105735/photo/7d787e4174f1cdd1/320.jpg",
 "rating": "G",
@@ -3342,7 +3417,7 @@
 "crime",
 "stage"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105831/photo/c71b09145d56830a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105831/photo/c71b09145d56830a/320.jpg",
 "rating": "PG12",
@@ -3419,7 +3494,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105887/photo/b099e8d6c96130fb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105887/photo/b099e8d6c96130fb/320.jpg",
 "rating": "G",
@@ -3441,7 +3516,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105893/photo/5c75c4ebde147197.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105893/photo/5c75c4ebde147197/320.jpg",
 "runtime": 103,
@@ -3485,7 +3560,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105906/photo/4b6ea79578761f42.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105906/photo/4b6ea79578761f42/320.jpg",
 "rating": "G",
@@ -3507,7 +3582,7 @@
 "genres_eiga": [
 "thriller"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105907/photo/d9ce2707e2f585ff.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105907/photo/d9ce2707e2f585ff/320.jpg",
 "rating": "G",
@@ -3531,7 +3606,7 @@
 "drama",
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105911/photo/4e6bf60e94be3492.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105911/photo/4e6bf60e94be3492/320.jpg",
 "rating": "PG12",
@@ -3553,7 +3628,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105953/photo/5611d0f612face8d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105953/photo/5611d0f612face8d/320.jpg",
 "rating": "G",
@@ -3576,7 +3651,7 @@
 "anime",
 "mystery"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105969/photo/d57c18dbd6b98e78.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105969/photo/d57c18dbd6b98e78/320.jpg",
 "rating": "G",
@@ -3600,7 +3675,7 @@
 "action",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/105977/photo/ea7b93d692a8ecbd.jpg",
 "poster_small": "https://media.eiga.com/images/movie/105977/photo/ea7b93d692a8ecbd/320.jpg",
 "rating": "G",
@@ -3648,7 +3723,7 @@
 "genres_eiga": [
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106025/photo/40ba82f64ce5522d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106025/photo/40ba82f64ce5522d/320.jpg",
 "rating": "PG12",
@@ -3671,7 +3746,7 @@
 "action",
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106029/photo/c6c519cc3187ac32.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106029/photo/c6c519cc3187ac32/320.jpg",
 "runtime": 156,
@@ -3710,7 +3785,7 @@
 "genres_eiga": [
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106044/photo/72ab3e6bf17d3b38.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106044/photo/72ab3e6bf17d3b38/320.jpg",
 "rating": "G",
@@ -3732,7 +3807,7 @@
 "genres_eiga": [
 "mystery"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106045/photo/3c4867c89e5ff80e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106045/photo/3c4867c89e5ff80e/320.jpg",
 "rating": "G",
@@ -3756,7 +3831,7 @@
 "thriller",
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106072/photo/32d84861c1b10993.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106072/photo/32d84861c1b10993/320.jpg",
 "rating": "G",
@@ -3779,7 +3854,7 @@
 "genres_eiga": [
 "thriller"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106078/photo/9f0c8228378c0ce8.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106078/photo/9f0c8228378c0ce8/320.jpg",
 "rating": "R15+",
@@ -3802,7 +3877,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106095/photo/9b4e0e68e7c96c5e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106095/photo/9b4e0e68e7c96c5e/320.jpg",
 "rating": "G",
@@ -3824,7 +3899,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106103/photo/12431c9c6f1cd2f6.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106103/photo/12431c9c6f1cd2f6/320.jpg",
 "runtime": 95,
@@ -3892,7 +3967,7 @@
 "mystery",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106119/photo/1bf42a779941585b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106119/photo/1bf42a779941585b/320.jpg",
 "rating": "R15+",
@@ -3937,7 +4012,7 @@
 "genres_eiga": [
 "horror"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106123/photo/91595e98277060d1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106123/photo/91595e98277060d1/320.jpg",
 "rating": "R15+",
@@ -3960,7 +4035,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106146/photo/c4dd888bdc81c95e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106146/photo/c4dd888bdc81c95e/320.jpg",
 "rating": "G",
@@ -4007,7 +4082,7 @@
 "mystery",
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106186/photo/ec0ab46de248fae3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106186/photo/ec0ab46de248fae3/320.jpg",
 "rating": "G",
@@ -4029,7 +4104,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106187/photo/d0cc1a7ff1d5ac32.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106187/photo/d0cc1a7ff1d5ac32/320.jpg",
 "rating": "PG12",
@@ -4052,7 +4127,7 @@
 "drama",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106192/photo/6b4d9a46bbd49e99.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106192/photo/6b4d9a46bbd49e99/320.jpg",
 "runtime": 99,
@@ -4067,6 +4142,26 @@
 "title_ja": "ルオムの黄昏",
 "year": 2025
 },
+"106193": {
+"country": "日本",
+"director": "中川龍太郎",
+"fetched": "2026-11-06",
+"genres_eiga": [],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/106193/photo/10b8e70957768e0c.jpg",
+"poster_small": "https://media.eiga.com/images/movie/106193/photo/10b8e70957768e0c/320.jpg",
+"rating": "G",
+"runtime": 108,
+"scores": {
+"eiga": {
+"n": 8,
+"v": 4.2
+}
+},
+"synopsis": "映画プロデューサー・監督として数々の名作映画を世に送り出してきた角川春樹が総監督を務めた青春群像劇。「みをつくし料理帖」シリーズで知られる小説家・髙田郁が漫画原作者時代に取材した夜間学級でのエピソードをもとに執筆した小説「星の教室」を原作に、「四月の永い夢」の中川龍太郎が監督を務めた。 2001年1月。大阪の下町にあるレンタルビデオ店で働く潤間さやかは、店長から履歴書の提出を求められたことをきっかけに、近所の中学校の夜間学級に足を踏み入れる。中学時代にいじめが原因で不登校となったさやかは、卒業を拒否して“中学中退”を選択し、そのまま成人を迎えていた。そんな彼女が夜間中学で目にしたのは、校庭で夜空を見上げながら幸せそうに歌う、年齢も国籍もバラバラな生徒たちの姿だった。学校に行けなかったのは自分だけではないことに気づいたさやかは、夜間中学に入学することを決意し、先生やクラスメイトに支えられなが",
+"title_ja": "星の教室",
+"year": 2026
+},
 "106195": {
 "country": "韓国",
 "director": "ヨン・サンホ",
@@ -4076,7 +4171,7 @@
 "mystery",
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106195/photo/47279f513aa5f36d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106195/photo/47279f513aa5f36d/320.jpg",
 "rating": "G",
@@ -4100,7 +4195,7 @@
 "documentary",
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106196/photo/c8ce8992aa5a5270.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106196/photo/c8ce8992aa5a5270/320.jpg",
 "rating": "G",
@@ -4123,7 +4218,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106200/photo/b1e11d02367d6fd7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106200/photo/b1e11d02367d6fd7/320.jpg",
 "rating": "G",
@@ -4192,7 +4287,7 @@
 "drama",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106216/photo/97b6710a7ca46de2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106216/photo/97b6710a7ca46de2/320.jpg",
 "rating": "G",
@@ -4214,7 +4309,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106225/photo/4d4432cff0e0c1d5.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106225/photo/4d4432cff0e0c1d5/320.jpg",
 "rating": "G",
@@ -4280,7 +4375,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106254/photo/bf264b094d874168.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106254/photo/bf264b094d874168/320.jpg",
 "rating": "G",
@@ -4348,7 +4443,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106277/photo/6283f86d786c4749.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106277/photo/6283f86d786c4749/320.jpg",
 "rating": "G",
@@ -4372,7 +4467,7 @@
 "thriller",
 "horror"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106287/photo/d9d010bd78f3cfcc.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106287/photo/d9d010bd78f3cfcc/320.jpg",
 "rating": "G",
@@ -4395,7 +4490,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106291/photo/855db3759f470dfd.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106291/photo/855db3759f470dfd/320.jpg",
 "rating": "G",
@@ -4441,7 +4536,7 @@
 "drama",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106300/photo/b92d2498cc0e77b1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106300/photo/b92d2498cc0e77b1/320.jpg",
 "rating": "G",
@@ -4478,6 +4573,26 @@
 "title_ja": "沼影市民プール",
 "year": 2025
 },
+"106315": {
+"country": "日本",
+"director": "稲垣壮洋",
+"fetched": "2026-11-06",
+"genres_eiga": [],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/106315/photo/04dc33ae0018385c.jpg",
+"poster_small": "https://media.eiga.com/images/movie/106315/photo/04dc33ae0018385c/320.jpg",
+"rating": "G",
+"runtime": 124,
+"scores": {
+"eiga": {
+"n": 5,
+"v": 3.7
+}
+},
+"synopsis": "作家・平山讓のノンフィクション小説「4アウト ある障害者野球チームの挑戦」を原作に、東京に初めて結成された身体障害者野球チーム「東京ブルーサンダース」の創設にまつわる実話を映画化。 子どもの頃から野球一筋だった矢上雄一は、結婚して父になってからも社会人野球に情熱を注いでいたが、年齢の壁には勝てず戦力外通告を受けてしまう。身体障害者スポーツセンターに再就職した彼は、聴覚障害を持つ泉邦衛から野球チームの監督を依頼され、戸惑いながらも引き受けることを決める。同僚の高橋明日香と共に選手集めに奔走し、やがてチームは全国大会に挑むことになるが、現実は厳しく初めての大舞台で惨敗してしまう。「勝ちたい」と言いながらも悔しそうな様子を見せない選手たちに失望した矢上は、監督を降りると宣言するが……。 相葉雅紀が矢上雄一役で主演を務め、実際の身体障害者野球チームとの交流や練習を重ねて撮影に臨んだ。矢上の同僚でチ",
+"title_ja": "4アウト もう一度、プレイボール",
+"year": 2026
+},
 "106324": {
 "country": "アメリカ",
 "director": "ブライアン・ダッフィールド",
@@ -4485,7 +4600,7 @@
 "genres_eiga": [
 "thriller"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106324/photo/a853f38c6b83bf4a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106324/photo/a853f38c6b83bf4a/320.jpg",
 "rating": "G",
@@ -4508,7 +4623,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106327/photo/0632bc590fc6da23.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106327/photo/0632bc590fc6da23/320.jpg",
 "runtime": 93,
@@ -4525,7 +4640,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106328/photo/a7f354863d45b83a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106328/photo/a7f354863d45b83a/320.jpg",
 "runtime": 100,
@@ -4542,7 +4657,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106330/photo/c42fe36b252a8ce2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106330/photo/c42fe36b252a8ce2/320.jpg",
 "runtime": 107,
@@ -4560,7 +4675,7 @@
 "drama",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106331/photo/c46b26c458872d5c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106331/photo/c46b26c458872d5c/320.jpg",
 "rating": "G",
@@ -4605,7 +4720,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106358/photo/fa449782e423d7dc.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106358/photo/fa449782e423d7dc/320.jpg",
 "rating": "G",
@@ -4629,7 +4744,7 @@
 "comedy",
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106361/photo/f822d745998a7fe0.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106361/photo/f822d745998a7fe0/320.jpg",
 "rating": "G",
@@ -4652,7 +4767,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106365/photo/33e9683c1908ea92.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106365/photo/33e9683c1908ea92/320.jpg",
 "rating": "G",
@@ -4674,7 +4789,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106367/photo/46384af095ec7679.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106367/photo/46384af095ec7679/320.jpg",
 "rating": "G",
@@ -4696,7 +4811,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106369/photo/5c43052e057e19a2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106369/photo/5c43052e057e19a2/320.jpg",
 "rating": "G",
@@ -4719,7 +4834,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106371/photo/69903f908666b5b1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106371/photo/69903f908666b5b1/320.jpg",
 "rating": "G",
@@ -4872,7 +4987,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106416/photo/aa407faa56cc28fe.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106416/photo/aa407faa56cc28fe/320.jpg",
 "rating": "G",
@@ -4939,7 +5054,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106444/photo/6eb8e38a36e9bd69.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106444/photo/6eb8e38a36e9bd69/320.jpg",
 "rating": "G",
@@ -4962,7 +5077,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106445/photo/2341fe4fa3357413.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106445/photo/2341fe4fa3357413/320.jpg",
 "rating": "G",
@@ -5053,7 +5168,7 @@
 "thriller",
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106491/photo/77bea5a044b0e1b1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106491/photo/77bea5a044b0e1b1/320.jpg",
 "rating": "PG12",
@@ -5113,7 +5228,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106505/photo/1e4c25645bc544cd.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106505/photo/1e4c25645bc544cd/320.jpg",
 "rating": "G",
@@ -5136,7 +5251,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106506/photo/daf4c54b7f369b76.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106506/photo/daf4c54b7f369b76/320.jpg",
 "rating": "PG12",
@@ -5245,7 +5360,7 @@
 "drama",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106561/photo/ba195aa4451603db.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106561/photo/ba195aa4451603db/320.jpg",
 "runtime": 70,
@@ -5308,7 +5423,7 @@
 "director": "ハリス・ディキンソン",
 "fetched": "2026-11-05",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106582/photo/ed7649d6c6f09c45.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106582/photo/ed7649d6c6f09c45/320.jpg",
 "rating": "PG12",
@@ -5348,7 +5463,7 @@
 "action",
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106585/photo/e3c5914a02c3c9a3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106585/photo/e3c5914a02c3c9a3/320.jpg",
 "rating": "PG12",
@@ -5371,7 +5486,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106587/photo/9476f341a00f6141.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106587/photo/9476f341a00f6141/320.jpg",
 "runtime": 138,
@@ -5413,7 +5528,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106601/photo/9741c7c5b0470bf3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106601/photo/9741c7c5b0470bf3/320.jpg",
 "rating": "G",
@@ -5431,7 +5546,7 @@
 "drama",
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106602/photo/42d5f2f1d2103d2c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106602/photo/42d5f2f1d2103d2c/320.jpg",
 "rating": "G",
@@ -5495,7 +5610,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106645/photo/b2e2be13ae242afd.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106645/photo/b2e2be13ae242afd/320.jpg",
 "rating": "G",
@@ -5560,7 +5675,7 @@
 "drama",
 "scifi"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106648/photo/102bd95a167f63c6.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106648/photo/102bd95a167f63c6/320.jpg",
 "rating": "G",
@@ -5599,7 +5714,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106652/photo/9ef4763cb3a9f2e4.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106652/photo/9ef4763cb3a9f2e4/320.jpg",
 "rating": "G",
@@ -5635,7 +5750,7 @@
 "drama",
 "history"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106671/photo/c8126166c152f775.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106671/photo/c8126166c152f775/320.jpg",
 "rating": "PG12",
@@ -5736,6 +5851,27 @@
 "title_ja": "ワンカモ",
 "year": 2026
 },
+"106724": {
+"country": "日本",
+"director": "泊誠也",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"suspense"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/106724/photo/9fd0998d8468641f.jpg",
+"poster_small": "https://media.eiga.com/images/movie/106724/photo/9fd0998d8468641f/320.jpg",
+"runtime": 124,
+"scores": {
+"eiga": {
+"n": 6,
+"v": 4.3
+}
+},
+"synopsis": "2019年にIR事業をめぐる汚職事件で逮捕され有罪判決を受けた元衆議院議員・あきもと司の手記「事実無根 私はこうして特捜に嵌められた」を原案に、“冤罪をつくる側”の視点から描いた社会派サスペンス。 東京地検特捜部に配属されたばかりの若き検察事務官・早乙女直樹は、指導役を務めるエース検事・如月美麗が1枚の供述調書を“作り上げていく”現場を目の当たりにする。それは事件の捜査ではなく、事件そのものの製造だった。「特捜は正義の組織ではなく、“勝つ”ための組織だ」と語る如月は、微笑みながら被疑者を追い込み、望んだ供述だけを引き出していく。そんな彼女の標的となったのは、秘書から身を起こし40代で副大臣にまでのぼりつめた衆議院議員・塚本明。身に覚えのない罪を着せられた彼は否認を貫くが、証言の買収と捏造された調書によって追い詰められていく。 特捜部のエース検事・如月美麗役で加藤夏希、新人検察事務官・早乙女",
+"title_ja": "冤罪のつくりかた",
+"year": 2026
+},
 "106732": {
 "country": "アメリカ",
 "director": "アダム・デュビン",
@@ -5812,7 +5948,7 @@
 "music",
 "stage"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106737/photo/835b1d6a52504bea.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106737/photo/835b1d6a52504bea/320.jpg",
 "rating": "G",
@@ -5831,18 +5967,18 @@
 "106742": {
 "country": "日本",
 "director": "末廣朋樹",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106742/photo/32bda1b42630cafa.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106742/photo/32bda1b42630cafa/320.jpg",
 "runtime": 91,
 "scores": {
 "eiga": {
-"n": 1,
-"v": 3.0
+"n": 2,
+"v": 3.2
 }
 },
 "synopsis": "責任から逃げ続けてきた小説家志望の男性が、夢と現実、憧れと生活の間で自身の人生と向き合っていく姿を、切なくもユーモラスに描いたドラマ。 30代の江川厚は、アルバイトをしながら小説家を目指している。しかし最後に小説を完成させたのは随分前で、今後の人生について考えるべき時期にきていた。「世界は醜く、人間は残酷だ」とわめく江川にとって、明るく前向きな恋人・本田の存在は、心の拠りどころとなっていた。本田は江川の不器用なところを褒めてくれていたが、責任が生じる物事から逃げては世の中に文句ばかり言っている江川は、ついに愛想を尽かされてしまう。江川は本田とヨリを戻すべく、ある行動を起こすが……。 監督は、2013年に大学の卒業制作として手がけた短編映画「苔まみれの転石」で注目を集めた末廣朋樹。「苔まみれの転石」でも主演を務めた松井薫平が主人公・江川、「凪の憂鬱」などの辻凪子が江川の恋人・本田を演じ、三河",
@@ -5856,7 +5992,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106743/photo/5930a105870d83cb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106743/photo/5930a105870d83cb/320.jpg",
 "rating": "G",
@@ -5878,7 +6014,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106744/photo/32b10d2e0921e05c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106744/photo/32b10d2e0921e05c/320.jpg",
 "rating": "G",
@@ -5897,7 +6033,7 @@
 "action",
 "horror"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106773/photo/b38a09941d56c02c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106773/photo/b38a09941d56c02c/320.jpg",
 "rating": "G",
@@ -5940,7 +6076,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106782/photo/288072b747fcf412.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106782/photo/288072b747fcf412/320.jpg",
 "runtime": 127,
@@ -5958,7 +6094,7 @@
 "comedy",
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106803/photo/34cfe30d52367cde.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106803/photo/34cfe30d52367cde/320.jpg",
 "runtime": 26,
@@ -5975,11 +6111,11 @@
 "106832": {
 "country": "日本",
 "director": "尾崎健",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106832/photo/43ab828c73d922d9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106832/photo/43ab828c73d922d9/320.jpg",
 "runtime": 78,
@@ -5995,7 +6131,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106834/photo/fe061e0e9558072b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106834/photo/fe061e0e9558072b/320.jpg",
 "rating": "G",
@@ -6018,7 +6154,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106859/photo/b2a6b14a3acd414e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106859/photo/b2a6b14a3acd414e/320.jpg",
 "runtime": 104,
@@ -6039,7 +6175,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106862/photo/108993cd4e02183e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106862/photo/108993cd4e02183e/320.jpg",
 "runtime": 110,
@@ -6056,15 +6192,20 @@
 "106866": {
 "country": "ベトナム",
 "director": "フン・チャン",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "horror"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106866/photo/645bb24c617a1e00.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106866/photo/645bb24c617a1e00/320.jpg",
 "runtime": 94,
-"scores": {},
+"scores": {
+"eiga": {
+"n": 5,
+"v": 2.2
+}
+},
 "synopsis": "ベトナムで知られる都市伝説をモチーフに、怨霊が潜む屋敷に足を踏み入れたSNSインフルエンサーたちの運命を描いたホラー映画。 とあるSNSインフルエンサーのグループが、再生数を稼ぐため、ホア家の都市伝説にまつわる古い屋敷「ラウ・チュー・ホア」を訪れる。廃墟となったその場所でライブ配信を始める彼らだったが、開始直後から次々と超常現象が発生。やがてライブ配信は、彼らが「業を作り、業を返す」場へと変貌を遂げ、ホア家の令嬢の怨霊を前に1人また1人と恐怖の底に突き落とされていく。 本作が長編デビュー作となるベトナムの若手映画監督フン・チャンが、登場人物たちによるライブ配信という語り口で臨場感たっぷりに描き、本国ベトナムではSNSを中心に口コミで人気を集め大ヒットを記録した。",
 "title_en": "Lầu Chú Hoả",
 "title_ja": "ラウ・チュー・ホア あの屋敷には、何かいる。",
@@ -6078,7 +6219,7 @@
 "anime",
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106891/photo/6a9f9058801a4b2d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106891/photo/6a9f9058801a4b2d/320.jpg",
 "runtime": 105,
@@ -6112,7 +6253,7 @@
 "genres_eiga": [
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106924/photo/19c7ccf55285a1f9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106924/photo/19c7ccf55285a1f9/320.jpg",
 "rating": "G",
@@ -6132,7 +6273,7 @@
 "suspense",
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106925/photo/74370db3c0f48c5f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106925/photo/74370db3c0f48c5f/320.jpg",
 "rating": "R15+",
@@ -6164,7 +6305,7 @@
 "genres_eiga": [
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106948/photo/326d3b2010b84f6f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106948/photo/326d3b2010b84f6f/320.jpg",
 "rating": "G",
@@ -6176,11 +6317,11 @@
 },
 "106951": {
 "country": "韓国",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "rating": "G",
@@ -6193,19 +6334,19 @@
 "106952": {
 "country": "日本",
 "director": "丸山貢治",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "action",
 "history"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106952/photo/455365132fa74026.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106952/photo/455365132fa74026/320.jpg",
 "runtime": 90,
 "scores": {
 "eiga": {
-"n": 3,
-"v": 3.3
+"n": 4,
+"v": 3.7
 }
 },
 "synopsis": "激動の幕末を舞台に、言葉を失った異国の少女と、言葉を話さず山奥に隠れ住む謎の男の出会いと数奇な運命を描いたアクション時代劇。「ウルトラマン」シリーズのスーツアクターをはじめ、スタントマンやアクション俳優として活動する丸山貢治が主演・監督・脚本を手がけ、自身の主宰する劇団丸組で上演した舞台「山猫」を映画版として生まれ変わらせた。丸山監督が自らアクション監督も務め、現代的なアレンジを加えた殺陣や素手のファイトを用いたアクションシーンを散りばめて描き出す。 目の前で母親を殺されたショックで言葉を失った異国の少女クレア。薩摩藩から逃れ京都に辿り着いた彼女は、鞍馬山の奥深くにたったひとりで生きる、言葉を話さない謎の男・山猫と出会う。言葉を交わさなくともクレアを守る山猫だったが、そんな2人の前に立ちはだかったのは薩摩藩の追手ではなく、幕府が送り込んだ新選組だった。 言葉を失った少女クレアを「小さな恋の",
@@ -6220,7 +6361,7 @@
 "anime",
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/106973/photo/780006826bd6c820.jpg",
 "poster_small": "https://media.eiga.com/images/movie/106973/photo/780006826bd6c820/320.jpg",
 "rating": "PG12",
@@ -6352,7 +6493,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/107113/photo/fbf5a97401e1c124.jpg",
 "poster_small": "https://media.eiga.com/images/movie/107113/photo/fbf5a97401e1c124/320.jpg",
 "runtime": 126,
@@ -6382,7 +6523,7 @@
 "director": "アンジェイ・ワイダ",
 "fetched": "2026-11-05",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/107164/photo/db32ad9feeaa9ef2.jpg",
 "poster_small": "https://media.eiga.com/images/movie/107164/photo/db32ad9feeaa9ef2/320.jpg",
 "runtime": 103,
@@ -6397,13 +6538,98 @@
 "director": "ふるいちやすし",
 "fetched": "2026-11-05",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {},
 "synopsis": "雨の器の作品情報。上映スケジュール、キャスト、あらすじ、映画レビュー、予告動画。",
 "title_ja": "雨の器",
 "year": 2026
+},
+"107228": {
+"country": "中国",
+"director": "ジャン・モンチー",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"documentary"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/107228/photo/7d9f45b91b8faa54.jpg",
+"poster_small": "https://media.eiga.com/images/movie/107228/photo/7d9f45b91b8faa54/320.jpg",
+"runtime": 78,
+"scores": {},
+"synopsis": "中国の女性監督ジャン・モンチーが、父の故郷である湖北省の村を10年以上にわたって撮り続けた「自画像 47KM」シリーズの第1作。23歳だった監督が初めて村に入った2010年の日々を記録した、シリーズの出発点となる一編。 大学を出たばかりのジャン・モンチーは、農村の老人たちの話を映像で記録するプロジェクトに参加し、「47KM村」と呼ばれる村を訪ねる。祖父や伯父に反対されながらも、彼女は家々を回って村人に耳を傾け、過去の過酷な出来事や厳しい現実を聞き出していく。記録を重ねるうち、カメラは村の姿だけでなく、自分は何者なのかを問い始めた監督自身にも向けられていく。 監督のジャン・モンチーは1987年湖北省生まれ。ダンサー、振付家として活動しながらドキュメンタリーを撮り始め、2020年には47KM村に家を建てて移り住んだ。シリーズ全10本を上映する特集企画（2026年11月7日～20日、ポレポレ東中",
+"title_en": "Self Portrait: At 47 Km",
+"title_ja": "自画像 47KM",
+"year": 2011
+},
+"107229": {
+"country": "中国",
+"director": "ジャン・モンチー",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"documentary"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/107229/photo/6c027a180ee2d466.jpg",
+"poster_small": "https://media.eiga.com/images/movie/107229/photo/6c027a180ee2d466/320.jpg",
+"runtime": 78,
+"scores": {},
+"synopsis": "父親の故郷である中国湖北省の村に10年以上通い続け、村の記憶と自身の変化を記録してきたジャン・モンチー監督による「自画像 47KM」シリーズの第2作。村で亡くなった人々のための記念碑を建てようとする日々を追った。 2010年、大学を出たばかりのジャン・モンチーは、老人たちにインタビューをしようと「47KM村」と呼ばれる村を訪れ、村を襲った飢餓の記憶を聞き取り始める。約1年ぶりに村へ戻ってきた監督は、村で亡くなり忘れ去られようとしている人々のために記念碑を建てようと考える。反対の声を受けながらも1軒ずつ家を訪ね、賛同と寄付を募っていくが、詳しい聞き取りを重ねるうち、人々の証言が大きく食い違っていることに気づいていく。 監督のジャン・モンチーは1987年、中国湖北省生まれ。中央民族大学でダンスを学び、ダンサー、振付家として活動しながらドキュメンタリー制作を始めた。山形国際ドキュメンタリー映画祭",
+"title_en": "Self-Portrait: Dancing at 47KM",
+"title_ja": "自画像 47KMのダンス",
+"year": 2012
+},
+"107230": {
+"country": "中国",
+"director": "ジャン・モンチー",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"documentary"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/107230/photo/659e3f7ece232efc.jpg",
+"poster_small": "https://media.eiga.com/images/movie/107230/photo/659e3f7ece232efc/320.jpg",
+"runtime": 78,
+"scores": {},
+"synopsis": "中国・湖北省の農村に毎年通い、村の人々と自身の変化を記録し続けるジャン・モンチーのドキュメンタリー「自画像 47KM」シリーズの第3作。村に関わろうとする監督の試みと空回りを、自身のパフォーマンスも交えて描いた。 2010年、大学を出たばかりのジャン・モンチーは、老人たちへの聞き取りのため、父の故郷である「47KM村」と呼ばれる村を訪れた。それから毎年村に通い続ける監督は、やがて村に図書室を作ろうと考える。子どもたちを集めてゴミ拾いの活動も始めるが、周囲の大人たちからは子どもに関わるなと反対されてしまう。貧しい暮らしをする老女の家に電線を引こうとすれば、嫁に怒られるからやめてほしいと断られる。村に貢献したいという思いは、行き場を失っていく。 ジャン・モンチーは1987年、中国湖北省生まれ。中央民族大学でダンスを学び、ダンサーや振付家として活動しながら2010年に村での撮影を始め、2020年",
+"title_en": "Self-Portrait: Dreaming at 47 km",
+"title_ja": "自画像 47KMの夢",
+"year": 2013
+},
+"107231": {
+"country": "中国",
+"director": "ジャン・モンチー",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"documentary"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/107231/photo/b862a50cfca4c7ec.jpg",
+"poster_small": "https://media.eiga.com/images/movie/107231/photo/b862a50cfca4c7ec/320.jpg",
+"runtime": 77,
+"scores": {},
+"synopsis": "中国のドキュメンタリー作家ジャン・モンチーが、父の故郷である湖北省の村を2010年から記録し続ける「自画像 47KM」シリーズの第4作。村の子どもたちとの交流を軸に、村に関わろうとする自身の立ち位置を見つめる。 ジャン・モンチー監督はこの年も、「47KM村」と呼ばれる村に戻ってくる。老人たちへの聞き取りを重ねてきた彼女に子どもたちはすっかり打ち解け、インタビューを手伝ったり、一緒にワークショップを開いたりするようになっていた。中には将来カメラマンになりたいという夢を語る子もいる。だが、ある老人は、農村の子どもが学業で大成したり志を持ったりすることはないのだと言い切る。監督は村の高齢者を支える老人基金を作り、子どもたちとともに支援物資を配って回るのだが……。 ジャン・モンチーは1987年中国湖北省生まれ。中央民族大学でダンスを学び、ダンサー・振付家として活動しながらドキュメンタリーを撮り始め",
+"title_en": "Self-Portrait: Building the Bridge at 47 KM",
+"title_ja": "自画像 47KMの橋",
+"year": 2014
+},
+"107232": {
+"country": "中国",
+"director": "ジャン・モンチー",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"drama"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/107232/photo/dac1c791cd320dd1.jpg",
+"poster_small": "https://media.eiga.com/images/movie/107232/photo/dac1c791cd320dd1/320.jpg",
+"runtime": 70,
+"scores": {},
+"synopsis": "中国湖北省の農村に通い続け、村の人々と自身の変化を記録してきたジャン・モンチーの「自画像 47KM」シリーズ第5作。村と彼女を結ぶ存在だった祖父の死をきっかけに、監督が村を覆う無数の死と向き合った記録となった。 2010年、大学を出たばかりのジャン・モンチー監督は、老人たちへのインタビューのため父の故郷である湖北省の村「47KM村」を訪れ、以来毎年通い続けてきた。だが、村と自分をつないでいた祖父が亡くなり、彼女は村にとどまる意義を見失う。死とはどういうものなのか。監督は老人たちにカメラの前で語ってもらう。農薬を飲んで自ら命を絶った老人、批判闘争でつるし上げられて死んだ人々。穏やかに見えた日常は、実は無数の死に囲まれていた。それでも監督は、村の若者たちに希望を見いだそうとする。 シリーズは第1作「自画像 47KM」から第10作「自画像 47KM 2020」まで10本を数え、監督は2020年か",
+"title_en": "Self-Portrait: Dying at 47 KM",
+"title_ja": "自画像 47KMの死",
+"year": 2015
 },
 "107270": {
 "country": "日本",
@@ -6414,7 +6640,7 @@
 "drama",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {},
@@ -6430,7 +6656,7 @@
 "comedy",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/1115/photo/ab5bf5f3e9946f0b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/1115/photo/ab5bf5f3e9946f0b/320.jpg",
 "rating": "PG12",
@@ -6478,7 +6704,7 @@
 "drama",
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/1138/photo/30ede27d57f32cbc.jpg",
 "poster_small": "https://media.eiga.com/images/movie/1138/photo/30ede27d57f32cbc/320.jpg",
 "runtime": 138,
@@ -6524,7 +6750,7 @@
 "comedy",
 "suspense"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/12299/photo/8d7928a3fd44b3af.jpg",
 "poster_small": "https://media.eiga.com/images/movie/12299/photo/8d7928a3fd44b3af/320.jpg",
 "runtime": 80,
@@ -6656,7 +6882,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/14646/photo/155c8f4e05164482.jpg",
 "poster_small": "https://media.eiga.com/images/movie/14646/photo/155c8f4e05164482/320.jpg",
 "rating": "PG12",
@@ -6679,7 +6905,7 @@
 "genres_eiga": [
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/1465/photo/bf12104cabfaed83.jpg",
 "poster_small": "https://media.eiga.com/images/movie/1465/photo/bf12104cabfaed83/320.jpg",
 "runtime": 97,
@@ -6746,7 +6972,7 @@
 "drama",
 "suspense"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/1629/photo/23d0a92423c5fbdb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/1629/photo/23d0a92423c5fbdb/320.jpg",
 "rating": "R15+",
@@ -6940,7 +7166,7 @@
 "director": "クシシュトフ・キエシロフスキ",
 "fetched": "2026-11-04",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/21401/photo/24cd4477fcc87c5d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/21401/photo/24cd4477fcc87c5d/320.jpg",
 "runtime": 99,
@@ -6962,7 +7188,7 @@
 "genres_eiga": [
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/21403/photo/af2dc842bec11091.jpg",
 "poster_small": "https://media.eiga.com/images/movie/21403/photo/af2dc842bec11091/320.jpg",
 "runtime": 96,
@@ -6982,7 +7208,7 @@
 "director": "クシシュトフ・キエシロフスキ",
 "fetched": "2026-11-04",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/21404/photo/1e47992478885edd.jpg",
 "poster_small": "https://media.eiga.com/images/movie/21404/photo/1e47992478885edd/320.jpg",
 "runtime": 92,
@@ -7074,7 +7300,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/24638/photo/b75c9f5013e6a4a9.jpg",
 "poster_small": "https://media.eiga.com/images/movie/24638/photo/b75c9f5013e6a4a9/320.jpg",
 "rating": "G",
@@ -7097,7 +7323,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/24872/photo/73cf71d2bd13722a.jpg",
 "poster_small": "https://media.eiga.com/images/movie/24872/photo/73cf71d2bd13722a/320.jpg",
 "runtime": 80,
@@ -7136,7 +7362,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/25679/photo/0e19f2a309fc4965.jpg",
 "poster_small": "https://media.eiga.com/images/movie/25679/photo/0e19f2a309fc4965/320.jpg",
 "runtime": 83,
@@ -7182,7 +7408,7 @@
 "suspense",
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/25862/photo/b34fc61446beb424.jpg",
 "poster_small": "https://media.eiga.com/images/movie/25862/photo/b34fc61446beb424/320.jpg",
 "rating": "G",
@@ -7198,12 +7424,35 @@
 "title_ja": "ファーゴ",
 "year": 1996
 },
+"27929": {
+"country": "フランス",
+"director": "レオス・カラックス",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"drama",
+"romance"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/27929/photo/794adbcfd8514fe0.jpg",
+"poster_small": "https://media.eiga.com/images/movie/27929/photo/794adbcfd8514fe0/320.jpg",
+"runtime": 104,
+"scores": {
+"eiga": {
+"n": 19,
+"v": 3.2
+}
+},
+"synopsis": "フランスの鬼才レオス・カラックスが1983年に発表した長編デビュー作。夜のパリをさまようふたつの孤独な魂の出会いを美しいモノクロ映像で描き、第37回カンヌ国際映画祭でヤング大賞を受賞するなど世界各地の映画祭で話題を集めた。 親友に恋人を奪われた青年アレックスは、恋人とケンカした女性ミレーユと運命的な出会いを果たす。アレックスはミレーユに一目ぼれするが、やがてふたりは思わぬ悲劇に見舞われる。 アレックス役とミレーユ役には、当時新人俳優だったドニ・ラバンとミレーユ・ペリエをそれぞれ抜てき。ラバン演じる主人公アレックスは、後に形を変えながら「汚れた血」「ポンヌフの恋人」の主人公となり、本作とあわせて「アレックス3部作」と呼ばれるようになった。ジャン＝イブ・エスコフィエが撮影を手がけ、続く2作品でも撮影を担当。日本では、1988年2月公開の「汚れた血」に続いて同年7月に劇場初公開された。2026年",
+"title_en": "Boy Meets Girl",
+"title_ja": "ボーイ・ミーツ・ガール（1983）",
+"year": 1983
+},
 "28423": {
 "country": "アメリカ",
 "director": "ガス・バン・サント",
 "fetched": "2026-11-05",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/28423/photo/d10ee0f896633f7e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/28423/photo/d10ee0f896633f7e/320.jpg",
 "rating": "PG12",
@@ -7226,7 +7475,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/28668/photo/9885239bb8513ebb.jpg",
 "poster_small": "https://media.eiga.com/images/movie/28668/photo/9885239bb8513ebb/320.jpg",
 "runtime": 70,
@@ -7271,7 +7520,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/28906/photo/4b9649b6dff12101.jpg",
 "poster_small": "https://media.eiga.com/images/movie/28906/photo/4b9649b6dff12101/320.jpg",
 "runtime": 73,
@@ -7286,6 +7535,29 @@
 "title_ja": "真夜中の虹",
 "year": 1988
 },
+"31071": {
+"country": "フランス",
+"director": "レオス・カラックス",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"drama",
+"crime"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/31071/photo/897debccebc224d5.jpg",
+"poster_small": "https://media.eiga.com/images/movie/31071/photo/897debccebc224d5/320.jpg",
+"runtime": 120,
+"scores": {
+"eiga": {
+"n": 41,
+"v": 4.0
+}
+},
+"synopsis": "フランスの鬼才レオス・カラックスが1986年に手がけた長編第2作。監督デビュー作「ボーイ・ミーツ・ガール」に始まるアレックス3部作の第2作で、結ばれない男女の三角関係を独自の映像センスと鮮烈な色彩でスピーディに描き、弱冠25歳にして映画作家としてのカラックスの評価を決定づけた一作。 愛のないセックスにより感染する奇妙な病気「STBO」が蔓延した近未来のパリ。空虚な日々を過ごす青年アレックスは父が不可解な死を遂げた後、父の友人であるギャングの男マルクから犯罪に誘われる。マルクを手伝うことにしたアレックスは、彼の愛人であるアンナにひかれていくが……。 「ボーイ・ミーツ・ガール」に続いてドニ・ラバンが主人公アレックスを演じ、名優ミシェル・ピコリが父の友人マルク、キャリア初期のジュリエット・ビノシュがマルクの愛人アンナを演じた。後にアメリカで「グッド・ウィル・ハンティング 旅立ち」などを手がけるジ",
+"title_en": "Mauvais sang",
+"title_ja": "汚れた血",
+"year": 1986
+},
 "31509": {
 "country": "フィンランド",
 "director": "アキ・カウリスマキ",
@@ -7293,7 +7565,7 @@
 "genres_eiga": [
 "stage"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/31509/photo/af9615bc4783383e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/31509/photo/af9615bc4783383e/320.jpg",
 "runtime": 103,
@@ -7418,7 +7690,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/34045/photo/d3332c2155727f32.jpg",
 "poster_small": "https://media.eiga.com/images/movie/34045/photo/d3332c2155727f32/320.jpg",
 "runtime": 78,
@@ -7440,7 +7712,7 @@
 "genres_eiga": [
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/34164/photo/df46bd7fe49fa654.jpg",
 "poster_small": "https://media.eiga.com/images/movie/34164/photo/df46bd7fe49fa654/320.jpg",
 "runtime": 75,
@@ -7460,7 +7732,7 @@
 "director": "木村荘十二",
 "fetched": "2026-11-04",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 60,
@@ -7519,7 +7791,7 @@
 "comedy",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 103,
@@ -7538,7 +7810,7 @@
 "director": "篠田正浩",
 "fetched": "2026-11-05",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 99,
@@ -7560,7 +7832,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 129,
@@ -7627,7 +7899,7 @@
 "director": "千葉泰樹",
 "fetched": "2026-11-02",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 103,
@@ -7649,7 +7921,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 94,
@@ -7670,7 +7942,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/35330/photo/cc75dd8cfffc4103.jpg",
 "poster_small": "https://media.eiga.com/images/movie/35330/photo/cc75dd8cfffc4103/320.jpg",
 "rating": "G",
@@ -7925,7 +8197,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 95,
@@ -7944,7 +8216,7 @@
 "director": "篠田正浩",
 "fetched": "2026-11-05",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 86,
@@ -7965,7 +8237,7 @@
 "genres_eiga": [
 "mystery"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 95,
@@ -7987,7 +8259,7 @@
 "genres_eiga": [
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/37677/photo/4c97eac4b69eb517.jpg",
 "poster_small": "https://media.eiga.com/images/movie/37677/photo/4c97eac4b69eb517/320.jpg",
 "rating": "G",
@@ -8001,6 +8273,22 @@
 "synopsis": "自ら製造した原子爆弾で政府を脅迫する男の孤独な闘いを鋭い風刺とパワフルな演出で描き、現在もカルト的人気を誇る異色のアクション映画。 中学校の冴えない理科教師・城戸は、原子力発電所に侵入してプルトニウムを盗み出し、自宅アパートで苦労の末に原子爆弾の製造に成功。警察に脅迫電話を掛けると、以前バスジャック事件に遭遇した際に知り合った山下警部を交渉相手に指名する。明確な目的も思想も持たない城戸は、テレビの野球中継を試合終了まで放送させるよう要求したり、ラジオ番組を通して次の要求を募集したりと、行き当たりばったりの犯行を続けるが……。 沢田研二が主演を務め、菅原文太が山下警部を圧倒的存在感で熱演。「青春の殺人者」の長谷川和彦監督の長編第2作で、「ザ・ヤクザ」のレナード・シュレイダーが原案と共同脚本を手がけた。2026年10月に4Kリマスター版が公開。",
 "title_ja": "太陽を盗んだ男",
 "year": 1979
+},
+"37684": {
+"country": "日本",
+"director": "野淵昶",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"drama"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/noimg.png",
+"poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
+"runtime": 97,
+"scores": {},
+"synopsis": "明治文壇の巨匠泉鏡花の原作から「西鶴一代女」の依田義賢が脚本を書き、「愛染橋」の野淵昶が監督し、「西陣の姉妹」の宮川一夫が撮影を担当している。なお衣裳考案を閨秀画家梶原緋佐子が受け持っている。主演は「長崎の歌は忘れじ」の京マチ子と「武蔵野夫人」の森雅之で、他に星美千子、進藤英太郎、羅門光三郎、浪花千栄子、殿山泰司などが助演している。",
+"title_ja": "滝の白糸（1952）",
+"year": 1952
 },
 "37707": {
 "country": "日本",
@@ -8031,7 +8319,7 @@
 "genres_eiga": [
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/37847/photo/e3b8f0d355e3995d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/37847/photo/e3b8f0d355e3995d/320.jpg",
 "runtime": 100,
@@ -8051,7 +8339,7 @@
 "director": "篠田正浩",
 "fetched": "2026-11-05",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 129,
@@ -8093,7 +8381,7 @@
 "genres_eiga": [
 "history"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 105,
@@ -8213,7 +8501,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 111,
@@ -8234,7 +8522,7 @@
 "genres_eiga": [
 "comedy"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 98,
@@ -8257,7 +8545,7 @@
 "drama",
 "suspense"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 87,
@@ -8386,7 +8674,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 100,
@@ -8408,7 +8696,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 104,
@@ -8439,7 +8727,7 @@
 "year": 1988
 },
 "39536": {
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 80,
 "title_ja": "マリヤのお雪"
@@ -8451,7 +8739,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/39618/photo/bad6af1af367de9d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/39618/photo/bad6af1af367de9d/320.jpg",
 "runtime": 111,
@@ -8535,7 +8823,7 @@
 "fantasy",
 "stage"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/39811/photo/65f1343f52eb9459.jpg",
 "poster_small": "https://media.eiga.com/images/movie/39811/photo/65f1343f52eb9459/320.jpg",
 "rating": "G",
@@ -8557,7 +8845,7 @@
 "genres_eiga": [
 "mystery"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/39830/photo/20f2fe3ac9093fc4.jpg",
 "poster_small": "https://media.eiga.com/images/movie/39830/photo/20f2fe3ac9093fc4/320.jpg",
 "runtime": 151,
@@ -8652,7 +8940,7 @@
 "crime",
 "stage"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/40089/photo/69467954685ad74b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/40089/photo/69467954685ad74b/320.jpg",
 "runtime": 92,
@@ -8730,7 +9018,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/40347/photo/1b608d25cbf8e432.jpg",
 "poster_small": "https://media.eiga.com/images/movie/40347/photo/1b608d25cbf8e432/320.jpg",
 "rating": "G",
@@ -8794,7 +9082,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/40525/photo/87539e566b0d90c0.jpg",
 "poster_small": "https://media.eiga.com/images/movie/40525/photo/87539e566b0d90c0/320.jpg",
 "runtime": 135,
@@ -8828,7 +9116,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/41164/photo/c7856a91f9aa5e9f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/41164/photo/c7856a91f9aa5e9f/320.jpg",
 "runtime": 110,
@@ -8892,7 +9180,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 95,
@@ -8911,7 +9199,7 @@
 "director": "野村芳太郎",
 "fetched": "2026-11-02",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 86,
@@ -8978,7 +9266,7 @@
 "genres_eiga": [
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/41939/photo/b256a82c97946296.jpg",
 "poster_small": "https://media.eiga.com/images/movie/41939/photo/b256a82c97946296/320.jpg",
 "runtime": 91,
@@ -9027,11 +9315,11 @@
 "42367": {
 "country": "アメリカ",
 "director": "ジョセフ・L・マンキウィッツ",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/42367/photo/42381c56c75db18e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/42367/photo/42381c56c75db18e/320.jpg",
 "rating": "G",
@@ -9073,9 +9361,9 @@
 "43089": {
 "country": "アメリカ",
 "director": "ビンセント・ミネリ",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {
@@ -9160,7 +9448,7 @@
 "genres_eiga": [
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/44353/photo/b88088f0936b923c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/44353/photo/b88088f0936b923c/320.jpg",
 "scores": {
@@ -9201,11 +9489,11 @@
 "44571": {
 "country": "アメリカ",
 "director": "ジョセフ・L・マンキウィッツ",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {},
@@ -9221,7 +9509,7 @@
 "genres_eiga": [
 "family"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/44594/photo/5a9cefe291ef142c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/44594/photo/5a9cefe291ef142c/320.jpg",
 "rating": "G",
@@ -9258,11 +9546,11 @@
 "45033": {
 "country": "アメリカ",
 "director": "ジョセフ・L・マンキウィッツ",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "comedy"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/45033/photo/8c26bcf90d416e75.jpg",
 "poster_small": "https://media.eiga.com/images/movie/45033/photo/8c26bcf90d416e75/320.jpg",
 "runtime": 103,
@@ -9307,7 +9595,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/46248/photo/43887bb3eed0411c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/46248/photo/43887bb3eed0411c/320.jpg",
 "runtime": 108,
@@ -9325,9 +9613,9 @@
 "46572": {
 "country": "アメリカ",
 "director": "ジョセフ・L・マンキウィッツ",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {
@@ -9370,7 +9658,7 @@
 "genres_eiga": [
 "suspense"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/46810/photo/8af2f493e43137ab.jpg",
 "poster_small": "https://media.eiga.com/images/movie/46810/photo/8af2f493e43137ab/320.jpg",
 "rating": "PG12",
@@ -9393,7 +9681,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/4703/photo/a4b07d110b9643b1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/4703/photo/a4b07d110b9643b1/320.jpg",
 "runtime": 62,
@@ -9479,7 +9767,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/47642/photo/39d0e4417f26d024.jpg",
 "poster_small": "https://media.eiga.com/images/movie/47642/photo/39d0e4417f26d024/320.jpg",
 "runtime": 103,
@@ -9497,9 +9785,9 @@
 "47940": {
 "country": "アメリカ",
 "director": "ジョセフ・L・マンキウィッツ",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/47940/photo/bfb7364022955a8e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/47940/photo/bfb7364022955a8e/320.jpg",
 "scores": {
@@ -9565,7 +9853,7 @@
 "comedy",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {
@@ -9608,7 +9896,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/49013/photo/a491d98ff807d7f3.jpg",
 "poster_small": "https://media.eiga.com/images/movie/49013/photo/a491d98ff807d7f3/320.jpg",
 "rating": "PG12",
@@ -9700,7 +9988,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/49890/photo/fc201091b37b51a5.jpg",
 "poster_small": "https://media.eiga.com/images/movie/49890/photo/fc201091b37b51a5/320.jpg",
 "rating": "G",
@@ -9739,11 +10027,11 @@
 "50259": {
 "country": "アメリカ",
 "director": "ジョセフ・L・マンキウィッツ",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 150,
@@ -9761,11 +10049,11 @@
 "50314": {
 "country": "アメリカ",
 "director": "ジョセフ・L・マンキウィッツ",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {
@@ -9807,7 +10095,7 @@
 "director": "アキ・カウリスマキ",
 "fetched": "2026-11-03",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/5105/photo/c0fcafd12a314f68.jpg",
 "poster_small": "https://media.eiga.com/images/movie/5105/photo/c0fcafd12a314f68/320.jpg",
 "runtime": 96,
@@ -9829,7 +10117,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/51482/photo/1c4dd3924985cbd7.jpg",
 "poster_small": "https://media.eiga.com/images/movie/51482/photo/1c4dd3924985cbd7/320.jpg",
 "runtime": 85,
@@ -9851,7 +10139,7 @@
 "genres_eiga": [
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/51671/photo/f377c72697c57092.jpg",
 "poster_small": "https://media.eiga.com/images/movie/51671/photo/f377c72697c57092/320.jpg",
 "rating": "R15+",
@@ -9874,7 +10162,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 112,
@@ -9917,7 +10205,7 @@
 "suspense",
 "scifi"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/52796/photo/4b3777ee91546a51.jpg",
 "poster_small": "https://media.eiga.com/images/movie/52796/photo/4b3777ee91546a51/320.jpg",
 "rating": "R15+",
@@ -9979,7 +10267,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/53383/photo/55298a019cd5269f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/53383/photo/55298a019cd5269f/320.jpg",
 "runtime": 140,
@@ -10068,7 +10356,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/55066/photo/bd9447105a1bb886.jpg",
 "poster_small": "https://media.eiga.com/images/movie/55066/photo/bd9447105a1bb886/320.jpg",
 "rating": "G",
@@ -10091,7 +10379,7 @@
 "drama",
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/55165/photo/cb8c195b0bf6ee95.jpg",
 "poster_small": "https://media.eiga.com/images/movie/55165/photo/cb8c195b0bf6ee95/320.jpg",
 "rating": "G",
@@ -10113,7 +10401,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/55169/photo/ec903d58a0e7fe37.jpg",
 "poster_small": "https://media.eiga.com/images/movie/55169/photo/ec903d58a0e7fe37/320.jpg",
 "rating": "G",
@@ -10135,7 +10423,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/55520/photo/e0c6dc6d7917d142.jpg",
 "poster_small": "https://media.eiga.com/images/movie/55520/photo/e0c6dc6d7917d142/320.jpg",
 "runtime": 85,
@@ -10193,6 +10481,29 @@
 "title_ja": "ゴダール・ソシアリスム",
 "year": 2010
 },
+"55905": {
+"country": "フランス",
+"director": "レオス・カラックス",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"romance"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/55905/photo/b51539280c2dbe2a.jpg",
+"poster_small": "https://media.eiga.com/images/movie/55905/photo/b51539280c2dbe2a/320.jpg",
+"rating": "PG12",
+"runtime": 125,
+"scores": {
+"eiga": {
+"n": 62,
+"v": 3.8
+}
+},
+"synopsis": "フランスの鬼才レオス・カラックスが「ボーイ・ミーツ・ガール」「汚れた血」に続いて手がけたラブストーリー。アレックスという名を持つ青年を主人公に描く3部作の完結編にあたる。 パリで最も古く美しい橋・ポンヌフで暮らす大道芸人のアレックスは、ある日、失恋の痛手と治る見込みのない目の病に苦しみ放浪する画学生ミシェルと出会う。やがて2人はポンヌフで共に暮らし始め、孤独な日々の中で絆を深めていく。ジュリアンというチェリストへの恋の未練と、画家としての失明への恐怖を抱えるミシェル。そして、他人とのつながりを知らずに生きてきたアレックス。2人の間には、次第に絆と愛が芽生えていく。しかし、ミシェルはやがて両親が自分を捜していること、そして眼病の治療法が見つかったことを知り……。 主人公アレックスを演じるのは、「ボーイ・ミーツ・ガール」「汚れた血」に続いてドニ・ラバン。ミシェル役にはジュリエット・ビノシュが扮",
+"title_en": "Les amants du Pont-Neuf",
+"title_ja": "ポンヌフの恋人",
+"year": 1991
+},
 "56676": {
 "country": "フランス",
 "director": "ロベール・ブレッソン",
@@ -10201,7 +10512,7 @@
 "drama",
 "suspense"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/56676/photo/6e766c93f23b4a48.jpg",
 "poster_small": "https://media.eiga.com/images/movie/56676/photo/6e766c93f23b4a48/320.jpg",
 "runtime": 76,
@@ -10223,7 +10534,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/56677/photo/65cc7e93d9178c30.jpg",
 "poster_small": "https://media.eiga.com/images/movie/56677/photo/65cc7e93d9178c30/320.jpg",
 "runtime": 85,
@@ -10245,7 +10556,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/57671/photo/55528002c9d8f534.jpg",
 "poster_small": "https://media.eiga.com/images/movie/57671/photo/55528002c9d8f534/320.jpg",
 "rating": "G",
@@ -10279,11 +10590,11 @@
 "61474": {
 "country": "アメリカ",
 "director": "エドワード・クライン",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {},
@@ -10319,7 +10630,7 @@
 "director": "エルンスト・ルビッチ",
 "fetched": "2026-11-04",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {},
@@ -10356,7 +10667,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {},
@@ -10368,9 +10679,9 @@
 "64864": {
 "country": "アメリカ",
 "director": "ジョセフ・L・マンキウィッツ",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {},
@@ -10429,7 +10740,7 @@
 "genres_eiga": [
 "comedy"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 83,
@@ -10443,7 +10754,7 @@
 "director": "木村荘十二",
 "fetched": "2026-11-02",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "scores": {},
@@ -10475,7 +10786,7 @@
 "genres_eiga": [
 "comedy"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 76,
@@ -10659,7 +10970,7 @@
 "director": "野村芳太郎",
 "fetched": "2026-11-02",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 89,
@@ -10688,11 +10999,11 @@
 "74311": {
 "country": "日本",
 "director": "木村荘十二",
-"fetched": "2026-10-30",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 67,
@@ -10886,7 +11197,7 @@
 "director": "荒木哲郎",
 "fetched": "2026-11-04",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/80231/photo/e9db8f05f6121761.jpg",
 "poster_small": "https://media.eiga.com/images/movie/80231/photo/e9db8f05f6121761/320.jpg",
 "rating": "G",
@@ -10908,7 +11219,7 @@
 "genres_eiga": [
 "crime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/8041/photo/f7adb8157fd0fac5.jpg",
 "poster_small": "https://media.eiga.com/images/movie/8041/photo/f7adb8157fd0fac5/320.jpg",
 "runtime": 102,
@@ -11027,6 +11338,31 @@
 "title_ja": "ポケモン・ザ・ムービーXY 「光輪（リング）の超魔神 フーパ」",
 "year": 2015
 },
+"82024": {
+"country": "アメリカ",
+"director": "デイミアン・チャゼル",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"comedy",
+"romance",
+"music"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/82024/photo/ab9bf9f5935c3e87.jpg",
+"poster_small": "https://media.eiga.com/images/movie/82024/photo/ab9bf9f5935c3e87/320.jpg",
+"rating": "G",
+"runtime": 128,
+"scores": {
+"eiga": {
+"n": 1497,
+"v": 3.8
+}
+},
+"synopsis": "「セッション」で一躍注目を集めたデイミアン・チャゼル監督が、ライアン・ゴズリング＆エマ・ストーン主演で描いたミュージカル映画。売れない女優とジャズピアニストの恋を、往年の名作ミュージカル映画を彷彿させるゴージャスでロマンチックな歌とダンスで描く。オーディションに落ちて意気消沈していた女優志望のミアは、ピアノの音色に誘われて入ったジャズバーで、ピアニストのセバスチャンと最悪な出会いをする。そして後日、ミアは、あるパーティ会場のプールサイドで不機嫌そうに80年代ポップスを演奏するセバスチャンと再会。初めての会話でぶつかりあう2人だったが、互いの才能と夢に惹かれ合ううちに恋に落ちていく。「セッション」でアカデミー助演男優賞を受賞したJ・K・シモンズも出演。第73回ベネチア国際映画祭でエマ・ストーンが最優秀女優賞、第74回ゴールデングローブ賞では作品賞（ミュージカル／コメディ部門）ほか同賞の映画部",
+"title_en": "La La Land",
+"title_ja": "ラ・ラ・ランド",
+"year": 2016
+},
 "82212": {
 "country": "アメリカ",
 "director": "キャメロン・クロウ",
@@ -11050,6 +11386,28 @@
 "title_ja": "あの頃ペニー・レインと 特別編集版",
 "year": 2000
 },
+"82443": {
+"country": "日本",
+"director": "犬童一利",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"drama"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/82443/photo/f74f8708fb12d502.jpg",
+"poster_small": "https://media.eiga.com/images/movie/82443/photo/f74f8708fb12d502/320.jpg",
+"rating": "G",
+"runtime": 109,
+"scores": {
+"eiga": {
+"n": 11,
+"v": 4.0
+}
+},
+"synopsis": "和紙をはじめとする伝統産業が盛んな福井県丹南地域と、百済時代の面影を残す韓国・扶余（プヨ）を舞台に、頑固な職人と韓国から来た若い娘が次第に心を通わせていく人間ドラマ。妻を亡くして以来、偏屈な性格から誰とも心を通わせることなく生きる、越前和紙職人の剛生。脳腫瘍で倒れ、半身まひで介護が必要な体となってしまった剛生のもとにヘルパーとしてやって来たのが、韓国からワーキングホリデーで福井に訪れたフリーターのヨナだった。頑固な剛生と勝ち気なヨナ、文化も異なる2人は当然のように衝突するが、ヨナの常識にとらわれない介護により、固く閉ざされた剛生の心が次第に開いていく。主人公・剛生役に、役者人生50年にして本作が映画初主演となる石倉三郎。ヨナ役には「息もできない」のキム・コッピ。監督は「カミングアウト」「早乙女4姉妹」などを手がけた犬童一利。",
+"title_ja": "つむぐもの",
+"year": 2016
+},
 "8285": {
 "country": "フィンランド",
 "director": "アキ・カウリスマキ",
@@ -11057,7 +11415,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/8285/photo/54eb54189ade0565.jpg",
 "poster_small": "https://media.eiga.com/images/movie/8285/photo/54eb54189ade0565/320.jpg",
 "runtime": 80,
@@ -11121,7 +11479,7 @@
 "anime",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/83287/photo/d07fe57628f6b84d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/83287/photo/d07fe57628f6b84d/320.jpg",
 "rating": "G",
@@ -11141,7 +11499,7 @@
 "director": "A・D・カルボ",
 "fetched": "2026-10-31",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 90,
@@ -11186,7 +11544,7 @@
 "drama",
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/85779/photo/808e2a015b2bea0f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/85779/photo/808e2a015b2bea0f/320.jpg",
 "rating": "G",
@@ -11210,7 +11568,7 @@
 "drama",
 "history"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/85818/photo/802f3d2266fb326d.jpg",
 "poster_small": "https://media.eiga.com/images/movie/85818/photo/802f3d2266fb326d/320.jpg",
 "rating": "G",
@@ -11233,7 +11591,7 @@
 "genres_eiga": [
 "music"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/86306/photo/3ebcbf58dbba2e4e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/86306/photo/3ebcbf58dbba2e4e/320.jpg",
 "rating": "G",
@@ -11275,11 +11633,11 @@
 "87079": {
 "country": "アメリカ・デンマーク合作",
 "director": "ジョン・グエン",
-"fetched": "2026-10-29",
+"fetched": "2026-11-06",
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-04",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/87079/photo/ad888cc344dc2b4b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/87079/photo/ad888cc344dc2b4b/320.jpg",
 "rating": "G",
@@ -11302,7 +11660,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/87201/photo/486f0df522e80db1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/87201/photo/486f0df522e80db1/320.jpg",
 "runtime": 162,
@@ -11324,7 +11682,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/87599/photo/cc2a5ddbd7bada7e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/87599/photo/cc2a5ddbd7bada7e/320.jpg",
 "rating": "G",
@@ -11416,7 +11774,7 @@
 "music",
 "history"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/89230/photo/76429d58a335ef67.jpg",
 "poster_small": "https://media.eiga.com/images/movie/89230/photo/76429d58a335ef67/320.jpg",
 "rating": "G",
@@ -11438,7 +11796,7 @@
 "genres_eiga": [
 "stage"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/89725/photo/42d6f8c196c0129f.jpg",
 "poster_small": "https://media.eiga.com/images/movie/89725/photo/42d6f8c196c0129f/320.jpg",
 "rating": "G",
@@ -11478,7 +11836,7 @@
 "director": "アンゲラ・シャーネレク",
 "fetched": "2026-10-31",
 "genres_eiga": [],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/noimg.png",
 "poster_small": "https://media.eiga.com/images/movie/noimg/320.png",
 "runtime": 105,
@@ -11619,7 +11977,7 @@
 "anime",
 "thriller"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/93074/photo/3e2ae0a2ef10b6ed.jpg",
 "poster_small": "https://media.eiga.com/images/movie/93074/photo/3e2ae0a2ef10b6ed/320.jpg",
 "rating": "R15+",
@@ -11687,7 +12045,7 @@
 "genres_eiga": [
 "anime"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/94928/photo/71a6cf3425985f2c.jpg",
 "poster_small": "https://media.eiga.com/images/movie/94928/photo/71a6cf3425985f2c/320.jpg",
 "rating": "G",
@@ -11711,7 +12069,7 @@
 "action",
 "mystery"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/95385/photo/f4e8ae942c9165a1.jpg",
 "poster_small": "https://media.eiga.com/images/movie/95385/photo/f4e8ae942c9165a1/320.jpg",
 "runtime": 100,
@@ -11733,7 +12091,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/95495/photo/94ed1bdc3081fe44.jpg",
 "poster_small": "https://media.eiga.com/images/movie/95495/photo/94ed1bdc3081fe44/320.jpg",
 "runtime": 88,
@@ -11914,7 +12272,7 @@
 "genres_eiga": [
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/97777/photo/b7daf5ee967b5063.jpg",
 "poster_small": "https://media.eiga.com/images/movie/97777/photo/b7daf5ee967b5063/320.jpg",
 "rating": "G",
@@ -11937,7 +12295,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/97880/photo/6f7f46c7831dc821.jpg",
 "poster_small": "https://media.eiga.com/images/movie/97880/photo/6f7f46c7831dc821/320.jpg",
 "rating": "G",
@@ -11980,7 +12338,7 @@
 "genres_eiga": [
 "action"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/98380/photo/e765653e9608c98b.jpg",
 "poster_small": "https://media.eiga.com/images/movie/98380/photo/e765653e9608c98b/320.jpg",
 "rating": "G",
@@ -12003,7 +12361,7 @@
 "genres_eiga": [
 "documentary"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/98470/photo/8fdfa0b26101c920.jpg",
 "poster_small": "https://media.eiga.com/images/movie/98470/photo/8fdfa0b26101c920/320.jpg",
 "rating": "G",
@@ -12026,7 +12384,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/98819/photo/9ed7f29ee50f0446.jpg",
 "poster_small": "https://media.eiga.com/images/movie/98819/photo/9ed7f29ee50f0446/320.jpg",
 "runtime": 108,
@@ -12128,7 +12486,7 @@
 "genres_eiga": [
 "romance"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/99293/photo/07a711efef46f978.jpg",
 "poster_small": "https://media.eiga.com/images/movie/99293/photo/07a711efef46f978/320.jpg",
 "rating": "G",
@@ -12151,7 +12509,7 @@
 "genres_eiga": [
 "drama"
 ],
-"last_seen": "2026-11-05",
+"last_seen": "2026-11-06",
 "poster": "https://media.eiga.com/images/movie/99304/photo/def63a937450f99e.jpg",
 "poster_small": "https://media.eiga.com/images/movie/99304/photo/def63a937450f99e/320.jpg",
 "rating": "G",
@@ -12186,5 +12544,22 @@
 "title_en": "No Home Movie",
 "title_ja": "ノー・ホーム・ムーヴィー",
 "year": 2015
+},
+"99826": {
+"country": "中国",
+"director": "ジャン・モンチー",
+"fetched": "2026-11-06",
+"genres_eiga": [
+"documentary"
+],
+"last_seen": "2026-11-06",
+"poster": "https://media.eiga.com/images/movie/99826/photo/8e038be13f2c5ce8.jpg",
+"poster_small": "https://media.eiga.com/images/movie/99826/photo/8e038be13f2c5ce8/320.jpg",
+"runtime": 190,
+"scores": {},
+"synopsis": "中国の女性監督ジャン・モンチーが、父の故郷である湖北省の村に通い続けて撮影してきた「自画像 47KM」シリーズの第10作。190分をかけて村の1年を見つめ、山形国際ドキュメンタリー映画祭2023のインターナショナル・コンペティションで優秀賞を受賞した。 「47KM」と呼ばれる湖北省の山あいの村は、新型コロナウイルスの感染が広がった武漢から220キロ離れている。2020年、幼稚園や学校が休みになって村にいる子どもたちに、監督はカメラを向けて「コロナを知ってる？」「コロナが怖い？」と問いかける。だが村の人々はマスクもせず、これまでと変わらない暮らしを続けていた。2010年から村に通い、この年ついに村へ移り住むことを決めたジャン・モンチー監督は、農作業や老人たちの語り、子どもたちの遊ぶ姿を、四季の移ろいとともに記録していく。 ジャン・モンチー監督は1987年、中国湖北省生まれ。北京の中央民族大学",
+"title_en": "Self-Portrait: 47 KM 2020",
+"title_ja": "自画像 47KM 2020",
+"year": 2023
 }
 }
